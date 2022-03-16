@@ -7,152 +7,54 @@
     <title>Document</title>
     <style>
         *{
-            padding: 0px;
-            margin: 0px;
-            justify-content: center;
-        }
-        .all{
-            margin:0px auto;
-            width: 980px;
-        }
-        header{
-            width: 980px;
-            height:100px;
-            background: #cb7802;
-        }
-        header img{
-            margin-left: 30px;
-        }
-        nav{
-            height: 35px;
-            background-color: #272f54;
-        }
-        nav ul{
-            list-style: none;
-        }
-        nav .menu ul li a{
-            text-decoration: none;
-            color: #fff;
-            float: left;
-            line-height: 35px;
-            padding:0 15px;
-        }
-        nav .search {
-           line-height: 35px;
-           float:right;
-           margin-right: 25px;
-        }
-        article h3{
+            max-width: 100%;
             text-align: center;
-            padding: 15px 0px;
-            color: #272f54;
-            font-size: 20px;
-            text-transform: uppercase;
+            margin:0px;
+            padding:0px;
         }
-        article .newlist .newitems{
-            width: 28%;
-            padding:12px;
-            float:left;
-            border: 1px solid #ccc;
-            margin-right: 4%;
+        .bigbox{
+            display: flex;
+            height: 400px;
+            font-display: grid;
+            grid-column-gap: 15px;
         }
-        #fix{
-            margin-right: 0px;
+        .box1{
+            background-color: white;
+            width: 33.33%;
         }
-        article .newlist .newitems h4{
-            color:#ad3f00;
-            font-size: 16px;
+        .box2{
+            background-color: white;
+            width: 33.33%;
         }
-        article .newlist .newitems img{
-            margin:10px 0px;
-        }
-        article .newlist .newitems content{
-            font-size: 13px;
+        .box3{
+            background-color: white;
+            width: 33.33%;
         }
     </style>
 </head>
 <body>
-    <div class="all">
-        <header>
-            <a href=""><img src="img/logo.png"/></a>
-        </header>
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><a href="">Trang Chủ</a></li>
-                    <li><a href="">Đào Tạo</a></li>
-                    <li><a href="">Hoạt Động Sinh Viên</a></li>
-                    <li><a href=" ">Tuyển Sinh</a></li>
-                    <li><a href="">Liên Hệ</a></li>
-                </ul>
+    <div class="bigbox">
+        <div class="box box1">
+            <div>
+                <div><img src="img/lenovo-tab-m10-fhd-plus-1-1-org.jpg"></div>
             </div>
-            <div style="clear:both"></div>
-            <div class="search">
-                <input type="Search" placeholder="search...">
-                <button>Tìm kiếm</button>
-            </div>
-        </nav>
-        <div class="slide">
-            <a href=""><img src="img/slide.jpg"/></a>
+            <div>lenovo P11</div>
+            <div>8.190.000</div>
         </div>
-        <article>
-            <h3>Tin Tức Học Tập</h3>
-            <div class="newlist">
-                <div class="newitems">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_1.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
-                <div class="newitems">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_2.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
-
-                <div class="newitems" id="fix">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_3.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
-                <div style="clear:both"></div>
+        <div class="box box2">
+            <div>
+                <div><img src="img/lenovo-tab-m10-fhd-plus-1-1-org.jpg"></div>
             </div>
-        </article>
-        <article>
-            <h3>Tin Tức Học Tập</h3>
-            <div class="newlist">
-                <div class="newitems">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_1.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
-                <div class="newitems">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_2.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
-
-                <div class="newitems" id="fix">
-                    <h4>Sinh Viên FPT polytecnich giành quán quân cuộc thi "FPTHackcathon 2018"</h4>
-                    <a href=""><img src="img/anh_3.jpg"></a>
-                    <div class="content">
-                        Dài quá không copy được mà lười gõ nên chữ này chỉ mang tính chất minh họa 
-                    </div>
-                </div>
+            <div>lenovo P11</div>
+            <div>8.190.000</div>
+        </div>
+        <div class="box box3">
+            <div>
+                <div><img src="img/lenovo-tab-m10-fhd-plus-1-1-org.jpg"></div>
             </div>
-        </article>
-        <footer>
-    
-        </footer>
+            <div>lenovo P11</div>
+            <div>8.190.000</div>
+        </div>
     </div>
 </body>
 </html>
