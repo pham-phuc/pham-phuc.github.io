@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hướng dẫn sử dụng JDBC kết nối cơ sở dữ liệu trong Jva</h1>
+    <p>Hiện nay hầu hết các ứng dụng Java hay các framework của nó đều dần chuyển sang các ORM(Object Relational Mapping) để làm việc với database, có thể kể đến là hibernate được sử dụng rộng rãi. Thế nên mọi người có xu hướng dần quên đi JDBC, thế nhưng các bạn có biết rằng bên dưới hibernate đang sử dụng JDBC để để kết nối đến database và thực thi các lệnh SQL được nó tạo ra</p>
+    <p>Trong loạt bài viết này, chúng ta sẽ cùng tìm hiểu về JDBC và cách sử dụng chúng.</p>
+    <h2>JDBC là gì?</h2>
+    <p>
+      JDBC-<b>J</b>ava <b>D</b>atabase <b>C</b>onectivity, là một API chuẩn để
+      kết nối giữa ngôn ngữ lập trình Java và các database.Nó là một phần của
+      javaSE(<i><b>J</b>ava <b>S</b>tandard <b>E</b>dition</i>).API JDBC sử dụng
+      JDBC drives để kết nối với cơ sở dữ liệu
+    </p>
+    <h2>Kiến trúc JDBC</h2>
+    <p>
+      <img
+        src="https://media.techmaster.vn/api/static/bq0a8rs51co78aldi4p0/diuws9Lf"
+      />
+      <ul>
+        <li><ul>
+            <li><p>JDBC API: Cho phép chương trình Java thực thi các câu lệnh SQL và truy xuất kết quả. Một số lớp và interface quan trọng được định nghĩa trong JDBC API như sau:</p></li>
+            <li><p>DriverManager: Đóng vai trò quan trọng trong kiến trúc JDBC. Nó sử dụng một số quy trình điều khiển dành riêng cho cơ sở dữ liệu để kết nối hiệu quả các ứng dụng doanh nghiệp với database</p></li>
+            <li><p>JDBC Driver: Để giao tiếp với nguồn dữ liệu thông qua JDBC, bạn cần JDBC Driver để giao tiếp với nguồn dữ liệu tương ứng. Có 4 loại JDBC drivers:</p>
+                <ul>
+                    <li>JDBC - ODBC Bridge Driver</li>
+                    <li>Native Drive</li>
+                    <li>Network Protocol Driver</li>
+                    <li>Thin driver</li>
+                </ul>
+            </li>
+    
+    </ul>
+    </p>
+    <h2>Các thành phần chính trong JDBC</h2>
+    <ul>
+        <li>DriverManager: Là một class dùng để quản lý danh sách các Driver</li>
+        <li>river: Là một interface, chịu trách nhiệm xử lý các hoạt động giao tiếp giữa ứng dụng và database</li>
+        <li>Connection: Là một interface, cung cấp các phương thức cho việc thao tác với database</li>
+        <li>Statement: Là một interface, để thực thi các câu lệnh SQL xuống database</li>
+        <li>ResultSet: Là một bảng dữ liệu mà biểu diễn tập kết quả từ cơ sở dữ liệu trả về bởi các lệnh SQ</li>
+        <li>SQLException: Xử lý ngoại lệ xảy ra trong database</li>  
+    </ul>
+    <h2>Các bước kết nối database với Java</h2>
+    <ul>
+        <li>Load driver</li>
+        <li>Tạo kết nối (Create Connection)</li>
+        <li>Tạo câu lệnh truy vấn SQL (Statement)</li>
+        <li>Thực thi câu lệnh truy vấn SQL (Excute query)</li>
+        <li>Đóng kết nối (Close Connection)</li>
+    </ul>
+    <h2>Tạo project ví dụ JDBC</h2>
+    <h3> Chuẩn bị database</h3>
+    <p>Trong ví dụ này mình sẽ sử dụng MySQL. Mình có một bảng users với cấu trúc sau:
+        <img src="https://media.techmaster.vn/api/static/bq0a8rs51co78aldi4p0/GMRJHBhE"/>
+        <p>Thêm một số dữ liệu vào bảng users</p>
+        <img src="https://media.techmaster.vn/api/static/bq0a8rs51co78aldi4p0/7X5KyJ13"/>
+    </p>
+    <h2>Cài đặt thư viện</h2>
+    <p>Ở đây mình sẽ sử dụng Maven để quản lý chương trình Java</p>
+    <p>Add 2 dependency vào file pom.xml</p>
+    <pre>
+        <!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc10 -->
+<dependency>
+    <groupId>com.oracle.database.jdbc</groupId>
+    <artifactId>ojdbc10</artifactId>
+    <version>19.13.0.0.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.28</version>
+</dependency>
+    </pre>
+    <p>Nếu bạn sử dụng database khác thay vì MySQL thì hãy sử dụng các dependency khác</p>
+    <h2>Tạo kết nối tới databas</h2>
+    <p>Để có thể kết nối tới database chúng ta cần chuẩn bị các thông tin như: hostname, username, password, database</p>
+    <pre>
+        public class ConnectJDBC {
+            private String hostName = "localhost:8082";
+            private String dbName = "my_database";
+            private String username = "root";
+            private String password = "123";
+        
+            private String connectionURL = "jdbc:mysql://"+hostName+"/"+dbName;
+        
+            public Connection connect(){
+                //Tạo đối tượng Connection
+                Connection conn = null;
+        
+                try {
+                    conn = DriverManager.getConnection(connectionURL, username, password);
+                    System.out.println("Kết nối thành công");
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+        
+                return conn;
+            }
+        }
+        
+    </pre>
+    <h2>Sử dụng JDBC API để truy vấn dữ liệu</h2>
+    <P>Lấy ra toàn bộ thông tin users</P>
+    <pre>public class Main {
+        public static void main(String[] args) {
+            ConnectJDBC connectJDBC = new ConnectJDBC();
+            Connection conn = connectJDBC.connect();
+    
+            String query = "SELECT * FROM users";
+    
+            Statement stm = null;
+            try {
+                //Tạo đối tượng Statement
+                stm = conn.createStatement();
+    
+                //Thực thi truy vấn và trả về đối tượng ResultSet
+                ResultSet rs = stm.executeQuery(query);
+    
+                //Duyệt kết quả trả về
+                while (rs.next()){  //Di chuyển con trỏ xuống bản ghi kế tiếp
+                    int id = rs.getInt("id");
+                    String username = rs.getString("username");
+                    String password = rs.getString("password");
+                    String email = rs.getString("email");
+    
+                    System.out.println(id + " - " + username + " - " + password + " - " + email);
+                }
+                //Đóng kết nối
+                conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+    
+        }
+    }
+    </pre>
+  </body>
+</html>
