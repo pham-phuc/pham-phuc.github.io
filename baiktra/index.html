@@ -12,7 +12,7 @@
         text-align: center;
         margin: 0px;
         padding: 0px;
-        background-color: white;
+        background-color: #ecf0f1;
       }
       .bigbox {
         display: flex;
@@ -29,6 +29,7 @@
       .box {
         width: 25%;
         border: 1px solid gray;
+        transition: 0.5s;
       }
       a {
         text-decoration: none;
@@ -43,6 +44,13 @@
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
         color: #464646;
       }
+      .ten{
+        transition: 0.5s;
+      }
+      .box a .item:hover>.ten{
+        color: aqua;
+        font-size: 25px;
+      }
     </style>
   </head>
   <body>
@@ -50,25 +58,29 @@
     <div class="bigbox">
       <div class="box box1">
         <a href="ga.html">
-          <div >
-            <div><img src="img/pexels-photo-1216482.jpeg" alt="anh ga"/> </div>
+          <div class="item">
+            <div >
+              <div><img src="img/pexels-photo-1216482.jpeg" alt="anh ga"/> </div>
+            </div>
+            <div class="ten">Gà</div>
+            <div class="mota">Xem thêm mô tả</div>
           </div>
-          <div class="ten">Gà</div>
-          <div class="mota">Xem thêm mô tả</div>
         </a>
       </div>
       <div class="box box2">
         <a href="cakoi.html">
-          <div>
-            <div><img src="img/pexels-photo-213399.jpeg" /></div>
-          </div >
-          <div class="ten">Cá Koi</div>
-          <div class="mota">Xem thêm mô tả</div>
+          <div class="item">
+            <div>
+              <div><img src="img/pexels-photo-213399.jpeg" /></div>
+            </div >
+            <div class="ten">Cá Koi</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
         </a>
       </div>
       <div class="box box3">
         <a href="khi.html">
-          <div>
+          <div class="item">
             <div><img src="img/pexels-photo-819372.jpeg" /></div>
             <div class="ten">Khỉ</div>
             <div class="mota">Xem thêm mô tả</div>
@@ -79,29 +91,33 @@
     <div class="bigbox">
       <div class="box box1">
         <a href="huou.html">
-          <div>
-            <div><img src="img/pexels-photo-4577792.jpeg" /></div>
+          <div class="item">
+            <div>
+              <div><img src="img/pexels-photo-4577792.jpeg" /></div>
+            </div>
+            <div class="ten">Hươu cao cổ</div>
+            <div class="mota">Xem thêm mô tả</div>
           </div>
-          <div class="ten">Hươu cao cổ</div>
-          <div class="mota">Xem thêm mô tả</div>
         </a>
       </div>
       <div class="box box2">
         <a href="daibang.html">
-          <div>
+          <div class="item">
             <div>
-              <img
-                src="img/bald-eagles-bald-eagle-bird-of-prey-adler-53581.jpeg"
-              />
+              <div>
+                <img
+                  src="img/bald-eagles-bald-eagle-bird-of-prey-adler-53581.jpeg"
+                />
+              </div>
             </div>
+            <div class="ten">Đại bàng</div>
+            <div class="mota">Xem thêm mô tả</div>
           </div>
-          <div class="ten">Đại bàng</div>
-          <div class="mota">Xem thêm mô tả</div>
         </a>
       </div>
       <div class="box box3">
         <a href="chim.html">
-          <div>
+          <div class="item">
             <div><img src="img/pexels-photo-689784.jpeg" /></div>
             <div class="ten">Chim cánh cụt</div>
             <div class="mota">Xem thêm mô tả</div>
