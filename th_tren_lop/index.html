@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px auto;
+    color: #16a085;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contain {
+    /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4px 16px;
+  box-sizing: border-box; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin: 24px;
+}
+
+.flower {
+    width: 100%;
+    height: 500px;
+    box-shadow: 3px 3px 3px #16a085;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.flower:hover {
+    transform: scale(1.01);
+}
+
+.flower-img {
+    height: 80%;
+}
+
+.flower-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.flower-name {
+    height: 20%;
+    background-color: aliceblue;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flower-name p {
+    color: #16a085;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:780px) {
+    .contain {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:550px) {
+    .contain {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>FLOWER GALLERY <i class="fa-solid fa-clover"></i></h1> 
+    <div class="contain">
+      <div class="flower">
+        <a href="hoa-ly.html">
+          <div class="flower-img">
+            <img src="img/hoa-ly.jpg" alt="Hoa ly" />
+          </div>
+          <div class="flower-name"><p>Hoa ly</p></div>
+        </a>
+      </div>
+      <div class="flower">
+        <a href="hoa-lan.html">
+          <div class="flower-img">
+            <img src="img/hoalan.jpg" alt="Hoa lan" />
+          </div>
+          <div class="flower-name"><p>Hoa lan</p></div>
+        </a>
+      </div>
+      <div class="flower">
+        <a href="hoa-sen.html">
+          <div class="flower-img">
+            <img src="img/lotus.jpg" alt="Hoa sen" />
+          </div>
+          <div class="flower-name"><p>Hoa sen</p></div>
+        </a>
+      </div>
+      <div class="flower">
+        <a href="hoa-huong-duong.html">
+          <div class="flower-img">
+            <img src="img/sunflower.jpg" alt="Hoa hướng dương" />
+          </div>
+          <div class="flower-name"><p>Hoa hướng dương</p></div>
+        </a>
+      </div>
+      <div class="flower">
+        <a href="hoa-cuc.html">
+          <div class="flower-img">
+            <img src="img/white-daisy.jpg" alt="Hoa cúc" />
+          </div>
+          <div class="flower-name"><p>Hoa cúc</p></div>
+        </a>
+      </div>
+      <div class="flower">
+        <a href="hoa-hong.html">
+          <div class="flower-img">
+            <img src="img/whiterose.jpg" alt="Hoa hồng" />
+          </div>
+          <div class="flower-name"><p>Hoa hồng</p></div>
+        </a>
+      </div>
+    </div>
+</body>
+</html>
