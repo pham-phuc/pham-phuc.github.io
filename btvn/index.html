@@ -31,14 +31,19 @@
 
       .bigbox {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+
+        /** Sử dụng Mobile first style **/
+        grid-template-columns: 1fr;
         gap: 20px;
         margin: 24px;
       }
 
       .box {
         width: 100%;
-        height: 400px;
+        /** Không set height cho thẻ div bọc quanh item nữa
+        mà để nó tự thay đổi height theo màn hình
+        **/
+
         box-shadow: 3px 3px 3px #16a085;
         transition: 0.5s;
         border-radius: 10px;
@@ -49,9 +54,8 @@
         transform: scale(1.01);
       }
 
-      .box_img {
-        height: 80%;
-      }
+      /** Để cho image tự co giãn theo kích thước của box **/
+
 
       .box_img img {
         height: 100%;
@@ -79,29 +83,19 @@
         font-weight: 700;
       }
 
-      @media only screen and (max-width: 550px) {
-        .bigbox{
-          grid-template-columns: 1fr;
-        }
-        .box {
-          height: 400px;
-        }
-      }
+      /** Vì đã sử dụng mobile first style nên chỉ cần set columns
+      cho 2 break points lớn hơn 550px thôi
+       **/
 
-      @media only screen and (max-width: 1030px) and (min-width: 551px) {
+      @media only screen and (min-width: 551px) {
         .bigbox {
           grid-template-columns: 1fr 1fr;
         }
-        .box{
-          height: 400px;
-        }
       }
-      @media only screen and (max-width: 1200px) and (min-width: 1031px) {
+
+      @media only screen and (min-width: 1031px) {
         .bigbox {
           grid-template-columns: 1fr 1fr 1fr;
-        }
-        .box{
-          height: 300px;
         }
       }
     </style>
@@ -186,6 +180,6 @@
         </a>
       </div>
     </div>
-    
+
   </body>
 </html>
