@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(img/background.jpg);
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        margin: 20px auto;
+        color: #16a085;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .bigbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin: 24px;
+      }
+
+      .box {
+        width: 100%;
+        height: 400px;
+        box-shadow: 3px 3px 3px #16a085;
+        transition: 0.5s;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .box:hover {
+        transform: scale(1.01);
+      }
+
+      .box_img {
+        height: 80%;
+      }
+
+      .box_img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .flower-name {
+        height: 20%;
+        background-color: aliceblue;
+        overflow: hidden;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ten {
+        color: #16a085;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      @media only screen and (max-width: 550px) {
+        .bigbox{
+          grid-template-columns: 1fr;
+        }
+        .box {
+          height: 400px;
+        }
+      }
+
+      @media only screen and (max-width: 1000px) and (min-width: 551px) {
+        .bigbox {
+          grid-template-columns: 1fr 1fr;
+        }
+        .box{
+          height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CÁC LOÀI ĐỘNG VẬT THÚ VỊ</h1>
+    <div class="bigbox">
+      <div class="box box1">
+        <a href="ga.html">
+          <div class="item">
+            <div>
+              <div class="box_img">
+                <img src="img/pexels-photo-1216482.jpeg" alt="anh ga" />
+              </div>
+            </div>
+            <div class="ten">Gà</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+      <div class="box box2">
+        <a href="cakoi.html">
+          <div class="item">
+            <div>
+              <div class="box_img"><img src="img/pexels-photo-213399.jpeg" alt="cakoi" /></div>
+            </div>
+            <div class="ten">Cá Koi</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+      <div class="box box3">
+        <a href="khi.html">
+          <div class="item">
+            <div class="box_img"><img src="img/pexels-photo-819372.jpeg" alt="anh_khi" /></div>
+            <div class="ten">Khỉ</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+      <div class="box box1">
+        <a href="huou.html">
+          <div class="item">
+            <div>
+              <div class="box_img">
+                <img
+                  src="img/hinh-2-1481269677.jpg"
+                  alt="anh_huou_cao_co"
+                />
+              </div>
+            </div>
+            <div class="ten">Hươu cao cổ</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+      <div class="box box2">
+        <a href="daibang.html">
+          <div class="item">
+            <div>
+              <div class="box_img">
+                <img
+                  src="img/bald-eagles-bald-eagle-bird-of-prey-adler-53581.jpeg"
+                  alt="anh_dai_bang"
+                />
+              </div>
+            </div>
+            <div class="ten">Đại bàng</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+      <div class="box box3">
+        <a href="chim.html">
+          <div class="item">
+            <div class="box_img">
+              <img src="img/pexels-photo-689784.jpeg" alt="anh_chim_canh_cut" />
+            </div>
+            <div class="ten">Chim cánh cụt</div>
+            <div class="mota">Xem thêm mô tả</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+  </body>
+</html>
