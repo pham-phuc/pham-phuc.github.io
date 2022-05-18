@@ -1,576 +1,683 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
+
+<head>
+    <title>Ecomerce Web</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-  </head>
-  <style>
-    body {
-      background: #f7f6f4;
-      width: 100%;
-    }
-    .navbar {
-      margin: auto;
-      line-height: 60px;
-    }
-    .icon {
-      padding: 0px 20px;
-    }
-    .icon a {
-      text-decoration: none;
-      color: black;
-    }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    .navbar-light .navbar-nav .nav-link {
-      font-size: 18px;
-    }
-    .icon i {
-      font-size: 18px;
-    }
-    .navbar-brand {
-      font-size: 22px;
-    }
-    .carousel .carousel-inner .carousel-item img {
-      width: 100%;
-      position: relative;
-    }
-    .clock {
-      width: 20%;
-      position: absolute;
-      bottom: -20px;
-      z-index: 1000;
-    }
-    .navbar-nav {
-      margin: auto;
-    }
-    .contain-breadcrumb{
-      margin: 30px auto;
-    }
-    .breadcrumb .breadcrumb-item-1 a {
-      text-decoration: none;
-      color: #333333;
-      font-size: 16px;
-      line-height: 27px;
-    }
-    .breadcrumb .breadcrumb-item-1:nth-child(4) a {
-      color: #d84727;
-    }
-    
-    .row_img_big {
-      max-width: 100%;
-    }
-    .row_text_heading {
-      font-size: 60px;
-      max-width: 413px;
-    }
-      
-    .price {
-      font-size: 22px;
-      text-decoration: line-through;
-    }
-    .promotional_price {
-      font-size: 24px;
-    }
-    .mode {
-      font-size: 16px;
-    }
-    .quantity {
-      margin-top: 20px;
-    }
-    .result {
-      margin: 0px 10px;
-      font-size: 36px;
-      line-height: 61px;
-      font-weight: 400;
-    }
-    .tong,
-    .tru {
-      width: 30px;
-      height: 30px;
-      margin-top: -10px;
-    }
-    .breadcrumb-item-2 a {
-      font-size: 20px;
-      text-decoration: none;
-      color: #999999;
-      margin-left: 40px;
-    }
-    .breadcrumb-item-2:first-child a {
-      color: #d84727;
-    }
-    .title-content {
-      color: #333333;
-      font-size: 24px;
-    }
-    .text-content {
-      color: #555555;
-      line-height: 28px;
-      font-size: 16px;
-    }
-    .content {
-      max-width: 1046px;
-      margin:auto;
-    }
-    .img-structure {
-      text-align: center;
-      width: 100%;
-      margin-bottom: 100px;
-    }
-    .title-describe{
-      margin-bottom: 50px;
-    }
-    .list {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 15px;
-      margin: 15px;
-      width: 100%;
-    }
-    .list-item {
-      background: #ffffff;
-    }
-    
-    .list-item img {
-      width: 100%;
-      height: auto;
-      padding: 46px 15px 20px 14px;
-    }
-    .text-item {
-      margin-left: 20px;
-    }
-    .footer-1 {
-      width: 100%;
-      background: #da5e42;
-      margin: 0px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      text-align: center;
-      margin-top: 50px;
-    }
-    
-    .img-item {
-      margin: 0px 50px;
-    }
-    .footer {
-      background: #d84727;
-      margin: 0px;
-    }
-    .cus-alinecentter {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-    .item-footer{
-      font-size: 30px;
-      color: #DADADA;
-      margin-top:25px;
-      margin-right: 25px;
-    }
-    @media only screen and (max-width: 540px) {
-      .footer-1 {
-        display: grid;
-      grid-template-columns: 1fr 1fr ;
-      }
-      .list {
-        display: grid;
-      grid-template-columns: 1fr 1fr ;
-      margin:20px 0px;
-      }
-      .img-structure img{
-        width: 80%;
-        margin: auto;
-      }
-      .row_text_heading {
-        font-size: 20px;
-      }
-      .row_img_small {
-        width: 70%;
-      }
-      .breadcrumb .breadcrumb-item a {
-        font-size: 10px;
-      }
-      .mode{
-        font-size: 10px;
-      }
-      .color_mode img{
-        width: 20%;
-      }
-      .tong,.tru{
-        width: 20px;
-        height: 20px;
-        padding: 0; 
-        padding-bottom: 8px 0px;       
-      }
-      .breadcrumb-item-2 a{
-        font-size: 14px;
-        margin: 0px;
-      }
-      .breadcrumb-item-2+.breadcrumb-item-2 {
-        padding-left: 0;
-      }
-      .breadcrumb-item-2:first-child a {
-        padding-right: 10px;
-      }
-      .title-content{
-        font-size: 16px;
-      }
-      .text-content{
-        font-size: 12px;
-      }  
-    }
-    .contact{
-      margin-right: 30px;
-    }
-  </style>
-  <body>
-    <nav class="navbar navbar-expand-xl navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">M A T O A</a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Watches <span class="visually-hidden">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Eyewear</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accessories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav mt-2 mt-lg-0">
-            <div class="icon">
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </div>
+    <!-- FontAwesome 5.15.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Taviraj">
+    <style>
+      * {
+  font-family: "Taviraj", serif;
+  color: #333;
+}
 
-            <div class="icon">
-              <a href="#"><i class="fa-solid fa-user"></i></a>
-              <a href="#">Login</a>
-            </div>
+body {
+  background-color: #f7f6f4;
+}
 
-            <div class="icon">
-              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+.cus-menu-style {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.cus-menu-item {
+  color: #333 !important;
+  font-size: 1.15rem;
+  margin: 0 1em;
+  padding: 0 0.5em;
+  letter-spacing: 0.03rem;
+}
+
+.cus-card-icon {
+  background-color: #f1ddc9;
+  border-radius: 18px;
+  color: #f1ddc9;
+  stroke: #000;
+  stroke-width: 30px;
+}
+
+.cus-maxwith-100 {
+  max-width: 100%;
+}
+
+.cus-slide {
+  background-color: #f1ddc9;
+  height: 60vh;
+}
+
+.cus-slide img {
+  position: absolute;
+  max-width: 100%;
+}
+
+.cus-section-2 {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.cus-section2-item {
+  background-color: #fff;
+  padding: 2em 0.5em 0 2em;
+}
+
+.cus-section2-item p {
+  color: #777;
+}
+
+.cus-section2-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cus-section-3 {
+  margin-top: 3em;
+}
+
+.cus-section3-item {
+  background-color: #fff;
+  padding: 2em 0.5em 0 2em;
+}
+
+.image-section-42 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: imagemove 5s infinite;
+  z-index: 1;
+}
+
+.image-section-w30 {
+  width: 30em;
+  height: 20em;
+  position: relative;
+  animation: imagemove 5s infinite;
+  z-index: 1;
+}
+
+.image-section-w20 {
+  width: 25em;
+  height: 20em;
+  position: relative;
+  animation: imagemove 5s infinite;
+  z-index: 1;
+}
+
+.cus-btnred {
+  color: #d84727;
+  border: 1px solid #d84727;
+  height: 50px;
+  min-width: 10em;
+  background-color: rgba(119, 119, 119, 0);
+}
+
+.cus-btnred-mini {
+  background-color: #d84727;
+  color: #fff;
+  border: none;
+}
+
+.cus-write-mini {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #d84727;
+}
+
+.cus-divpink {
+  background-color: #f1ddc9;
+  width: 30em;
+  height: 20em;
+  position: absolute;
+  right: 0;
+  bottom: 4em;
+}
+
+.cus-divpink100 {
+  background-color: #f1ddc9;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 4em;
+}
+
+.cus-relative {
+  position: relative;
+}
+
+.cus-alinecentter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cus-alinecentter80 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.cus-section-2em {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.cus-img-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.cus-img-100px {
+  width: 100px;
+  height: 100px;
+}
+
+.cus-colorda {
+  background-color: #da5e42;
+}
+
+.cus-colord8 {
+  background-color: #d84727;
+}
+
+.cus-color-write {
+  color: #fff;
+}
+
+.cus-flexbetween {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cus-line-text {
+  text-decoration: line-through;
+  color: #d84727;
+}
+
+.cus-item-hovers {
+  display: none;
+}
+
+.cus-hove {
+  display: inline;
+}
+
+.cus-hove:hover .cus-item-hovers {
+  display: block;
+  color: red;
+}
+    </style>
+</head>
+
+<body>
+
+    <!--Menu gõ bs5-nav-default -->
+
+    <div class="container-md">
+        <nav class="navbar navbar-expand-md navbar-light cus-menu-style">
+            <a class="navbar-brand" href="#">
+                <img src="./source/images/image_5.png" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="collapsibleNavId">
+                <ul class="navbar-nav justify-content-center" style="width: 60%;">
+                    <li class="nav-item active">
+                        <a class="nav-link cus-menu-item" href="./detail.html">Watches</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item">Eyewear</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item">Accessories</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item">News</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav justify-content-end" style="width: 40%;">
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item" href="#"><i class="fas fa-user"></i>Log
+                            In</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link cus-menu-item" href="#"><i class="fas fa-briefcase"></i></a>
+                    </li>
+                </ul>
+
             </div>
-          </ul>
-        </div>
-        
-    </nav>
-    <div class="container contain-breadcrumb">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item breadcrumb-item-1"><a href="#">Home</a></li>
-          <li class="breadcrumb-item breadcrumb-item-1"><a href="#">Product</a></li>
-          <li class="breadcrumb-item breadcrumb-item-1"><a href="#">Watches</a></li>
-          <li class="breadcrumb-item breadcrumb-item-1"><a href="#">Way Kambas Mini Ebony</a></li>
-        </ol>
-      </nav>
-    </div>
-    <div class="container row_item">
-        <div class="row">
-          <div class="col-3">
-            <div><img class="row_img_small" src="img/image 37.png" alt="" srcset=""></div>
-            <div><img class="row_img_small" src="img/image-removebg-preview 1.png" alt="" srcset=""></div>
-            <div><img class="row_img_small" src="img/image-removebg-preview1 1.png" alt="" srcset=""></div>
-            <div><img class="row_img_small" src="img/image-removebg-preview2 1.png" alt="" srcset=""></div>
-          </div>
-          <div class="col-4">
-            <div><img class="row_img_big" src="img/image 6 (1).png" alt="" srcset=""></div>           
-          </div>
-          <div class="col-5">
-            <div class="row_text_heading">
-                WAY KAMPAS MINI EBONY
-            </div>
-            <div class="price">
-                Rp 1.280.000
-            </div>
-            <div class="promotional_price">
-                Rp 1.024.000
-            </div>
-            <div class="mode">
-                Choose Mode
-            </div>
-            <div class="color_mode">
-                <img src="img/image 38.png" alt="">
-                <img src="img/image 39.png" alt="">
-            </div>
-            <div class="quantity">
-                <button class="tru">-</button>                
-                <span class="result">1</span>               
-                <button class="tong">+</button>
-              </div>
-          </div>
-        </div>
-      </div>
-    <div class="container">
-      <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-        <ol class="breadcrumb contain-breadcrumb">
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">Detail</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">Warranty</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">Custom Engrave</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">How To Adjust</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">How To Care</a>
-          </li>
-          <li class="breadcrumb-item breadcrumb-item-2">
-            <a href="#">Gallery</a>
-          </li>
-        </ol>
-      </nav>
-      <div class="content">
-        <h3 class="title-content">Material</h3>
-        <p class="text-content">
-          MATOA Way Kambas - Sumatran Rhino comes with a material form of
-          Makassar Ebony (Diospyros celebica). This wood is chosen to represent
-          the Sumatran Rhino's skin which is designed with an overlap effect on
-          its strap to represent Rhino's skin. Sumatran Rhino has unique skin
-          fold, the skin is fairly thin about 10-16mm, and is soft and pliable.
-        </p>
-        <h3 class="title-content">Case</h3>
-        <p class="text-content">
-          The case on this timepiece is made with Height 12.5mm, Width 36mm,
-          Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat
-          glass to increase the enhanced durability on timepieces as scratch
-          resistant and anti fingerprint. This timepiece is also equipped with
-          Hand Polish Brass Spacer for a longer usage periods.
-        </p>
-        <h3 class="title-content">Movement</h3>
-        <p class="text-content">
-          For the first time, MATOA comes with Seiko Quartz VD78 movement with
-          small second function. A small second hand is above 6 o'clock
-          position. This second hand dial is dedicated to Sumatran Rhino whom
-          every second of its life is so precious because whenever Sumatran
-          Rhino goes, it can be threatened by illegal poaching
-        </p>
-        <h3 class="title-content">Dial</h3>
-        <p class="text-content">
-          In the dial, there are double layer of Makassar Ebony Veneer with 3, 9
-          & 12 o'clock laser cut brass plate index.
-        </p>
-        <h3 class="title-content">Hand</h3>
-        <p class="text-content">
-          The hour, minute & small second hands on MATOA Way Kambas - Sumatran
-          Rhino is outfitted with skeleton hand and brush finished with Gold
-          Matte color. This new design aims at adding a value for this special
-          edition.
-        </p>
-        <h3 class="title-content">Important to Note</h3>
-        <p class="text-content">
-          Wood color on watches is produced from a combination of mature and
-          fresh wood but should not be viewed as a defect. It is a very natural
-          process of wood aging.
-        </p>
-      </div>
-    </div>
-    <div class="img-structure">
-      <img src="img/image 40.png" alt="" />
-    </div>
-    <div class="container">
-      <h2 class="title-describe">Relate Products</h2>
-      <div class="list">
-        <div class="list-item">
-          <img src="img/image 9 (1).png" alt="" />
-          <div class="text-item">
-            <h3 class="title-content">Singo Maple</h3>
-            <div class="price cus-line-text">Rp 1.280.000</div>
-            <div class="promotional_price">Rp 1.024.000</div>
-          </div>
-        </div>
-        <div class="list-item">
-          <div class="list-item">
-            <img src="img/image 41.png" alt="" />
-            <div class="text-item">
-              <h3 class="title-content">Sikka (Ebony & Maple)</h3>
-              <div class="price">Rp 1.280.000</div>
-              <div class="promotional_price">Rp 1.024.000</div>
-            </div>
-          </div>
-        </div>
-        <div class="list-item">
-          <div class="list-item">
-            <img src="img/image 42.png" alt="" />
-            <div class="text-item">
-              <h3 class="title-content">Sunda</h3>
-              <div class="promotional_price">Rp 1.170.000</div>
-            </div>
-          </div>
-        </div>
-        <div class="list-item">
-          <div class="list-item">
-            <img src="img/image 9 (1).png" alt="" />
-            <div class="text-item">
-              <h3 class="title-content">Singo Maple</h3>
-              <div class="price">Rp 1.280.000</div>
-              <div class="promotional_price">Rp 960.000</div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
     </div>
 
-    <div class="footer-1">
-      <div class="img-item">
-        <img src="img/image 25.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 26.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 27.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 28.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 29.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 32.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 33.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 34.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 35.png" alt="" />
-      </div>
-      <div class="img-item">
-        <img src="img/image 36.png" alt="" />
-      </div>
-    </div>    
-    <div class="row footer">
-      <div class="row cus-alinecentter80">
-        <div class="col cus-alinecentter">
-          <div class="cus-section-3">
-            <div class="cus-section-2em">
-             <img src="img/image 30.png" />
-              <h4 class="cus-color-write">Address</h4>
-              <div class="cus-color-write">
-                <div>Store &amp; Office</div>
-                <div>Jl. Setrasari Kulon III, No. 10-12, Sukarasa,
-                Sukasari, Bandung, Jawa Barat, Indonesia 40152</div>
-              </div>
-            </div>
-            <div class="cus-section-2em">
-              <h5 class="cus-color-write">Office Hour</h5>
-              <p class="cus-color-write">Monday - Sunday 10.00 - 18.00</p>
-            </div>
-          </div>
-        </div>
-        <div class="col cus-alinecentter">
-          <div class="cus-section-3">
-            <h4 class="cus-color-write">Get in touch</h4>
-            <div class="cus-section-2em">
-              <h5 class="cus-color-write">Address</h5>
-              <p class="cus-color-write">
-                <div><span class="contact">Phone</span><span>022-20277564</span></div>
-                <div><span class="contact">Service Center</span><span>0811-233-8899</span></div>
-                <div><span class="contact">Customer Service</span><span>0811-235-9988</span></div>
-                <div class="icon-footer">
-                  <i class="fa-brands fa-facebook item-footer"></i>
-                  <i class="fa-brands fa-instagram-square item-footer"></i>
-                  <i class="fa-brands fa-twitter item-footer"></i>
-                  <i class="fa-brands fa-youtube-square item-footer"></i>
+    <div class="container-md">
+
+        <!-- Carousel bs5-carousel-default -->
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="row cus-slide">
+                        <div class="row cus-slide">
+                            <div class="col-4">
+                                <img class="cus-image-slide" src="./source/images/image_6.png">
+                            </div>
+                            <div class="col-8 p-5">
+                                <h2> WAY KAMBAS MINI EBONY</h2>
+                                <p>MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which
+                                    is designed with an overlap effect
+                                    on its strap to represent Rhino's skin.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-              </p>
+                <div class="carousel-item">
+                    <div class="w-100 cus-slide">
+                        Slide 2, Các em tự làm tiếp nhé
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 cus-slide">
+                        Slide 3, Các em tự làm tiếp nhé
+                    </div>
+                </div>
             </div>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="col cus-alinecentter">
-          <div class="cus-section-3">
-            <h4 class="cus-color-write">Useful Link</h4>
-            <div class="cus-section-2em">              
-              <div class="cus-color-write">
-                <div>Warranty & Complaints</div>
-                <div>Order & Shipping</div>
-                <div>Tracking Order</div>
-                <div>About Us</div>
-                <div>Repair</div>
-                <div>Terms</div>
-                <div>FAQ</div>
-              </div>
-            </div>            
-          </div>
-        </div>
-        <div class="col cus-alinecentter">
-          <div class="cus-section-3">
-            <h4 class="cus-color-write">Campaign</h4>
-            <div class="cus-section-2em">
-              <div class="cus-color-write">
-                <div>Mengenal Arti Cukup</div>
-                <div>Tell Your Difference</div>
-                <div>Waykambas</div>
-                <div>Rebrand</div>
-                <div>Gallery</div>
-                <div>Singo</div>
-                <div>Rakai</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- (Optional) Use CSS or JS implementation -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
-      integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <!--- -->
+
+        <div class="row cus-section-2">
+            <div class="col-12 col-md-6">
+                <div class="w-100 me-lg-3 mb-sm-3 cus-section2-item">
+                    <h3>Luxurious Eyewear</h3>
+                    <p>
+                        See the beauty of exotic world with the luxurious glasses
+                    </p>
+                    <a href="#">Discover Now</a>
+
+                    <img src="./source/images/image_7.png" />
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="w-100 mb-sm-3 cus-section2-item">
+                    <h3>Comfortable Watches</h3>
+                    <p>
+                        Feels the balancing function and beauty in our wooden watches
+                    </p>
+                    <a href="#">Discover Now</a>
+                    <img src="./source/images/image_8.png" />
+                </div>
+            </div>
+        </div>
+
+        <h2> Monthly Deals </h2>
+
+        <div class="row cus-section-3">
+            <div class="col-6 col-lg-3 cus-hove">
+                <div class="w-100 me-3 cus-section3-item">
+                    <img src="./source/images/section3.1.png" alt="">
+                    <h4>Singo Maple</h4>
+                    <p class="cus-sale-off">20% Off</p>
+                    <p class="cus-old-price cus-line-text">Rp 1.500.000</p>
+                    <p class="">Rp 1.264.000</p>
+                    <div class="row cus-flexbetween cus-item-hovers">
+                        <button class="col-4 cus-write-mini">(3</button>
+                        <button class="cus-btnred-mini col-7">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 cus-hove">
+                <div class="w-100 me-3 cus-section3-item">
+                    <img src="./source/images/section3.1.png" alt="">
+                    <h4>Singo Maple</h4>
+                    <p class="cus-sale-off">20% Off</p>
+                    <p class="cus-old-price cus-line-text">Rp 1.500.000</p>
+                    <p class="">Rp 1.264.000</p>
+                    <div class="row cus-flexbetween cus-item-hovers">
+                        <button class="col-4 cus-write-mini">(3</button>
+                        <button class="cus-btnred-mini col-7">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 cus-hove">
+                <div class="w-100 me-3 cus-section3-item">
+                    <img src="./source/images/section3.1.png" alt="">
+                    <h4>Singo Maple</h4>
+                    <p class="cus-sale-off">20% Off</p>
+                    <p class="cus-old-price cus-line-text">Rp 1.500.000</p>
+                    <p class="">Rp 1.264.000</p>
+                    <div class="row cus-flexbetween cus-item-hovers">
+                        <button class="col-4 cus-write-mini">(3</button>
+                        <button class="cus-btnred-mini col-7">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 cus-hove">
+                <div class="w-100 me-3 cus-section3-item">
+                    <img src="./source/images/section3.1.png" alt="">
+                    <h4>Singo Maple</h4>
+                    <p class="cus-sale-off">20% Off</p>
+                    <p class="cus-old-price cus-line-text">Rp 1.500.000</p>
+                    <p class="">Rp 1.264.000</p>
+                    <div class="row cus-flexbetween cus-item-hovers">
+                        <button class="col-4 cus-write-mini">(3</button>
+                        <button class="cus-btnred-mini col-7">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="cus-section-3"> Recent News </h2>
+        <div class="row">
+            <div class="row cus-section-2">
+                <div class="col-4">
+                    <p>Where To Travel</p>
+                    <h2>Matoa Where To Travel? Yogyakarta</h2>
+                    <button class="cus-btnred ">Discover</button>
+                </div>
+                <div class="col">
+                    <div class="row cus-relative">
+                        <div class="cus-divpink"></div>
+                        <img class="image-section-w30" src="./source/images/section4.1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-4">
+                <p>Recent News</p>
+            </div>
+            <div class="col-8">
+                <img class="image-section-42" src="./source/images/section4.1.png">
+                <div class="div-section-42"></div>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-4">
+                <h2 class="col">Maple Series</h2>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h2>Ebony Series</h2>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h2>Featured</h2>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+                <div class="row cus-section-3">
+                    <div class="col">
+                        <img class="image-section-42" src="./source/images/section4.1.png">
+                    </div>
+                    <div class="col-8">
+                        <p>Way Kambas Maple</p>
+                        <h4>Rp 1.280.000</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" row justify-content-md-center cus-section-3">
+            <hr class="col col-lg-2" />
+            <button class="cus-btnred col-md-auto ">See More</button>
+            <hr class="col col-lg-2" />
+        </div>
+
+        <div class="container cus-section-3">
+            <div class="row row-cols-2">
+                <div class="col us-relative">
+                    <div></div>
+                    <img class="image-section-w20" src="./source/images/section4.1.png">
+                </div>
+                <div class="col">
+                    <h3>Testimonials</h3>
+                    <p class="cus-section-2em">Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch
+                        local brand that uses
+                        wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian
+                        heritage.</p>
+                    <h4>Gita Savitri</h4>
+                    <p>Content Creator/Influencer</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="cus-section-3 ">Instagram</h2>
+        <div class="row">
+            <div class="col">
+                <img class="cus-img-100" src="./source/images/section4.1.png">
+            </div>
+            <div class="col">
+                <img class="cus-img-100" src="./source/images/section4.1.png">
+            </div>
+            <div class="col">
+                <img class="cus-img-100" src="./source/images/section4.1.png">
+            </div>
+            <div class="col">
+                <img class="cus-img-100" src="./source/images/section4.1.png">
+            </div>
+            <div class="col">
+                <img class="cus-img-100" src="./source/images/section4.1.png">
+            </div>
+        </div>
+
+        <div class="row cus-section-3 cus-colorda cus-alinecentter">
+            <div class="row  cus-alinecentter80">
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+            </div>
+            <div class="row  cus-alinecentter80">
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+                <div class="col cus-alinecentter">
+                    <img class="cus-img-100px" src="./source/images/image 27.png">
+                </div>
+            </div>
+        </div>
+        <div class="row cus-colord8 cus-alinecentter">
+            <div class="row  cus-alinecentter80">
+                <div class="col cus-alinecentter">
+                    <div class="cus-section-3">
+                        <img src="./source/images/image 30.png" />
+                        <div class="cus-section-2em ">
+                            <h5 class="cus-color-write">Address</h5>
+                            <p class="cus-color-write">Store & Office
+                                Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Indonesia
+                                40152</p>
+                        </div>
+                        <div class="cus-section-2em">
+                            <h5 class="cus-color-write">Office Hour</h5>
+                            <p class="cus-color-write">Monday - Sunday
+                                10.00 - 18.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cus-alinecentter">
+                    <div class="cus-section-3">
+                        <h4 class="cus-color-write">Get in touch</h4>
+                        <div class="cus-section-2em ">
+                            <h5 class="cus-color-write">Address</h5>
+                            <p class="cus-color-write">Store & Office
+                                Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Indonesia
+                                40152</p>
+                        </div>
+                        <div class="cus-section-2em">
+                            <h5 class="cus-color-write">Office Hour</h5>
+                            <p class="cus-color-write">Monday - Sunday
+                                10.00 - 18.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cus-alinecentter">
+                    <div class="cus-section-3">
+                        <h4 class="cus-color-write">Get in touch</h4>
+                        <div class="cus-section-2em ">
+                            <h5 class="cus-color-write">Address</h5>
+                            <p class="cus-color-write">Store & Office
+                                Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Indonesia
+                                40152</p>
+                        </div>
+                        <div class="cus-section-2em">
+                            <h5 class="cus-color-write">Office Hour</h5>
+                            <p class="cus-color-write">Monday - Sunday
+                                10.00 - 18.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col cus-alinecentter">
+                    <div class="cus-section-3">
+                        <h4 class="cus-color-write">Get in touch</h4>
+                        <div class="cus-section-2em ">
+                            <h5 class="cus-color-write">Address</h5>
+                            <p class="cus-color-write">Store & Office
+                                Jl. Setrasari Kulon III, No. 10-12, Sukarasa, Sukasari, Bandung, Jawa Barat, Indonesia
+                                40152</p>
+                        </div>
+                        <div class="cus-section-2em">
+                            <h5 class="cus-color-write">Office Hour</h5>
+                            <p class="cus-color-write">Monday - Sunday
+                                10.00 - 18.00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- (Optional) Use CSS or JS implementation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+            integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
