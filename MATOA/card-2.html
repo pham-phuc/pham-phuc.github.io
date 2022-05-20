@@ -239,6 +239,12 @@
       margin-right: 30px;
     }
     /* 1 */
+    body {
+        max-width: 90em;
+        height: auto;
+        margin: auto;
+        margin-top: 3em;
+      }
       .container {
         background: #f7f6f4;
       }
@@ -249,13 +255,23 @@
         margin-right: 1em;
       }
       .img-product img {
+        padding: auto;
         width: 89px;
+        height: auto;
+      }
+      .img-product:nth-child(2) img {
+        width: 71px;
       }
       .img-product .img-17 {
+        padding: auto;
         width: 71px;
+        height: auto;
       }
       .row-paren {
         padding: 1em;
+      }
+      .product-information {
+        width: 28em;
       }
       .product-information div {
         font-size: 1.2em;
@@ -277,20 +293,8 @@
         .product-bag {
           text-align: left;
         }
-        .promotional_price {
-          font-size: 22px;
-        }
-      }
-      @media only screen and (max-width: 1024px) and (min-width: 551px){
-        .container-grid {
-          display: grid;
-          grid-template-columns: 1fr;
-        }
-        .Subtotal {
-          gap: 0em;
-        }
-        .product-bag {
-          text-align: left;
+        .select-box {
+          flex-grow: 1;
         }
       }
       .sever {
@@ -321,7 +325,7 @@
         margin: 2em 0;
         max-width: 30em;
       }
-      .Purchase {
+      .product-bag {
         text-align: end;
       }
       .checkout {
@@ -382,137 +386,128 @@
             </div>
 
             <div class="icon">
-              <a href="#" class="nav-link cus-menu-item" data-bs-toggle="modal" data-bs-target="#modelId"><i class="fa-solid fa-bag-shopping"></i></a>
+              <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
           </ul>
         </div>
         
     </nav>
     <!-- 1 -->
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row row-paren">
-                          <div class="col-12 col-xl-6">
-                            <div class="row row-child">
-                              <div class="col-4 img-product">
-                                <img src="img/image 41 (1).png" alt="" />
-                              </div>
-                              <div class="col-8 product-information">
-                                <div class="product-name">Way Kambas Mini Ebony</div>
-                                <div class="price">Rp 1.280.000</div>
-                                <div class="promotional_price">
-                                  <span>Rp</span> <span id="numPromotionalPrice">1.024.000</span>
-                                </div>
-                                <div class="custom">Custom Engrave</div>
-                                <div class="information">“Happy | Birthday | from”</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-xl-6 Purchase">
-                            <div class="product-bag">Select Packaging</div>
-                            <div class="select-box">
-                              <select class="form-select" aria-label="Default select example">
-                                <option selected>Wooden Packaging (Rp 50.000)</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                              </select>
-                            </div>
-                            <div class="num-product">
-                              <div class="num">
-                                <button id="sub" style="width: 30px; height: 30px">-</button>
-                                <span id="result" style="margin: 0 5px">0</span>
-                                <button id="sum" style="width: 30px; height: 30px">+</button>
-                              </div>
-                              <div class="promotional_price">
-                                <span>Rp</span> <span id="productPrice">0</span>
-                              </div>
-                              <div>
-                                <button class="garbage-can">
-                                  <i class="fa-solid fa-trash-can"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="row row-paren">
-                          <div class="col-12 col-xl-6">
-                            <div class="row row-child">
-                              <div class="col-4 img-product">
-                                <img class="img-17" src="img/image 17.png" alt="" />
-                              </div>
-                              <div class="col-8 product-information">
-                                <div class="product-name">Sikka (Ebony & Maple)</div>
-                                <div class="promotional_price">
-                                  <span>Rp</span>
-                                  <span id="numPromotionalPriceSikka"> 1.264.000</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-xl-6 Purchase">
-                            <div class="product-bag">Select Packaging</div>
-                            <div class="select-box">
-                              <select class="form-select" aria-label="Default select example">
-                                <option selected>Default Packaging (Free)</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                              </select>
-                            </div>
-                            <div class="num-product">
-                              <div class="num">
-                                <button id="sub-sikka" style="width: 30px; height: 30px">
-                                  -
-                                </button>
-                                <span id="result-sikka" style="margin: 0 5px">0</span>
-                                <button id="sum-sikka" style="width: 30px; height: 30px">
-                                  +
-                                </button>
-                              </div>
-                              <div class="promotional_price">
-                                <span>Rp</span> <span id="productPriceSikka">0</span>
-                              </div>
-                              <div>
-                                <button class="garbage-can">
-                                  <i class="fa-solid fa-trash-can"></i>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="container submit-grap">
-                          <div class="container-grid">
-                            <div class="sever">
-                              <div>Kode Promo</div>
-                              <div>
-                                <button class="sever-button">INDONESIA</button>
-                              </div>
-                              <div>35% OFF</div>
-                            </div>
-                            <div class="Subtotal">
-                              <div>Subtotal</div>
-                              <div class="">
-                                <div class="price">Rp 3.312.000</div>
-                                <div class="promotional_price">Rp 2.152.000</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="checkout">
-                            <button type="submit" class="btn btn-danger" style="width: 100%">
-                              Checkout
-                            </button>
-                          </div>
-                        </div>
-                      </div>
+    <div class="container card">
+        <div class="row row-paren">
+          <div class="col-12 col-xl-6">
+            <div class="row row-child">
+              <div class="col-3 img-product">
+                <img src="img/image 41 (1).png" alt="" />
+              </div>
+              <div class="col-9 product-information">
+                <div class="product-name">Way Kambas Mini Ebony</div>
+                <div class="price">Rp 1.280.000</div>
+                <div class="promotional-price">
+                  <span>Rp</span> <span id="numPromotionalPrice">1.024.000</span>
                 </div>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <div class="custom">Custom Engrave</div>
+                <div class="information">“Happy | Birthday | from”</div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-xl-6 Purchase">
+            <div class="product-bag">Select Packaging</div>
+            <div class="select-box">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Wooden Packaging (Rp 50.000)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <div class="num-product">
+              <div class="num">
+                <button id="sub" style="width: 30px; height: 30px">-</button>
+                <span id="result" style="margin: 0 5px">0</span>
+                <button id="sum" style="width: 30px; height: 30px">+</button>
+              </div>
+              <div class="">
+                <span>Rp</span> <span id="productPrice">0</span>
+              </div>
+              <div>
+                <button class="garbage-can">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+        <hr />
+        <div class="row row-paren">
+          <div class="col-12 col-xl-6">
+            <div class="row row-child">
+              <div class="col-3 img-product">
+                <img class="img-17" src="img/image 17.png" alt="" />
+              </div>
+              <div class="col-9 product-information">
+                <div class="product-name">Sikka (Ebony & Maple)</div>
+                <div class="promotional-price">
+                  <span>Rp</span>
+                  <span id="numPromotionalPriceSikka"> 1264000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 Purchase">
+            <div class="product-bag">Select Packaging</div>
+            <div class="select-box">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Default Packaging (Free)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <div class="num-product">
+              <div class="num">
+                <button id="sub-sikka" style="width: 30px; height: 30px">
+                  -
+                </button>
+                <span id="result-sikka" style="margin: 0 5px">0</span>
+                <button id="sum-sikka" style="width: 30px; height: 30px">
+                  +
+                </button>
+              </div>
+              <div class="">
+                <span>Rp</span> <span id="productPriceSikka">0</span>
+              </div>
+              <div>
+                <button class="garbage-can">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container submit-grap">
+          <div class="container-grid">
+            <div class="sever">
+              <div>Kode Promo</div>
+              <div>
+                <button class="sever-button">INDONESIA</button>
+              </div>
+              <div>35% OFF</div>
+            </div>
+            <div class="Subtotal">
+              <div>Subtotal</div>
+              <div class="price-old">
+                <div class="price">Rp 3.312.000</div>
+                <div class="promotional-price">Rp 2.152.000</div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout">
+            <button type="submit" class="btn btn-danger" style="width: 100%">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
     <!-- 1 -->
     <div class="container contain-breadcrumb">
       <nav aria-label="breadcrumb">
