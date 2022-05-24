@@ -183,6 +183,42 @@
       margin-top:25px;
       margin-right: 25px;
     }
+    .add-product{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .side-btn{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 20px;
+    }
+    .slide-btn1 {
+    width: 196px;
+    height: 56px;
+    left: 545px;
+    top: 553px;
+    border: none;
+    background: #D84727;
+    color: white;
+    margin-bottom: 5px;
+    font-family: 'Taviraj';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    }
+    .slide-btn2 {
+    width: 130px;
+    height: 56px;
+    left: 769px;
+    top: 553px;
+    box-sizing: border-box;
+    background: #f7f6f4;
+    border: 2px solid #D84727;
+    color: #D84727;
+    }
+
     @media only screen and (max-width: 540px) {
       .footer-1 {
         display: grid;
@@ -233,7 +269,16 @@
       }
       .text-content{
         font-size: 12px;
-      }  
+      } 
+      .side-btn{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 20px;
+      } 
+      .add-product{
+      display: grid;
+      grid-template-columns: 1fr;
+      }
     }
     .contact{
       margin-right: 30px;
@@ -292,6 +337,15 @@
         .product-bag {
           text-align: left;
         }
+        .side-btn{
+          display: grid;
+          grid-template-columns: 1fr;
+          margin-top: 20px;
+        } 
+        .add-product{
+          display: grid;
+          grid-template-columns: 1fr;
+      }
       }
       .sever {
         display: grid;
@@ -381,8 +435,20 @@
               <a href="#">Login</a>
             </div>
 
-            <div class="icon">
-              <a href="#" class="nav-link cus-menu-item" data-bs-toggle="modal" data-bs-target="#modelId"><i class="fa-solid fa-bag-shopping"></i></a>
+            <div class="icon position-relative" style="position: relative!important;">
+              <a href="#" class="nav-link cus-menu-item" data-bs-toggle="modal" data-bs-target="#modelId" ><i style="font-size:22px" class="fa-solid fa-cart-arrow-down"></i></a>
+              <div id="cart-quantity" style="position: absolute;
+              right: 0px;
+              left: 50px;
+              top: 15px;
+              width: 20px;
+              height: 20px;
+              background: #dcc1c1;
+              border-radius: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;">2</div>
             </div>
           </ul>
         </div>
@@ -393,7 +459,7 @@
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="container">
+                    <div class="container cart">
                         <div class="row row-paren">
                           <div class="col-12 col-xl-6">
                             <div class="row row-child">
@@ -533,7 +599,7 @@
             <div><img class="row_img_small" src="img/image-removebg-preview2 1.png" alt="" srcset=""></div>
           </div>
           <div class="col-4">
-            <div><img class="row_img_big" src="img/image 6 (1).png" alt="" srcset=""></div>           
+            <div><img class="row_img_big revew-img" src="img/image 6 (1).png" alt="" srcset=""></div>           
           </div>
           <div class="col-5">
             <div class="row_text_heading">
@@ -552,11 +618,18 @@
                 <img src="img/image 38.png" alt="">
                 <img src="img/image 39.png" alt="">
             </div>
+            <div class="add-product">
             <div class="quantity">
-                <button class="tru" id="tru">-</button>                
-                <input type="text" class="result" id="result" value="1" style="width:50px;height:auto">              
-                <button class="tong" id="tong">+</button>
+                <button class="tru" id="qty_reduction_product">-</button>                
+                <input type="text" class="result" id="qty_result" value="1" style="width:50px;height:50px;text-align: center;">              
+                <button class="tong" id="qty_increase_product">+</button>
               </div>
+              <div class="side-btn">
+                <button type="button" class=" slide-btn1 btn-add-cart" style="margin: 0px 10px 10px 0px;"> Add to
+                    cart</button>
+                <button type="button" class=" slide-btn2"> cicill</button>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -802,32 +875,25 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      let cong=$('#tong');
-      let tru=$('#tru');
-      let kq=$('#result');
-      function tong(){
-        let tong = parseInt(kq.val()) + 1;
-        kq.val(tong);
+      // let cong=$('#qty-increase-product');
+      // let tru=$('#qty-reduction-product');
+      // let kq=$('#qty-result');
+      function tang(){
+        let tong = parseInt($('#qty_result').val()) + 1;
+        $('#qty_result').val(tong);
       }
-     cong.click(tong);
-     function hieu(){
-        let hieu = parseInt(kq.val()) - 1;
-        kq.val(hieu);
+      $('#qty_increase_product').click(tang);
+     function giam(){
+        let hieu = parseInt($('#qty_result').val()) - 1;
+        $('#qty_result').val(hieu);
         if(hieu < 0){
-          kq.val('0');
+          $('#qty_result').val('0');
         }
       }
-     tru.click(hieu);
+      $('#qty_reduction_product').click(giam);
 
 
-     let a = $("#numPromotionalPrice").text();
-      let b = a.replaceAll(".", "");
-      console.log(b);
-      let c = "2152000";
-      let d = c.replaceAll("", " ");
-      let g = c.split("");
-      let f = g.push(".");
-      console.log(f);
+     
 
       // tăng giảm sp 1
       function tong() {
@@ -904,6 +970,18 @@
         $("#productPriceSikka").text(gia);
       }
       $("#sum-sikka").click(productPriceSumSikka);
+
+      // tăng số lượng hàng
+      console.log($('#cart-quantity').text())
+      function qtyProduct(){
+        window.localStorage.setItem('#cart-quantity')
+        let qty=parseInt($('#qty_result').val())+ parseInt($('#cart-quantity').text());
+        $('#cart-quantity').text(qty);
+        
+    }
+      $('.btn-add-cart').click(qtyProduct);
+      
+
     </script>
   </body>
 </html>
