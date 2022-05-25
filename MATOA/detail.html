@@ -974,7 +974,6 @@
       // tăng số lượng hàng
       console.log($('#cart-quantity').text())
       function qtyProduct(){
-        window.localStorage.setItem('#cart-quantity')
         let qty=parseInt($('#qty_result').val())+ parseInt($('#cart-quantity').text());
         $('#cart-quantity').text(qty);
         
