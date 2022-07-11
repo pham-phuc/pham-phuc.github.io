@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="header-top">
+        <div class="container">
+          <div class="welcome">Welcome to CafeShop !</div>
+          <div class="icon-header">
+            <ul>
+              <li>
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-instagram-square"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="hotline">Hotline : 0334.526.8400</div>
+        </div>
+      </div>
+      <div class="header-container">
+        <div class="container">
+          <div class="header">
+            <div class="for-full-withmenu">
+              <div class="block block-search hidden-xs">
+                <div class="block block-content">
+                  <div class="actions">
+                    <button
+                      type="submit"
+                      title="Search"
+                      class="action search"
+                      disabled=""
+                    >
+                      <span
+                        ><i
+                          class="fa-solid fa-magnifying-glass icon-hearder-container"
+                        ></i
+                      ></span>
+                    </button>
+                  </div>
+                  <div class="field search">
+                    <div class="control">
+                      <input
+                        id="search"
+                        type="text"
+                        name="q"
+                        value=""
+                        placeholder="Enter keywords to search..."
+                        class="input-text"
+                        maxlength="128"
+                        role="combobox"
+                        aria-haspopup="false"
+                        aria-autocomplete="both"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      href="#"
+                      role="button"
+                      aria-expanded="false"
+                      >SHOP</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Coffee</a></li>
+                      <li><a class="dropdown-item" href="#">Tea</a></li>
+                      <li><a class="dropdown-item" href="#">Gift Set</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="actions-header">
+                <div class="register-login hidden-xs">
+                  <a href="#" class="text-color"
+                    ><i class="fa-solid fa-user"></i>Login</a
+                  >
+                  <a href="#" class="text-color"> / Sign up</a>
+                </div>
+                <div class="wishlist hidden-xs">
+                  <a href="#" class="text-color"
+                    ><i class="fa-solid fa-heart"></i
+                  ></a>
+                </div>
+                <div class="minicart-wrapper">
+                  <a href="#" class="text-color"
+                    ><i class="fa-solid fa-bag-shopping"></i
+                  ></a>
+                  <span class="counter-number"> 0 </span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="container">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >SHOP</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Coffee</a></li>
+                    <li><a class="dropdown-item" href="#">Tea</a></li>
+                    <li><a class="dropdown-item" href="#">Gift Set</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="homePageSlider">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/tea_slide1_1920_1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/tea_slide2_1920_1_1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="img/coffee1_1920.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/coffee2_1920.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="content-home">
+        <div class="top-content-home">
+          <div class="rokan-product-heading rokan-featured-heading">
+            <h2 class="title-top">WELCOME TO CAFESHOP</h2>
+            <p class="description">
+              “ Have you enjoy it? Premium Coffee - Organic coffee beans-
+              Organic Tea - Natural taste!<br />
+              If not yet, welcome to CAFESHOP. ”
+            </p>
+          </div>
+          <hr />
+          <!-- <div class="rokan-product-heading rokan-featured-heading">
+            <h2 class="title-top">WELCOME TO CAFESHOP</h2>
+            <p class="description">
+              “ Have you enjoy it? Premium Coffee - Organic coffee beans- Organic
+              Tea - Natural taste!<br />
+              If not yet, welcome to CAFESHOP. ”
+            </p>
+          </div> -->
+          <div class="rokan-bestseller select-element">
+            <div class="container">
+              <div class="rokan-product-heading rokan-featured-heading">
+                <h2 class="title-top">#Best Seller</h2>
+                <p class="description">
+                  The best Vietnamese coffe and made with love and all of our
+                  passion.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-xl-3 col-md-6">
+                  <div class="owl-item">
+                    <div class="product-item">
+                      <div class="product-photo">
+                        <a href="#" class="product photo product-item-photo">
+                          <span class="image0 image-switch">
+                            <span class="product-image-container">
+                              <span class="product-image-wrapper">
+                                <img
+                                  class="lazyOwl lazy product-image-photo"
+                                  src="img/2_2_1.jpg"
+                                  alt="image-product-coffee"
+                                />
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="product-info">
+                        <strong class="product name product-item-name">
+                          <a class="product-item-link" href="#">
+                            Weasel Coffee Gift Box
+                          </a>
+                        </strong>
+                        <div class="price-box price-final_price">
+                          <span
+                            class="price-container price-final_price tax weee"
+                          >
+                            <span class="price-wrapper"
+                              ><span class="price">$12.50</span></span
+                            >
+                          </span>
+                        </div>
+                        <div class="icon-product">
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-comment-dots"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-heart"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-bag-shopping"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="owl-item">
+                    <div class="product-item">
+                      <div class="product-photo">
+                        <a href="#" class="product photo product-item-photo">
+                          <span class="image0 image-switch">
+                            <span class="product-image-container">
+                              <span class="product-image-wrapper">
+                                <img
+                                  class="lazyOwl lazy product-image-photo"
+                                  src="img/7.jpg"
+                                  alt="image-product-coffee"
+                                />
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="product-info">
+                        <strong class="product name product-item-name">
+                          <a class="product-item-link" href="#">
+                            Weasel Legend Coffee Gift Box
+                          </a>
+                        </strong>
+                        <div class="price-box price-final_price">
+                          <span
+                            class="price-container price-final_price tax weee"
+                          >
+                            <span class="price-wrapper"
+                              ><span class="price">$21.50</span></span
+                            >
+                          </span>
+                        </div>
+                        <div class="icon-product">
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-comment-dots"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-heart"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-bag-shopping"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="owl-item">
+                    <div class="product-item">
+                      <div class="product-photo">
+                        <a href="#" class="product photo product-item-photo">
+                          <span class="image0 image-switch">
+                            <span class="product-image-container">
+                              <span class="product-image-wrapper">
+                                <img
+                                  class="lazyOwl lazy product-image-photo"
+                                  src="img/1_4_3.jpg"
+                                  alt="image-product-coffee"
+                                />
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="product-info">
+                        <strong class="product name product-item-name">
+                          <a class="product-item-link" href="#">
+                            Kopi Luwak Legend Coffee
+                          </a>
+                        </strong>
+                        <div class="price-box price-final_price">
+                          <span
+                            class="price-container price-final_price tax weee"
+                          >
+                            <span class="price-wrapper"
+                              ><span class="price">$10.00</span></span
+                            >
+                          </span>
+                        </div>
+                        <div class="icon-product">
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-comment-dots"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-heart"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-bag-shopping"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                  <div class="owl-item">
+                    <div class="product-item">
+                      <div class="product-photo">
+                        <a href="#" class="product photo product-item-photo">
+                          <span class="image0 image-switch">
+                            <span class="product-image-container">
+                              <span class="product-image-wrapper">
+                                <img
+                                  class="lazyOwl lazy product-image-photo"
+                                  src="img/2_4_4.jpg"
+                                  alt="image-product-coffee"
+                                />
+                              </span>
+                            </span>
+                          </span>
+                        </a>
+                      </div>
+                      <div class="product-info">
+                        <strong class="product name product-item-name">
+                          <a class="product-item-link" href="#">
+                            Weasel Legend Coffee
+                          </a>
+                        </strong>
+                        <div class="price-box price-final_price">
+                          <span
+                            class="price-container price-final_price tax weee"
+                          >
+                            <span class="price-wrapper"
+                              ><span class="price">$9.00</span></span
+                            >
+                          </span>
+                        </div>
+                        <div class="icon-product">
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-comment-dots"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-heart"></i
+                          ></a>
+                          <a href="" class="margin-icon"
+                            ><i class="fa-solid fa-bag-shopping"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-element banner-middle">
+            <div class="rokan-product-heading rokan-featured-heading countdown">
+              <h2 id="countdown-title" class="title-top">#HOT DEAL!</h2>
+              <p id="countdown-description" class="description">
+                Please join in CoffeeShop to have special price on HOT DEAL!
+              </p>
+            </div>
+            <div class="banner-middle">
+              <div class="row">
+                <div class="col-xs-12 hour-banner">
+                  <div id="countdown-container" class="is-countdown">
+                    <span class="countdown-row countdown-show3"
+                      ><span class="countdown-section"
+                        ><span class="countdown-amount">00</span
+                        ><span class="countdown-period">Hour</span></span
+                      ><span class="countdown-section"
+                        ><span class="countdown-amount">00</span
+                        ><span class="countdown-period">Minute</span></span
+                      ><span class="countdown-section"
+                        ><span class="countdown-amount">00</span
+                        ><span class="countdown-period">Second</span></span
+                      ></span
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-left">
+                  <div class="banner-content">
+                    <img
+                      src="https://www.huongmaicafe.com/pub/media/wysiwyg/banner5.1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-blog border-top">
+            <div class="container">
+              <section class="widget box-section block-recent-posts">
+                <div class="rokan-product-heading rokan-onsale-heading">
+                  <h2 class="title-top"><span>#From Our Blog</span></h2>
+                  <p class="description">New bog</p>
+                </div>
+                <div class="owl-container">
+                  <div class="block-content">
+                    <div class="row">
+                      <div class="col-xl-4">
+                        <div
+                          class="owl-item active"
+                          style="width: 416px; height: 520px"
+                        >
+                          <div class="product-item">
+                            <div class="item-blog">
+                              <div class="blog-image">
+                                <a href="#">
+                                  <img
+                                    class="lazyOwl lazy"
+                                    src="img/coffee-vlogger_2.jpg"
+                                    style="
+                                      display: inline;
+                                      width: 416px;
+                                      height: 285px;
+                                    "
+                                  />
+                                </a>
+                              </div>
+                              <div class="blog-content">
+                                <div class="post-info">
+                                  <div class="time-conment">
+                                    <span class="post-date"
+                                      ><span class="date">30</span
+                                      ><span class="separator">-</span
+                                      ><span class="month">Jun</span>-<span
+                                        class="year"
+                                        >2022</span
+                                      ></span
+                                    >
+                                  </div>
+                                  <h3 class="post-title">
+                                    <a href="#"
+                                      >Vietnamese coffee is in the top of the
+                                      best coffee in the world
+                                    </a>
+                                  </h3>
+                                  <div class="blog-button">
+                                    <div class="short-des">
+                                      Vietnamese coffee is in the top of the
+                                      best coffee in the world
+                                    </div>
+                                    <!--<a class="in_category" href="">
+                                                          </a>-->
+                                    <a class="readmore" href="#">
+                                      Continue Reading
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4">
+                        <div
+                          class="owl-item active"
+                          style="width: 416px; height: 520px"
+                        >
+                          <div class="product-item">
+                            <div class="item-blog">
+                              <div class="blog-image">
+                                <a href="#">
+                                  <img
+                                    class="lazyOwl lazy"
+                                    src="img/lotus-green-tea_2.jpg"
+                                    style="
+                                      display: inline;
+                                      width: 416px;
+                                      height: 285px;
+                                    "
+                                  />
+                                </a>
+                              </div>
+                              <div class="blog-content">
+                                <div class="post-info">
+                                  <div class="time-conment">
+                                    <span class="post-date"
+                                      ><span class="date">30</span
+                                      ><span class="separator">-</span
+                                      ><span class="month">Jun</span>-<span
+                                        class="year"
+                                        >2022</span
+                                      ></span
+                                    >
+                                  </div>
+                                  <h3 class="post-title">
+                                    <a href="#">Lotus Tea of Huongmai Cafe </a>
+                                  </h3>
+                                  <div class="blog-button">
+                                    <div class="short-des">
+                                      Lotus Tea of Huongmai Cafe
+                                    </div>
+                                    <!--<a class="in_category" href="">
+                                                          </a>-->
+                                    <a class="readmore" href="#">
+                                      Continue Reading
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4">
+                        <div
+                          class="owl-item active"
+                          style="width: 416px; height: 520px"
+                        >
+                          <div class="product-item">
+                            <div class="item-blog">
+                              <div class="blog-image">
+                                <a href="#">
+                                  <img
+                                    class="lazyOwl lazy"
+                                    src="img/macadamia-nut-latte.jpg"
+                                    style="
+                                      display: inline;
+                                      width: 416px;
+                                      height: 285px;
+                                    "
+                                  />
+                                </a>
+                              </div>
+                              <div class="blog-content">
+                                <div class="post-info">
+                                  <div class="time-conment">
+                                    <span class="post-date"
+                                      ><span class="date">30</span
+                                      ><span class="separator">-</span
+                                      ><span class="month">Jun</span>-<span
+                                        class="year"
+                                        >2022</span
+                                      ></span
+                                    >
+                                  </div>
+                                  <h3 class="post-title">
+                                    <a href="#"
+                                      >Unique coffees suitable for summer days
+                                    </a>
+                                  </h3>
+                                  <div class="blog-button">
+                                    <div class="short-des">
+                                      Unique coffees suitable for summer days
+                                    </div>
+                                    <!--<a class="in_category" href="">
+                                                          </a>-->
+                                    <a class="readmore" href="#">
+                                      Continue Reading
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="page-footer">
+        <div class="footer-container">
+          <div class="footer-static-container">
+            <div class="container">
+              <div class="footer_introduce">
+                <div class="footer-static">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                      <div class="footer-links contacts">
+                        <div class="footer-link-contact">
+                          <div class="logo-footer">
+                            <img src="img/04152019-37.jpg" alt="" />
+                          </div>
+                          <p
+                            style="
+                              margin-top: 20px;
+                              font-size: 13px;
+                              margin-bottom: 0px;
+                            "
+                          >
+                            Please contact us free via email:
+                            <a href="mailto: vanphuc14092002@gmail.com"
+                              >vanphuc14092002@gmail.com</a
+                            ><br />
+                            <span class="store-info-title"
+                              >Fell free to call us: </span
+                            ><br />
+                            <a href="tel:+84 983452858">+84 983452858</a> /
+                            <a href="tel:+84 438283999">+84 438283999</a><br />
+                            <span class="store-info-title">Open hour: </span
+                            ><br />
+                            08:00 am - 10:00 pm/ Monday - Sunday
+                          </p>
+                          <div class="payment-footer">
+                            <img src="img/payment.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8" style="padding-left: 50px">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="footer-links">
+                            <h2 class="title">Categories</h2>
+                            <ul>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/">Home</a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
+                                  >About Us</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/our-products.html/"
+                                  >Our Products</a
+                                >
+                              </li>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/blog/"
+                                  >Blogs</a
+                                >
+                              </li>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/faqs/"
+                                  >FAQ's</a
+                                >
+                              </li>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/contact/"
+                                  >Contact Us</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="footer-links">
+                            <h2 class="title">Infomation</h2>
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/store-location/"
+                                  >Store Location</a
+                                >
+                              </li>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/policy/"
+                                  >Policy</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/giving-gift/"
+                                  >Discount codes</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/tracking-order/"
+                                  >Order Tracking</a
+                                >
+                              </li>
+                              <li>
+                                <a href="https://www.huongmaicafe.com/gift/"
+                                  >Gift Card</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.huongmaicafe.com/terms-and-conditons/"
+                                  >Term Of Use</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="border-top">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="footer_menu">
+                      <ul>
+                        <li>
+                          <a
+                            title="blog"
+                            href="https://www.huongmaicafe.com/blog/"
+                            target="_self"
+                            >blog</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            title="about-us"
+                            href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
+                            >About us</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            title="order tracking"
+                            href="https://www.huongmaicafe.com/tracking-order/"
+                            >order tracking&nbsp;</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            title="contact"
+                            href="https://www.huongmaicafe.com/contact/"
+                            >contact</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            title="faq's"
+                            href="https://www.huongmaicafe.com/faqs/"
+                            >&nbsp;FAQ's</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="name-shop"
+                            title="coffeeshop"
+                            href="https://www.huongmaicafe.com/"
+                            >&nbsp;&nbsp;&nbsp; CoffeeShop</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="social-link">
+                      <ul>
+                        <!-- <li>
+                          <a title="Dribbble" href="#"
+                            ><span class="fa fa-dribbble"></span
+                          ></a>
+                        </li> -->
+                        <li>
+                          <a title="Twitter" href="#"
+                            ><i class="fa-brands fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a title="Instagram" href="#"
+                            ><i class="fa-brands fa-instagram-square"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a title="Face-book" href="#"
+                            ><i class="fa-brands fa-twitter"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

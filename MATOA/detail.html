@@ -237,7 +237,7 @@
         font-size: 20px;
       }
       .row_img_small {
-        width: 70%;
+        width: 100%;
       }
       .breadcrumb .breadcrumb-item a {
         font-size: 10px;
@@ -437,7 +437,7 @@
 
             <div class="icon position-relative" style="position: relative!important;">
               <a href="#" class="nav-link cus-menu-item" data-bs-toggle="modal" data-bs-target="#modelId" ><i style="font-size:22px" class="fa-solid fa-cart-arrow-down"></i></a>
-              <div id="cart-quantity" style="position: absolute;
+              <div id="cart-quantity " style="position: absolute;
               right: 0px;
               left: 50px;
               top: 15px;
@@ -448,7 +448,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              color: white;">2</div>
+              color: white;">0</div>
             </div>
           </ul>
         </div>
@@ -470,7 +470,7 @@
                                 <div class="product-name">Way Kambas Mini Ebony</div>
                                 <div class="price">Rp 1.280.000</div>
                                 <div class="promotional_price">
-                                  <span>Rp</span> <span id="numPromotionalPrice">1.024.000</span>
+                                  <span>Rp</span> <span id="numPromotionalPrice current-price">1.024.000</span>
                                 </div>
                                 <div class="custom">Custom Engrave</div>
                                 <div class="information">“Happy | Birthday | from”</div>
@@ -488,9 +488,9 @@
                             </div>
                             <div class="num-product">
                               <div class="num">
-                                <button id="sub" style="width: 30px; height: 30px">-</button>
-                                <span id="result" style="margin: 0 5px">0</span>
-                                <button id="sum" style="width: 30px; height: 30px">+</button>
+                                <button id="sub minus" style="width: 30px; height: 30px">-</button>
+                                <span id="result qty-way-kambas" style="margin: 0 5px">0</span>
+                                <button id="sum add" style="width: 30px; height: 30px">+</button>
                               </div>
                               <div class="promotional_price">
                                 <span>Rp</span> <span id="productPrice">0</span>
@@ -599,7 +599,7 @@
             <div><img class="row_img_small" src="img/image-removebg-preview2 1.png" alt="" srcset=""></div>
           </div>
           <div class="col-4">
-            <div><img class="row_img_big revew-img" src="img/image 6 (1).png" alt="" srcset=""></div>           
+            <div><img class="row_img_big revew-img" src="img/image 6 (1).png" alt="" srcset="" id="preview-product"></div>           
           </div>
           <div class="col-5">
             <div class="row_text_heading">
@@ -874,10 +874,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <script>
-      // let cong=$('#qty-increase-product');
-      // let tru=$('#qty-reduction-product');
-      // let kq=$('#qty-result');
+    <script>      
       function tang(){
         let tong = parseInt($('#qty_result').val()) + 1;
         $('#qty_result').val(tong);
@@ -971,16 +968,16 @@
       }
       $("#sum-sikka").click(productPriceSumSikka);
 
-      // tăng số lượng hàng
-      console.log($('#cart-quantity').text())
-      function qtyProduct(){
-        let qty=parseInt($('#qty_result').val())+ parseInt($('#cart-quantity').text());
-        $('#cart-quantity').text(qty);
+      // tăng số lượng hàng      
+    //   function qtyProduct(){
+    //     let qty=parseInt($('#qty_result').val())+ parseInt($('#cart-quantity').text());
+    //     $('#cart-quantity').text(qty);
         
-    }
-      $('.btn-add-cart').click(qtyProduct);
+    // }
+    //   $('.btn-add-cart').click(qtyProduct);
       
 
     </script>
+    <script src="./source/detail.js"></script>
   </body>
 </html>

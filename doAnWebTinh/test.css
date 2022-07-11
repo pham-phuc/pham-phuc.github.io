@@ -1,0 +1,257 @@
+/* header */
+.header-top {
+    background: #FF8500;
+    width: 100%;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+/* .container{
+    margin-right: auto;
+    margin-left: auto;
+} */
+.icon-header ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.icon-header ul li {
+    margin-right: 2em;
+    margin-top: 10px;
+}
+
+.icon-header ul li a i {
+    font-size: 14px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.welcome,
+.hotline {
+    color: white;
+}
+
+.header-container .header .for-full-withmenu {
+    align-items: flex-start;
+}
+
+.block-content {
+    display: flex;
+}
+
+.search,
+input {
+    border: none;
+}
+
+.search {
+    background: white;
+}
+
+.icon-hearder-container {
+    color: black;
+}
+.logo img {
+    height: 100%;
+    display: inline;
+    margin: auto;
+}
+
+.text-color {
+    text-decoration: none;
+    color: black;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 0;
+    position: static;
+    background: #fff;
+}
+
+.for-full-withmenu {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 30px 0px;
+}
+
+.actions-header {
+    display: flex;
+}
+
+.actions-header div {
+    margin-right: 20px;
+}
+
+.container .nav .nav-item a {
+    color: black;
+    text-transform: uppercase;
+    line-height: inherit;
+    box-sizing: border-box;
+    display: inline-block;
+}
+hr {
+    margin: 0px 50px;
+}
+/* footer */
+.page-footer {
+    position: relative;
+    color: #848484;
+}
+
+.page-footer .footer-static-container {
+    background: #d5d5d5;
+    padding: 30px 0 0;
+}
+
+.page-footer .footer-static-container .footer-static .footer-link-contact .store-info-title {
+    color: #333;
+    font-weight: 700;
+}
+
+.payment-footer img {
+    width: 370px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+.page-footer .footer-static-container .footer-static .footer-links h2 {
+    line-height: 1.1;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+.page-footer .footer-static-container .footer-static .footer-links ul li {
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.page-footer .footer-static-container .footer-static .footer-links ul {
+    padding: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+}
+
+.page-footer .footer-static-container .footer-static .footer-links ul li a {
+    transition: all .2s ease-in;
+    font-size: 14px;
+    position: relative;
+    color: #848484;
+    text-decoration: none;
+}
+
+.page-footer .footer-bottom {
+    padding: 15px 0;
+    background: #ff8500;
+}
+
+.footer-container .container {
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* .footer_menu ul{
+    display: flex;
+} */
+.page-footer .footer_menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.page-footer .footer_menu ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.border-top {
+    border-top: none !important;
+}
+
+.social-link ul li a i {
+    font-size: 14px;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.social-link ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+.page-footer .footer_menu ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.page-footer .footer_menu ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+.name-shop {
+    padding-left: 115.5px;
+}
+
+.social-link ul {
+    text-align: right;
+    margin: 0;
+}
+
+.social-link ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+}
+
+.social-link ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.logo-footer img {
+    width: 374px;
+    height: auto;
+
+}

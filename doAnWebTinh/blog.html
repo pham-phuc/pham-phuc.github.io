@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header-top">
+      <div class="container">
+        <div class="welcome">Welcome to CafeShop !</div>
+        <div class="icon-header">
+          <ul>
+            <li>
+              <a><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-instagram-square"></i></a>
+            </li>
+            <li>
+              <a><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="hotline">Hotline : 0334.526.8400</div>
+      </div>
+    </div>
+    <div class="header-container">
+      <div class="container">
+        <div class="header">
+          <div class="for-full-withmenu">
+            <div class="block block-search hidden-xs">
+              <div class="block block-content">
+                <div class="actions">
+                  <button
+                    type="submit"
+                    title="Search"
+                    class="action search"
+                    disabled=""
+                  >
+                    <span
+                      ><i
+                        class="fa-solid fa-magnifying-glass icon-hearder-container"
+                      ></i
+                    ></span>
+                  </button>
+                </div>
+                <div class="field search">
+                  <div class="control">
+                    <input
+                      id="search"
+                      type="text"
+                      name="q"
+                      value=""
+                      placeholder="Enter keywords to search..."
+                      class="input-text"
+                      maxlength="128"
+                      role="combobox"
+                      aria-haspopup="false"
+                      aria-autocomplete="both"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >SHOP</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Coffee</a></li>
+                    <li><a class="dropdown-item" href="#">Tea</a></li>
+                    <li><a class="dropdown-item" href="#">Gift Set</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+            </div>
+            <div class="actions-header">
+              <div class="register-login hidden-xs">
+                <a href="#" class="text-color"
+                  ><i class="fa-solid fa-user"></i>Login</a
+                >
+                <a href="#" class="text-color"> / Sign up</a>
+              </div>
+              <div class="wishlist hidden-xs">
+                <a href="#" class="text-color"
+                  ><i class="fa-solid fa-heart"></i
+                ></a>
+              </div>
+              <div class="minicart-wrapper">
+                <a href="#" class="text-color"
+                  ><i class="fa-solid fa-bag-shopping"></i
+                ></a>
+                <span class="counter-number"> 0 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- contnent -->
+    <div class="page-wrapper">
+      <h1 class="title-blog">BLOG</h1>
+      <div class="columns layout layout-1-col row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <div class="sidebar-left sidebar-post">
+            <div
+              class="widget widget-post-tab"
+              data-bind="scope: 'recemt-posts'"
+            >
+              <div class="title-post-tab">
+                <ul>
+                  <li><a href="#">Recent</a></li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" role="tabpanel">
+                  <ul class="list-post-tab">
+                    <li>
+                      <div class="zoom-image-thumb">
+                        <a
+                          title="Where exactly does the name of coffee come from?        "
+                          href="#"
+                        >
+                          <img
+                            src="https://www.huongmaicafe.com/pub/media/rokanthemes/blog/images/t/u/tu-a-z-ve-lich-su-cay-ca-phe-tren-the-gioi-va-viet-nam.jpg"
+                            alt="Where exactly does the name of coffee come from?        "
+                          />
+                        </a>
+                      </div>
+                      <div class="post-tab-info">
+                        <h3>
+                          <a class="title-recent-blog" href="#">
+                            Where exactly does the name of coffee come from?
+                          </a>
+                        </h3>
+                        <span>July 06 2022</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="zoom-image-thumb">
+                        <a
+                          title="Vietnamese coffee is in the top of the best coffee in the world	"
+                          href="https://www.huongmaicafe.com/blog/post/vietnamese-coffee-in-the-top/"
+                        >
+                          <img
+                            src="https://www.huongmaicafe.com/pub/media/rokanthemes/blog/images/c/o/coffee-vlogger_2.jpg"
+                            alt="Vietnamese coffee is in the top of the best coffee in the world	"
+                          />
+                        </a>
+                      </div>
+                      <div class="post-tab-info">
+                        <h3>
+                          <a
+                            class="title-recent-blog"
+                            href="https://www.huongmaicafe.com/blog/post/vietnamese-coffee-in-the-top/"
+                          >
+                            Vietnamese coffee is in the top of the best coffee
+                            in the world
+                          </a>
+                        </h3>
+                        <span>June 30 2022</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="zoom-image-thumb">
+                        <a
+                          title="Lotus Tea of Huongmai Cafe"
+                          href="https://www.huongmaicafe.com/blog/post/lotus-tea-product-of-huong-mai-cafe/"
+                        >
+                          <img
+                            src="https://www.huongmaicafe.com/pub/media/rokanthemes/blog/images/l/o/lotus-green-tea_2.jpg"
+                            alt="Lotus Tea of Huongmai Cafe"
+                          />
+                        </a>
+                      </div>
+                      <div class="post-tab-info">
+                        <h3>
+                          <a
+                            class="title-recent-blog"
+                            href="https://www.huongmaicafe.com/blog/post/lotus-tea-product-of-huong-mai-cafe/"
+                          >
+                            Lotus Tea of Huongmai Cafe
+                          </a>
+                        </h3>
+                        <span>June 30 2022</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="zoom-image-thumb">
+                        <a
+                          title="Unique coffees suitable for summer days	"
+                          href="https://www.huongmaicafe.com/blog/post/coffee-for-summer-days/"
+                        >
+                          <img
+                            src="https://www.huongmaicafe.com/pub/media/rokanthemes/blog/images/m/a/macadamia-nut-latte.jpg"
+                            alt="Unique coffees suitable for summer days	"
+                          />
+                        </a>
+                      </div>
+                      <div class="post-tab-info">
+                        <h3>
+                          <a
+                            class="title-recent-blog"
+                            href="https://www.huongmaicafe.com/blog/post/coffee-for-summer-days/"
+                          >
+                            Unique coffees suitable for summer days
+                          </a>
+                        </h3>
+                        <span>June 30 2022</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="zoom-image-thumb">
+                        <a
+                          title="5 coffee habits that help you live longer"
+                          href="https://www.huongmaicafe.com/blog/post/coffee-habits-that-help-you-live-longer/"
+                        >
+                          <img
+                            src="https://www.huongmaicafe.com/pub/media/rokanthemes/blog/images/c/a/caphebotnguyenchat.jpg"
+                            alt="5 coffee habits that help you live longer"
+                          />
+                        </a>
+                      </div>
+                      <div class="post-tab-info">
+                        <h3>
+                          <a
+                            class="title-recent-blog"
+                            href="https://www.huongmaicafe.com/blog/post/coffee-habits-that-help-you-live-longer/"
+                          >
+                            5 coffee habits that help you live longer
+                          </a>
+                        </h3>
+                        <span>June 29 2022</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="col-main column main col-lg-9 col-md-9 col-sm-9 col-xs-12">
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/coffee-map_1.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 06, </strong><span>Jul, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    Where exactly does the name of coffee come from?
+                  </a>
+                </h3>
+                <div class="short-des">
+                  Where exactly does the name of coffee come from?
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/ca-phe-wo-huongmaicafe.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 30, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    Vietnamese coffee is in the top of the best coffee in the
+                    world
+                  </a>
+                </h3>
+                <div class="short-des">
+                  Vietnamese coffee is in the top of the best coffee in the
+                  world
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/thumbcn-1200x676-9.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 06, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    Unique coffees suitable for summer days
+                  </a>
+                </h3>
+                <div class="short-des">
+                  Unique coffees suitable for summer days
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/uong-ca-phe-buoi-sang.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    5 coffee habits that help you live longer
+                  </a>
+                </h3>
+                <div class="short-des">
+                  5 coffee habits that help you live longer
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/ca-phe-xua_1.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    Street corner coffee - The idyllic feature of Hanoi people
+                  </a>
+                </h3>
+                <div class="short-des">
+                  Street corner coffee - The idyllic feature of Hanoi people
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img
+                      src="img/ca-phe-sua-da-nguyen-chat-ong-giay.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#"> Traditional coffee in Vietnam </a>
+                </h3>
+                <div class="short-des">Traditional coffee in Vietnam</div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/quancaphehm.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#"> Hoan Kiem Old Quarter Coffee </a>
+                </h3>
+                <div class="short-des">Hoan Kiem Old Quarter Coffee</div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/rang-ca-phe-truyen-thong.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#"> Traditional coffee roaster </a>
+                </h3>
+                <div class="short-des">Traditional coffee roaster</div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="row">
+            <div class="col-xl-6 col-md-12">
+              <div class="blog-post-thumb">
+                <div class="zoom-image-thumb">
+                  <a href="">
+                    <img src="img/quan-hm-cafe.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12">
+              <div class="post-info">
+                <div class="post-info-extra">
+                  <div class="post-tags-info">
+                    <label>Categories: </label>
+                    <a title="News" href="#">News </a>
+                  </div>
+                  <div class="post-date">
+                    / <strong> 29, </strong><span>Jun, 2022</span>
+                  </div>
+                </div>
+                <h3 class="post-title">
+                  <a title="#" href="#">
+                    Ancient coffee shop in the heart of Hanoi
+                  </a>
+                </h3>
+                <div class="short-des">
+                  Ancient coffee shop in the heart of Hanoi
+                </div>
+                <div class="readmore clearfix">
+                  <a href="#" class="readmore-text">Continue Reading</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-blog">
+            <hr />
+            <div class="pagination-blog">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="footer-container">
+        <div class="footer-static-container">
+          <div class="container">
+            <div class="footer_introduce">
+              <div class="footer-static">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="footer-links contacts">
+                      <div class="footer-link-contact">
+                        <div class="logo-footer">
+                          <img src="img/04152019-37.jpg" alt="" />
+                        </div>
+                        <p
+                          style="
+                            margin-top: 20px;
+                            font-size: 13px;
+                            margin-bottom: 0px;
+                          "
+                        >
+                          Please contact us free via email:
+                          <a href="mailto: vanphuc14092002@gmail.com"
+                            >vanphuc14092002@gmail.com</a
+                          ><br />
+                          <span class="store-info-title"
+                            >Fell free to call us: </span
+                          ><br />
+                          <a href="tel:+84 983452858">+84 983452858</a> /
+                          <a href="tel:+84 438283999">+84 438283999</a><br />
+                          <span class="store-info-title">Open hour: </span
+                          ><br />
+                          08:00 am - 10:00 pm/ Monday - Sunday
+                        </p>
+                        <div class="payment-footer">
+                          <img src="img/payment.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8" style="padding-left: 50px">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="footer-links">
+                          <h2 class="title">Categories</h2>
+                          <ul>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/">Home</a>
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
+                                >About Us</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/our-products.html/"
+                                >Our Products</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/blog/"
+                                >Blogs</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/faqs/"
+                                >FAQ's</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/contact/"
+                                >Contact Us</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer-links">
+                          <h2 class="title">Infomation</h2>
+                          <ul>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/store-location/"
+                                >Store Location</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/policy/"
+                                >Policy</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/giving-gift/"
+                                >Discount codes</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/tracking-order/"
+                                >Order Tracking</a
+                              >
+                            </li>
+                            <li>
+                              <a href="https://www.huongmaicafe.com/gift/"
+                                >Gift Card</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="https://www.huongmaicafe.com/terms-and-conditons/"
+                                >Term Of Use</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="border-top">
+              <div class="row">
+                <div class="col-sm-8">
+                  <div class="footer_menu">
+                    <ul>
+                      <li>
+                        <a
+                          title="blog"
+                          href="https://www.huongmaicafe.com/blog/"
+                          target="_self"
+                          >blog</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          title="about-us"
+                          href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
+                          >About us</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          title="order tracking"
+                          href="https://www.huongmaicafe.com/tracking-order/"
+                          >order tracking&nbsp;</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          title="contact"
+                          href="https://www.huongmaicafe.com/contact/"
+                          >contact</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          title="faq's"
+                          href="https://www.huongmaicafe.com/faqs/"
+                          >&nbsp;FAQ's</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="name-shop"
+                          title="coffeeshop"
+                          href="https://www.huongmaicafe.com/"
+                          >&nbsp;&nbsp;&nbsp; CoffeeShop</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="social-link">
+                    <ul>
+                      <!-- <li>
+                        <a title="Dribbble" href="#"
+                          ><span class="fa fa-dribbble"></span
+                        ></a>
+                      </li> -->
+                      <li>
+                        <a title="Twitter" href="#"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a title="Instagram" href="#"
+                          ><i class="fa-brands fa-instagram-square"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a title="Face-book" href="#"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
