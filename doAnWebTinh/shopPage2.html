@@ -25,121 +25,43 @@
   <body>
     <!-- footer -->
     <div class="header-top">
-      <div class="container">
-        <div class="welcome">Welcome to CafeShop !</div>
-        <div class="icon-header">
-          <ul>
-            <li>
-              <a><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a><i class="fa-brands fa-instagram-square"></i></a>
-            </li>
-            <li>
-              <a><i class="fa-brands fa-twitter"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="hotline">Hotline : 0334.526.8400</div>
-      </div>
-    </div>
-    <div class="header-container">
-      <div class="container">
-        <div class="header">
-          <div class="for-full-withmenu">
-            <div class="block block-search hidden-xs">
-              <div class="block block-content">
-                <div class="actions">
-                  <button
-                    type="submit"
-                    title="Search"
-                    class="action search"
-                    disabled=""
-                  >
-                    <span
-                      ><i
-                        class="fa-solid fa-magnifying-glass icon-hearder-container"
-                      ></i
-                    ></span>
-                  </button>
-                </div>
-                <div class="field search">
-                  <div class="control">
-                    <input
-                      id="search"
-                      type="text"
-                      name="q"
-                      value=""
-                      placeholder="Enter keywords to search..."
-                      class="input-text"
-                      maxlength="128"
-                      role="combobox"
-                      aria-haspopup="false"
-                      aria-autocomplete="both"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="text-align:center">
-              <img class="logo-header" src="img/logo-header.png" alt="">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >HOME</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    href="#"
-                    role="button"
-                    aria-expanded="false"
-                    >SHOP</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Coffee</a></li>
-                    <li><a class="dropdown-item" href="#">Tea</a></li>
-                    <li><a class="dropdown-item" href="#">Gift Set</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">BLOG</a>
-                </li>
-              </ul>
-            </div>
-            <div class="actions-header">
-              <div class="register-login hidden-xs">
-                <a href="#" class="text-color"
-                  ><i class="fa-solid fa-user"></i>Login</a
-                >
-                <a href="#" class="text-color"> / Sign up</a>
-              </div>
-              <div class="wishlist hidden-xs">
-                <a href="#" class="text-color"
-                  ><i class="fa-solid fa-heart"></i
-                ></a>
-              </div>
-              <div class="minicart-wrapper">
-                <a href="#" class="text-color"
-                  ><i class="fa-solid fa-bag-shopping"></i
-                ></a>
-                <span class="counter-number"> 0 </span>
-              </div>
-            </div>
+      <!-- sửa -->
+      <input
+      id="navbar-indicator"
+      class="navbar-collapse"
+      type="checkbox"
+      checked
+    />
+    <nav class="navbar-code">
+      <a class="navbar-brand" href="#"> COFFEE SHOP </a>
+
+      <div class="navbar-left">
+        <a class="nav-link" href="#">HOME</a>
+        <div class="dropdown">
+          <button class="nut_dropdown">
+            <a href="shop.html">SHOP</a>
+          </button>
+          <div class="noidung_dropdown">
+            <a href="#">Cofee</a>
+            <a href="#">Tea</a>
+            <a href="#">Gift Set</a>
           </div>
         </div>
+        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="#">CONTACT US</a>
+        <a class="nav-link" href="#">BLOG</a>
       </div>
+
+      <div class="navbar-right">
+        <a class="nav-link" href="#">Facebook</a>
+        <a class="nav-link" href="#">Instagram</a>
+        <a class="nav-link" href="#">Twitter</a>
+      </div>
+
+      <label class="navbar-toggler" for="navbar-indicator"> + </label>
+    </nav>
+    <!-- sửa -->
     </div>
-    <hr />
     <div class="breadcrumbs">
       <div class="container">
         <div class="breadcrumbs">
@@ -151,7 +73,7 @@
             </li>
             <li class="item icon"><strong>></strong></li>
             <li class="item product">
-              <strong>Shop</strong>
+              <strong>Shop Page 2</strong>
             </li>
           </ul>
         </div>
@@ -218,7 +140,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/1_4_7.jpg"
+                                    src="img/1_2_4.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -230,7 +152,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Gourmet Coffee
+                              Weasel Legend Coffee Gift Box
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -238,7 +160,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 12.50 </span></span
+                                ><span class="price">$ 21.50 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -260,7 +182,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/loc_tra_hoa_cuc_xanh-a2_1.jpg"
+                                    src="img/2_2_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -272,7 +194,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Mug Tea & Filter Set - Blue Chrysanthemum Flower
+                              Weasel Coffee Gift Box
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -302,7 +224,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/dsc09827_1.jpg"
+                                    src="img/dsc09663_2.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -314,7 +236,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Cinnamon Oolong Tea Box-80g
+                              Lotus Tea Box - 125g
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -344,7 +266,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/dsc09718_1.jpg"
+                                    src="img/dsc09674_2.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -356,7 +278,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Four Season Oolong Tea Bamboo
+                              Four Season Oolong Tea Box - 200
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -386,7 +308,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/dsc09708_1_1.jpg"
+                                    src="img/1_4_2.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -398,7 +320,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Snow Shan Bamboo Tea Box-115g
+                              Weasel legend Coffee 250g + weasel Legend Coffee Gift Box 250g
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -428,7 +350,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/dsc09833_2.jpg"
+                                    src="img/dsc09657_1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -440,7 +362,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Cinnamon Jasmine Tea Box -150g
+                              Jasmine Tea Box - 125g
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -470,7 +392,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/img_3087.jpg"
+                                    src="img/dsc09669_1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -482,7 +404,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Four Season Oolong Tea A
+                              Snow Shan Tea Box- 115g
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -512,7 +434,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/img_3093.jpg"
+                                    src="img/dsc09649_2.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -524,7 +446,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Four Season Oolong Tea B
+                              Green Tea Box - 125g
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -554,7 +476,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/1_4_5.jpg"
+                                    src="img/dsc09840_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -566,7 +488,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Moka Coffee
+                              Cinnamon Green Tea Box
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -596,7 +518,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/4_4_3.jpg"
+                                    src="img/dsc09902_1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -608,7 +530,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Traditional Coffee
+                              Weasel Legend Coffee Gift box + Hand Grinder Machine 1258
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -638,7 +560,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_gia_vuot_den_dia_may-a4_1.jpg"
+                                    src="img/balance_syphon_coffee_-_no.1_bron-a1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -650,7 +572,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Pottery textured Mug with design rattan dish
+                              Balance Syphone Coffee - No.1 Bron 
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -658,7 +580,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 6.50 </span></span
+                                ><span class="price">$ 287.50 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -680,7 +602,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_espresso_brown-a2_1_1.jpg"
+                                    src="img/coffee_grinder_gd8529-a2_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -692,7 +614,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Cup Espesso with design squares dish
+                              Coffee Grinder GD8529
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -700,7 +622,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 4.00 </span></span
+                                ><span class="price">$ 205.00 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -722,7 +644,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_capucino_chuon-a3_1.jpg"
+                                    src="img/coffee_grinder_gda1729-a1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -734,7 +656,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Capuchino Cup large dragonfly
+                              Coffee Grinder GDA1729
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -742,7 +664,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 4.50 </span></span
+                                ><span class="price">$ 80.00 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -764,7 +686,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_capucino_hoa_sen_long_hoa_cuc-a2_1.jpg"
+                                    src="img/coffee_grinder_gdb3729-a1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -776,7 +698,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Capuchino Cup large floral lotus
+                              Coffee Grinder GDB3729
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -784,7 +706,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 8.50 </span></span
+                                ><span class="price">$ 80.00 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -806,7 +728,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_capucino_hoa-a3_1.jpg"
+                                    src="img/coffee_grinder_gd1078-a1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -818,7 +740,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Capuchino Cup large floral four pet
+                              Coffee Grinder GD1078
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -826,7 +748,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 9.00 </span></span
+                                ><span class="price">$ 80.00 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -848,7 +770,7 @@
                                 <span class="product-image-wrapper">
                                   <img
                                     class="lazyOwl lazy product-image-photo"
-                                    src="img/coc_espresso_blue-a2_1.jpg"
+                                    src="img/balance_syphon_coffee_-_no.2_gold-a1_1.jpg"
                                     alt="image-product-coffee"
                                     style="padding: 10px"
                                   />
@@ -860,7 +782,7 @@
                         <div class="product-info">
                           <strong class="product name product-item-name">
                             <a class="product-item-link" href="#">
-                              Cup Espesso with petal dish design
+                              Balance Syphon Coffee - No.2 Gold
                             </a>
                           </strong>
                           <div class="price-box price-final_price">
@@ -868,7 +790,7 @@
                               class="price-container price-final_price tax weee"
                             >
                               <span class="price-wrapper"
-                                ><span class="price">$ 4.00 </span></span
+                                ><span class="price">$ 237.50 </span></span
                               >
                             </span>
                             <div class="add-to-card">
@@ -895,9 +817,9 @@
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="shop.html">1</a></li>
             <li class="page-item">
-              <a class="page-link" href="shopPage2.html">2</a>
+              <a class="page-link" style="color:#ea8025" href="shopPage2.html">2</a>
             </li>
             <li class="page-item">
               <a class="page-link" href="shopPage3.html">3</a>
@@ -912,218 +834,61 @@
       </div>
     </div>
     <!-- footer -->
-    <footer class="page-footer">
-      <div class="footer-container">
-        <div class="footer-static-container">
-          <div class="container">
-            <div class="footer_introduce">
-              <div class="footer-static">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="footer-links contacts">
-                      <div class="footer-link-contact">
-                        <div class="logo-footer">
-                          <img src="img/logo-footer.png" alt="" />
-                        </div>
-                        <p
-                          style="
-                            margin-top: 20px;
-                            font-size: 13px;
-                            margin-bottom: 0px;
-                          "
-                        >
-                          Please contact us free via email:
-                          <a href="mailto: vanphuc14092002@gmail.com"
-                            >vanphuc14092002@gmail.com</a
-                          ><br />
-                          <span class="store-info-title"
-                            >Fell free to call us: </span
-                          ><br />
-                          <a href="tel:+84 983452858">+84 983452858</a> /
-                          <a href="tel:+84 438283999">+84 438283999</a><br />
-                          <span class="store-info-title">Open hour: </span
-                          ><br />
-                          08:00 am - 10:00 pm/ Monday - Sunday
-                        </p>
-                        <div class="payment-footer">
-                          <img src="img/payment.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-8" style="padding-left: 50px">
-                    <div class="row">
-                      <div class="col-sm-3">
-                        <div class="footer-links">
-                          <h2 class="title">Categories</h2>
-                          <ul>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/">Home</a>
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
-                                >About Us</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/our-products.html/"
-                                >Our Products</a
-                              >
-                            </li>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/blog/"
-                                >Blogs</a
-                              >
-                            </li>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/faqs/"
-                                >FAQ's</a
-                              >
-                            </li>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/contact/"
-                                >Contact Us</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-sm-3">
-                        <div class="footer-links">
-                          <h2 class="title">Infomation</h2>
-                          <ul>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/store-location/"
-                                >Store Location</a
-                              >
-                            </li>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/policy/"
-                                >Policy</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/giving-gift/"
-                                >Discount codes</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/tracking-order/"
-                                >Order Tracking</a
-                              >
-                            </li>
-                            <li>
-                              <a href="https://www.huongmaicafe.com/gift/"
-                                >Gift Card</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="https://www.huongmaicafe.com/terms-and-conditons/"
-                                >Term Of Use</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="page-footer">
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>COFFEE SHOP</h3>
+  
+          <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+  
+            <a href="#">Blog</a>
+  
+            <a href="#">About Us</a>
+  
+            <a href="#">FAQ'S</a>
+  
+            <a href="#">Contact Us</a>
+          </p>
+  
+          <p class="footer-company-name">
+            Open hour : 08:00 am - 10:00 pm/ Monday - Sunday
+          </p>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>Viwaseen Tower</span> 48 Tố Hữu, quận Nam Từ Liêm, Hà Nội</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+0.123.456.7890</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">CoffeeshopMaiDinh@gmail.com</a></p>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="border-top">
-              <div class="row">
-                <div class="col-sm-8">
-                  <div class="footer_menu">
-                    <ul>
-                      <li>
-                        <a
-                          title="blog"
-                          href="https://www.huongmaicafe.com/blog/"
-                          target="_self"
-                          >blog</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          title="about-us"
-                          href="https://www.huongmaicafe.com/coffee-shop-in-hanoi/"
-                          >About us</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          title="order tracking"
-                          href="https://www.huongmaicafe.com/tracking-order/"
-                          >order tracking&nbsp;</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          title="contact"
-                          href="https://www.huongmaicafe.com/contact/"
-                          >contact</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          title="faq's"
-                          href="https://www.huongmaicafe.com/faqs/"
-                          >&nbsp;FAQ's</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          class="name-shop"
-                          title="coffeeshop"
-                          href="https://www.huongmaicafe.com/"
-                          >&nbsp;&nbsp;&nbsp; CoffeeShop</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="social-link">
-                    <ul>
-                      <!-- <li>
-                            <a title="Dribbble" href="#"
-                              ><span class="fa fa-dribbble"></span
-                            ></a>
-                          </li> -->
-                      <li>
-                        <a title="Twitter" href="#"
-                          ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a title="Instagram" href="#"
-                          ><i class="fa-brands fa-instagram-square"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a title="Face-book" href="#"
-                          ><i class="fa-brands fa-twitter"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+  
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the Coffee Shop</span>
+            Muốn nếm vị cà phê phải chờ đợi pha chế, đó là nét tinh hoa được chắt chiu lại mỗi giây sống chậm với cuộc đời.
+          </p>
+  
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+      <!--footer end-->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
