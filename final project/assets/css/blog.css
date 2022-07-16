@@ -1,4 +1,31 @@
-/* * header :start */ 
+body {
+    background: #fff;
+    font-family: 'Barlow',sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.rokan-featured-heading h2 {
+    font-size: 36px;
+    color: #262626;
+    font-family: Marcellus, sans-serif;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* 1 */
+
+
+/* * header :start */
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +33,10 @@
 }
 
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -82,6 +110,9 @@
         border-left: 1px solid DimGray;
         cursor: pointer;
     }
+    li .zoom-image-thumb {
+        float: none !important;
+    }
 }
 
 
@@ -133,7 +164,6 @@
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
-
 
 /* ô input */
 
@@ -192,16 +222,20 @@ nav li:hover {
 
 .search:hover .search-bar {
     display: block;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .search-bar form input[type="text"]:focus {
     width: 500px;
     background-color: white;
+    z-index: 1000;
 }
+
 /* header :end */
 
-
+.page-wrapper,.box{
+    padding: 0px 70px;
+}
 .title-blog {
     padding-bottom: 60px;
     padding-top: 55px;
@@ -232,6 +266,7 @@ nav li:hover {
 ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .list-post-tab li {
@@ -608,3 +643,113 @@ section {
 }
 
 /* footer end */
+
+.header-content {
+    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-title.jpg);
+    background-position: center 0px;
+    height: 480px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 400;
+    font-family: Marcellus, sans-serif;
+    text-align: center;
+    padding-top: 164px;
+}
+
+/* ô input */
+.box {
+    margin: 20px 0;
+    width: 300px;
+    height: 50px;
+}
+
+/* Search 1 - bg change*/
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search {
+    width: 300px;
+    height: 50px;
+    background: #666;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: white;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: white;
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: white;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+    z-index: 1;
+    color: white;
+}
+
+.container-1 input#search:focus,
+.container-1 input#search:active {
+    outline: none;
+    background: #2b303b;
+}
+
+.title-widget-post,
+.title-post-tab {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.widget-post-cat h2{
+    padding-left: 0;
+    margin-top: 20px;
+}
+a:hover {
+    color: #ff8500;
+}
+.widget-post-cat ul li{
+    padding: 10px 0 0px 0;
+}
+.noidung_dropdown a{
+    color: black;
+}
+.nut_dropdown a{
+    color:white;
+}

@@ -233,14 +233,137 @@ nav li:hover {
 
 /* header :end */
 
-.page-wrapper,.box{
-    padding: 0px 70px;
+/* content-start */
+.header-content {
+    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-title.jpg);
+    background-position: center 0px;
+    height: 480px;
+    margin-bottom: 100px;
 }
-.title-blog {
-    padding-bottom: 60px;
-    padding-top: 55px;
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 400;
+    font-family: Marcellus, sans-serif;
     text-align: center;
+    padding-top: 164px;
 }
+
+/* ô input */
+.box {
+    margin: 20px 0;
+    width: 300px;
+    height: 50px;
+}
+
+/* Search 1 - bg change*/
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search {
+    width: 300px;
+    height: 50px;
+    background: #666;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: white;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: white;
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: white;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+    z-index: 1;
+    color: white;
+}
+
+.container-1 input#search:focus,
+.container-1 input#search:active {
+    outline: none;
+    background: #2b303b;
+}
+
+.title-widget-post,
+.title-post-tab {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.widget-post-cat h2 {
+    /* padding-left: 2em; */
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #ff8500;
+}
+.noidung_dropdown a{
+    color: black;
+}
+.nut_dropdown a{
+    color:white;
+}
+.widget-post-cat ul li {
+    padding: 10px 0 0 0;
+}
+.title-post-tab a {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title-widget-post,
+.title-post-tab {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
 
 /* 1 */
 .widget {
@@ -349,113 +472,71 @@ img {
     width: 100%;
 }
 
-.title-post-tab ul li .zoom-image-thumb {
-    max-width: 100px;
-    margin-right: 15px;
-    float: left;
-}
-
 a {
     text-decoration: none;
 }
 
-.post-info {
-    margin-top: 0;
-    text-align: left;
+.page-wrapper,.box{
+    padding: 0px 70px;
 }
-
-.post-info-extra {
-    margin-bottom: 6px;
+textarea{
+    width: 100%;
 }
-
-.post-info-extra {
-    margin-bottom: 6px;
-}
-
-.post-date {
-    display: inline-block;
-    margin-top: 5px;
+#submit-comment{
     font-size: 12px;
-    color: #888;
-    margin-top: 0px !important;
-    padding-left: 5px;
+    line-height: 1.15em;
+    letter-spacing: .15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 19px 35px;
+    background: #365899;
+    border-color: #365899;
+    color:white;
 }
-
-.blog-list-post .blog-post-thumb {
-    float: left;
-    max-width: 50%;
-    margin-right: 60px;
+.comment-blog-bottom h4{
+    color: #1c1e21;
+    margin-bottom: 10px;
 }
-
-.post-date {
-    display: inline-block;
-    font-size: 12px;
-
-}
-
-.post-info-extra {
-    display: flex;
-}
-
-.post-tags-info {
-    font-size: 12px;
-}
-
-.post-tags-info a {
-    color: #ff8500
-}
-
-.post-info .post-title {
-    font-size: 30px;
-    margin-bottom: 13px;
-    padding: 0;
-}
-
-.post-title a {
-    color: #333;
-}
-
-.post-info .short-des {
-    margin: 3px 0 0;
-    padding-top: 10px;
-    line-height: 25px;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.post-info .readmore {
+/* right */
+.blog-header {
+    text-align: center;
+    margin-bottom: 30px;
     margin-top: 30px;
 }
 
-.post-info .readmore a {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    min-width: 1px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 14px;
-    transform: none;
-    text-transform: capitalize;
+.blog-header .post-tags-info,.blog-header .post-date {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.blog-header .post-tags-info a{
     color: #ff8500;
-    position: relative;
 }
-
-.col-main .row,
-.bottom-blog {
-    margin-bottom: 60px;
+.post-title{
+    color: #333;
+    font-family: 'Barlow',sans-serif;
+    font-weight: 700;
+    line-height: 1.35;
 }
-
-.bottom-blog hr {
-    padding-bottom: 60px;
-    margin: 0px 30px;
+.blog-header h3 a{
+    font-weight: 700;
+    color: #333;
+    font-size: 36px;
 }
-
-.pagination {
-    justify-content: center;
+.post-content .post-description p{
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+/* content-end */
 
 /* footer :start */
+.page-footer {
+    margin-top: 30px;
+}
+
 section {
     width: 100%;
     display: inline-block;
@@ -643,113 +724,3 @@ section {
 }
 
 /* footer end */
-
-.header-content {
-    background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/blog-title.jpg);
-    background-position: center 0px;
-    height: 480px;
-    margin-bottom: 100px;
-}
-
-h1 {
-    font-size: 60px;
-    letter-spacing: 3px;
-    color: #fff;
-    font-weight: 400;
-    font-family: Marcellus, sans-serif;
-    text-align: center;
-    padding-top: 164px;
-}
-
-/* ô input */
-.box {
-    margin: 20px 0;
-    width: 300px;
-    height: 50px;
-}
-
-/* Search 1 - bg change*/
-.container-1 {
-    width: 300px;
-    vertical-align: middle;
-    white-space: nowrap;
-    position: relative;
-}
-
-.container-1 input#search {
-    width: 300px;
-    height: 50px;
-    background: #666;
-    border: none;
-    font-size: 10pt;
-    float: left;
-    color: white;
-    padding-left: 45px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-
-    -webkit-transition: all .55s ease;
-    -moz-transition: all .55s ease;
-    -ms-transition: all .55s ease;
-    -o-transition: all .55s ease;
-    transition: all .55s ease;
-}
-
-.container-1 input#search::-webkit-input-placeholder {
-    color: white;
-}
-
-.container-1 input#search:-moz-placeholder {
-    /* Firefox 18- */
-    color: white;
-}
-
-.container-1 input#search::-moz-placeholder {
-    /* Firefox 19+ */
-    color: white;
-}
-
-.container-1 input#search:-ms-input-placeholder {
-    color: white;
-}
-
-.container-1 .icon {
-    position: absolute;
-    top: 50%;
-    margin-left: 15px;
-    margin-top: 15px;
-    z-index: 1;
-    color: white;
-}
-
-.container-1 input#search:focus,
-.container-1 input#search:active {
-    outline: none;
-    background: #2b303b;
-}
-
-.title-widget-post,
-.title-post-tab {
-    font-size: 18px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #333;
-}
-.widget-post-cat h2{
-    padding-left: 0;
-    margin-top: 20px;
-}
-a:hover {
-    color: #ff8500;
-}
-.widget-post-cat ul li{
-    padding: 10px 0 0px 0;
-}
-.noidung_dropdown a{
-    color: black;
-}
-.nut_dropdown a{
-    color:white;
-}
