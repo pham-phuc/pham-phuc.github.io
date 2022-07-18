@@ -782,3 +782,22 @@ section {
     padding: 0;
 }
 /* product-bestseller */
+
+/* slide */
+.carousel-item img {
+    position: relative;
+}
+
+.carousel-item h3 {
+    position: absolute;
+    top: 50%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+@media(max-width:880px){
+    .carousel-control-prev-icon,.carousel-control-next-icon{
+        display: none;
+    }
+}
