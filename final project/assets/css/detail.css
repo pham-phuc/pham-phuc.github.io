@@ -669,3 +669,10 @@ section {
 .box-tocart{
     margin-top: 20px;
 }
+.image-product li img,.product-image-wrapper,.img-product-big{
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: 100%;
+    transition: all 0.1s ease-in-out;
+}
