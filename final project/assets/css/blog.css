@@ -10,7 +10,9 @@ body {
     overflow-x: hidden;
 }
 
-
+.nav-link a:hover{
+    color: white;
+}
 
 /* 1 */
 
