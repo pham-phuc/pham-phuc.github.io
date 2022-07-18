@@ -99,7 +99,6 @@ body {
     background-color: Black;
     color: white;
     padding: 16px;
-    font-size: 16px;
     border: none;
 }
 
@@ -141,7 +140,7 @@ body {
 }
 
 .dropdown:hover .nut_dropdown {
-    background-color: #00bfff;
+    background-color: black;
 }
 /* ô input */
 
