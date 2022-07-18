@@ -1,4 +1,19 @@
-/* * header :start */ 
+body {
+    background: #fff;
+    font-family: 'Barlow',sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+p{
+    font-family: 'Barlow';
+}
+
+/* * header :start */
 * {
     margin: 0;
     padding: 0;
@@ -133,26 +148,22 @@
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
-
 /* ô input */
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav li a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 14px 16px;
-}
-
+  nav ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+  }
+  nav li{
+    display:inline-block;
+  }
+  nav li a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    padding:14px 16px;
+  }
 .search {
     position: relative;
     display: inline-block;
@@ -167,6 +178,7 @@ nav li a {
     display: none;
     right: 0;
     top: 45px;
+    z-index: 1000;
 }
 
 .search-bar form input[type=text] {
@@ -196,11 +208,10 @@ nav li:hover {
 .search-bar form input[type="text"]:focus {
     width: 500px;
     background-color: white;
+    z-index: 1000;
 }
+
 /* header :end */
-
-
-
 .catalog-product-view .breadcrumbs {
     max-width: 100%;
     margin-bottom: 0;
@@ -264,12 +275,12 @@ nav li:hover {
     margin-bottom: 20px;
     line-height: 1;
 }
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     color: #333;
-    font-family: 'Barlow',sans-serif;
+    font-family: Marcellus;
     font-weight: 700;
     line-height: 1.35;
-}
+} */
 
 .about-us-container .about-us-img {
     width: 100%;

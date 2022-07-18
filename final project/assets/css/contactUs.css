@@ -1,3 +1,15 @@
+body {
+    background: #fff;
+    font-family: 'Barlow',sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
 /* * header :start */
 * {
     margin: 0;
@@ -89,7 +101,6 @@
     background-color: Black;
     color: white;
     padding: 16px;
-    font-size: 16px;
     border: none;
 }
 
@@ -262,7 +273,7 @@ nav li:hover {
   .contact-form input,
   textarea {
     width: 100%;
-    border: 1px solid #555;
+    border: 1px solid white;
     padding: 5px 10px;
     text-transform: capitalize;
     margin-top: 15px;

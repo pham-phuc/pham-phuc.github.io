@@ -1,13 +1,20 @@
-/* header :start */
+body {
+    background: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * *
-  * Styling navigation bar for large screen devices
-  */
 
 .navbar {
     position: relative;

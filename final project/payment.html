@@ -21,8 +21,58 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap');
+      </style>
   </head>
   <body>
+    <div class="header-top">
+      <!-- sửa -->
+      <input
+        id="navbar-indicator"
+        class="navbar-collapse"
+        type="checkbox"
+        checked
+      />
+      <nav class="navbar-code">
+        <a class="navbar-brand" href="index.html"> COFFEE SHOP </a>
+
+        <div class="navbar-left">
+          <a class="nav-link" href="index.html">HOME</a>
+          <div class="dropdown">
+            <button class="nut_dropdown">
+              <a href="shop.html">SHOP</a>
+            </button>
+            <div class="noidung_dropdown">
+              <a href="coffee.html">Coffee</a>
+              <a href="tea.html">Tea</a>
+              <a href="giftset.html">Gift Set</a>
+            </div>
+          </div>
+          <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+          <a class="nav-link" href="contactUs.html">CONTACT US</a>
+          <a class="nav-link" href="blog.html">BLOG</a>
+        </div>
+
+        <div class="navbar-right">
+          <div class="nav-link search" ><i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-bar">
+              <form>
+                <input type="text" name="search" placeholder="Search.." />
+              </form>
+            </div>
+          </div >
+          <div  class="nav-link" ><a href="login.html"><i class="fa-regular fa-user"></i></a></div >
+          <div  class="nav-link" ><a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a></div >
+        </div>
+        <a href=""></a>
+        <label class="navbar-toggler" for="navbar-indicator"> + </label>
+      </nav>
+      <!-- sửa -->
+    </div>
     <div class="payment pt-100 pb-100">
         <div class="container">
             <div id="Checkout" class="inline">
@@ -88,6 +138,60 @@
                 </form>
             </div>
           </div>
+    </div>
+    <div class="page-footer">
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>COFFEE SHOP</h3>
+  
+          <p class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+  
+            <a href="blog.html">Blog</a>
+  
+            <a href="aboutUs.html">About Us</a>
+  
+            <a href="fqa.html">FAQ'S</a>
+  
+            <a href="contactUs.html">Contact Us</a>
+          </p>
+  
+          <p class="footer-company-name">
+            Open hour : 08:00 am - 10:00 pm/ Monday - Sunday
+          </p>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>Viwaseen Tower</span> 48 Tố Hữu, quận Nam Từ Liêm, Hà Nội</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+0.123.456.7890</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">CoffeeshopMaiDinh@gmail.com</a></p>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the Coffee Shop</span>
+            Muốn nếm vị cà phê phải chờ đợi pha chế, đó là nét tinh hoa được chắt chiu lại mỗi giây sống chậm với cuộc đời.
+          </p>
+  
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"

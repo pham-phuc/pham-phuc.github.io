@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog-Coffee-Shop-detail</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/blogdetail_2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap');
+      </style>
+  </head>
+  <body>
+    <div class="header-top">
+        <!-- sửa -->
+        <input
+          id="navbar-indicator"
+          class="navbar-collapse"
+          type="checkbox"
+          checked
+        />
+        <nav class="navbar-code">
+          <a class="navbar-brand" href="index.html"> COFFEE SHOP </a>
+
+          <div class="navbar-left">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="dropdown">
+              <button class="nut_dropdown">
+                <a href="shop.html">SHOP</a>
+              </button>
+              <div class="noidung_dropdown">
+                <a href="coffee.html">Coffee</a>
+                <a href="tea.html">Tea</a>
+                <a href="giftset.html">Gift Set</a>
+              </div>
+            </div>
+            <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+            <a class="nav-link" href="contactUs.html">CONTACT US</a>
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </div>
+
+          <div class="navbar-right">
+            <div class="nav-link search" ><i class="fa-solid fa-magnifying-glass"></i>
+              <div class="search-bar">
+                <form>
+                  <input type="text" name="search" placeholder="Search.." />
+                </form>
+              </div>
+            </div >
+            <div  class="nav-link" ><a href="login.html"><i class="fa-regular fa-user"></i></a></div >
+            <div  class="nav-link" ><a href="card.html"><i class="fa-solid fa-cart-shopping"></i></a></div >
+          </div>
+          <a href=""></a>
+          <label class="navbar-toggler" for="navbar-indicator"> + </label>
+        </nav>
+        <!-- sửa -->
+      </div>
+      <!-- haeder-content-start -->
+      <div class="header-content">
+        <div class="blog-grid">
+          <h1 class="blog-title">BLOG</h1>
+        </div>
+      </div>
+      <!-- haeder-contnent-end -->
+      <div class="page-wrapper">
+        <div class="columns layout layout-1-col row">
+          <div class="col-xl-3 col-md-3">
+            <!-- input-start -->  
+            <div >
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>   
+            <!-- input-end -->        
+            <div class="sidebar-left sidebar-post">
+              <div class="widget widget-post-tab" data-bind="scope: 'recemt-posts'">
+                <div class="title-post-tab">
+                  <ul>
+                    <li><a href="#">Recent</a></li>
+                  </ul>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" role="tabpanel">
+                    <ul class="list-post-tab">
+                      <li>
+                        <div class="zoom-image-thumb">
+                          <a
+                            title="Where exactly does the name of coffee come from?        "
+                            href="#"
+                          >
+                            <img
+                              src="assets/images/tu-a-z-ve-lich-su-cay-ca-phe-tren-the-gioi-va-viet-nam.jpg"
+                              alt="Where exactly does the name of coffee come from?        "
+                            />
+                          </a>
+                        </div>
+                        <div class="post-tab-info">
+                          <h3>
+                            <a class="title-recent-blog" href="#">
+                              Where exactly does the name of coffee come from?
+                            </a>
+                          </h3>
+                          <span>July 06 2022</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="zoom-image-thumb">
+                          <a
+                            title="Vietnamese coffee is in the top of the best coffee in the world	"
+                            href="blogdetail.html"
+                          >
+                            <img
+                              src="assets/images/coffee-vlogger_2.jpg"
+                              alt="Vietnamese coffee is in the top of the best coffee in the world	"
+                            />
+                          </a>
+                        </div>
+                        <div class="post-tab-info">
+                          <h3>
+                            <a
+                              class="title-recent-blog"
+                              href="blogdetail.html"
+                            >
+                              Vietnamese coffee is in the top of the best coffee in
+                              the world
+                            </a>
+                          </h3>
+                          <span>June 30 2022</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="zoom-image-thumb">
+                          <a
+                            title="Lotus Tea of Coffee Shop"
+                            href="blogdetail.html"
+                          >
+                            <img
+                              src="assets/images/lotus-green-tea_2.jpg"
+                              alt="Lotus Tea of Coffee Shop"
+                            />
+                          </a>
+                        </div>
+                        <div class="post-tab-info">
+                          <h3>
+                            <a
+                              class="title-recent-blog"
+                              href="blogdetail.html"
+                            >
+                              Lotus Tea of Coffee Shop
+                            </a>
+                          </h3>
+                          <span>June 30 2022</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="zoom-image-thumb">
+                          <a
+                            title="Unique coffees suitable for summer days	"
+                            href="blogdetail.html"
+                          >
+                            <img
+                              src="assets/images/macadamia-nut-latte.jpg"
+                              alt="Unique coffees suitable for summer days	"
+                            />
+                          </a>
+                        </div>
+                        <div class="post-tab-info">
+                          <h3>
+                            <a
+                              class="title-recent-blog"
+                              href="blogdetail.html"
+                            >
+                              Unique coffees suitable for summer days
+                            </a>
+                          </h3>
+                          <span>June 30 2022</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="zoom-image-thumb">
+                          <a
+                            title="5 coffee habits that help you live longer"
+                            href="blogdetail.html"
+                          >
+                            <img
+                              src="assets/images/caphebotnguyenchat.jpg"
+                              alt="5 coffee habits that help you live longer"
+                            />
+                          </a>
+                        </div>
+                        <div class="post-tab-info">
+                          <h3>
+                            <a
+                              class="title-recent-blog"
+                              href="blogdetail.html"
+                            >
+                              5 coffee habits that help you live longer
+                            </a>
+                          </h3>
+                          <span>June 29 2022</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-left sidebar-post">
+              <div class="widget widget-post-cat" data-bind="scope: 'blog-archive'">
+                <h2 class="title-widget-post">Archive</h2>
+                <ul>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      January
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      February
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      March
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      April
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      May
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      June
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      July
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      August
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      September
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      October
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      November
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="Archive %s"
+                      class="archive-item-link"
+                      href="#"
+                    >
+                      December
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-main column main col-xl-9 col-md-9">
+            <div class="img-top-blog" style="text-align:center">
+                <img src="assets/images/bao-tang-the-gioi-cafe-buon-me-thuot (1).jpg" alt="anh minh hoa blog">
+            </div>
+            <div class="blog-header">
+                <div class="post-tags-info">
+                  <label>Categories: </label>
+                  <a
+                    title="News"
+                    href="#"
+                    >News</a
+                  >
+                </div>
+                <div class="post-date">/ <strong>16, </strong><span>Jul, 2022</span></div>
+                <h3 class="post-title">
+                  <a
+                    title="https://www.huongmaicafe.com/blog/post/explore-around-the-world-through-espresso/"
+                    href="#"
+                  >
+                  Vietnam coffee map</a
+                  >
+                </h3>
+            </div>
+            <div class="post-content">
+                <div class="post-description">
+                    <p>
+                        Up to now, the tourism and coffee industries still have a lot of unexplored
+                        cooperation opportunities. Tourism activities will contribute to the
+                        development of the coffee industry, and the story of coffee culture will
+                        become a highlight to attract domestic and foreign tourists every time they
+                        set foot in Vietnam. Read the article below with Coffee Shop to learn about
+                        coffee tourism in this beautiful country.
+                      </p>
+                      <p>Coffee becomes "ambassador" to attract tourists?</p>
+                      <p>
+                        Vietnam is the world's leading country in terms of production and quality of
+                        Robusta coffee. Many roasters around the world use Vietnamese coffee beans,
+                        the truth is that every cup of delicious coffee that the world's consumers are
+                        enjoying has more or less origin from Vietnam. This is a very proud
+                        achievement. However, the coffee industry and tourism have not been closely
+                        linked to bring about greater and more sustainable benefits.
+                      </p>
+                      
+                  <p style="text-align: center">
+                    <img
+                      src="assets/images/ca-phe-nui-rung.jpg"
+                      alt="coffee-in-vietnam"
+                      width="494"
+                      height="439"
+                    />
+                  </p>
+                  <p style="text-align: center"><em>forest-coffee</em></p>
+                  <p>
+                    The tourism and coffee industries still have a lot of unexplored
+                    opportunities. With a large number of people in the world who are in love and
+                    passionate about coffee, many of them are willing to come to Vietnam to learn
+                    the deep meaning of this very special drink. Coffee is known as one of the
+                    most valuable agricultural commodities in the world. Vietnamese coffee is a
+                    famous agricultural commodity in the world in terms of quality and quantity in
+                    export turnover.
+                  </p>
+                  <p>
+                    Coffee Shop was present in the coffee market in the 1980s, bringing the
+                    traditional values ​​of Vietnamese people closer to domestic and foreign
+                    tourists. We - Coffee Shop always strive to bring the best quality and value
+                    products to satisfy even the most demanding customers globally. Every time
+                    tourists have the opportunity to visit Vietnam, they will definitely visit
+                    Hanoi Old Quarter, where, at 15 Hang Manh, we have a small coffee shop, cozy
+                    enough, displaying products. and serve drinks including coffee, tea,... a
+                    variety of drinks suitable for all audiences.
+                  </p>
+                  
+                  
+                  <p style="text-align: left">
+                    <img
+                      style="display: block; margin-left: auto; margin-right: auto"
+                      src="assets/images/anhquancafeHM.jpg"
+                      alt="traditional-vietnamese-coffee"
+                      width="600"
+                      height="400"
+                    />
+                  </p>
+                  <p style="text-align: center">
+                    <em>coffee-shop</em>
+                  </p>
+                  <p>
+                    According to the Vietnam Coffee and Cocoa Association, our country is
+                    currently the second largest coffee exporter in the world after Brazil, with a
+                    total annual export volume of about 1.6-1.8 million tons, with a turnover of
+                    about 2.6 - 2.8 billion USD. Coffee tourism is one of the emerging trends of
+                    Vietnam tourism. In order to bring the values ​​of coffee into tourism and
+                    give visitors a deeper experience of the local culture, in Vietnam, especially
+                    in the Central Highlands, coffee tours have been put into operation. Visitors
+                    can visit the Coffee Farm, the World Coffee Museum in Buon Me Thuot city,
+                    coffee villages, enjoy coffee, visit the production process of weasel coffee -
+                    a typical coffee species of Vietnam, learn about coffee trees, types of
+                    coffee, how to care for coffee trees, shop for different types of coffee...
+                  </p>
+                  <p>
+                    Vietnamese coffee is mainly grown in the provinces in the Central Highlands,
+                    with a relatively cool climate, rich natural resources and unique cultural
+                    characteristics. The Central Highlands is home to 47 ethnic groups, with
+                    unique cultural values ​​from architecture, living features, customs,
+                    practices and festivals. Exploiting the strength of coffee in tourism is also
+                    exploiting the typical cultural beauty of the Central Highlands.
+                  </p>
+                                               
+                  <p style="text-align: center">
+                    <img
+                      style="display: block; margin-left: auto; margin-right: auto"
+                      src="assets/images/ban-tay-nang-niu-ca-phe.jpg"
+                      alt="coffee-and-flower"
+                      width="600"
+                      height="400"
+                    /><em>coffee-in-hand</em>
+                  </p>
+                  <p style="text-align: left"></p>
+                  <p>
+                    Coffee plays an important role in the culture and history of Vietnam,
+                    producing the best coffee beans in the world, becoming a must-visit tourist
+                    destination for lovers of the popular drink. This translates to experiencing
+                    the culture of growing, processing, and preparing coffee. Information on
+                    coffee tourism such as: developing coffee tourism associated with community
+                    tourism, methods of building a coffee cultural space, linkages between
+                    stakeholders in the construction and promotion of coffee tourism products
+                    coffee, prospects for cooperation in developing coffee tourism between
+                    countries,...
+                  </p>
+                  <p>
+                    Through this article, from the perspective of Coffee Shop, hope it is useful
+                    in providing you with information on the topic of travel coffee.
+                  </p>
+                  
+                  
+                  
+                  <!--  -->
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <hr>
+              <div class="comment-blog-bottom">
+                <h4>comemnt</h4>
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  placeholder="Add a comment..."
+                  name="comment"
+                  form="usrform"
+                ></textarea>
+                <br />
+                <input id="submit-comment" type="submit" placeholder="Post" />
+              </div>
+                          
+            </div>
+        </div>
+      </div>
+  
+      <!-- haeder-content-end -->
+
+       <!-- footer -->
+    <div class="page-footer">
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>COFFEE SHOP</h3>
+    
+            <p class="footer-links">
+              <a href="index.html" class="link-1">Home</a>
+    
+              <a href="blog.html">Blog</a>
+    
+              <a href="aboutUs.html">About Us</a>
+    
+              <a href="fqa.html">FAQ'S</a>
+    
+              <a href="contactUs.html">Contact Us</a>
+            </p>
+    
+            <p class="footer-company-name">
+              Open hour : 08:00 am - 10:00 pm/ Monday - Sunday
+            </p>
+          </div>
+    
+          <div class="footer-center">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p><span>Viwaseen Tower</span> 48 Tố Hữu, quận Nam Từ Liêm, Hà Nội</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+0.123.456.7890</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:support@company.com">CoffeeshopMaiDinh@gmail.com</a></p>
+            </div>
+          </div>
+    
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>About the Coffee Shop</span>
+              Muốn nếm vị cà phê phải chờ đợi pha chế, đó là nét tinh hoa được chắt chiu lại mỗi giây sống chậm với cuộc đời.
+            </p>
+    
+            <div class="footer-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+        <!--footer end-->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

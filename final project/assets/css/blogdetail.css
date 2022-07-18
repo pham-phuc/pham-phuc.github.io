@@ -13,7 +13,6 @@ body {
 .rokan-featured-heading h2 {
     font-size: 36px;
     color: #262626;
-    font-family: Marcellus, sans-serif;
     line-height: 1.35;
     text-align: center;
     letter-spacing: -1.5px;
@@ -254,20 +253,21 @@ h1 {
 /* ô input */
 .box {
     margin: 20px 0;
-    width: 300px;
+    width: 100%;
     height: 50px;
 }
 
 /* Search 1 - bg change*/
 .container-1 {
-    width: 300px;
+    width: 100%;
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
 }
 
 .container-1 input#search {
-    width: 300px;
+    margin-bottom: 20px;
+    width: 100%;
     height: 50px;
     background: #666;
     border: none;
@@ -522,7 +522,7 @@ textarea{
 .blog-header h3 a{
     font-weight: 700;
     color: #333;
-    font-size: 36px;
+    font-size: 1.2em;
 }
 .post-content .post-description p{
     font-size: 14px;
@@ -724,3 +724,9 @@ section {
 }
 
 /* footer end */
+
+@media (max-width:450px){
+    .sidebar-left{
+        display: none;
+    }
+}
