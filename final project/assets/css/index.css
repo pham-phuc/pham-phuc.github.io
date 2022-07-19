@@ -37,7 +37,7 @@ body {
 
 .navbar-right {
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 15px;
     position: absolute;
     top: 0;
     right: 0;
@@ -882,7 +882,7 @@ section {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .row>*{
+    .banner-middle .row>*{
         padding-left: 0;
         padding-right: 0;
     }
