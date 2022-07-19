@@ -877,3 +877,13 @@ section {
         margin: 0 5px;
     }
 }
+@media(max-width:880px){
+    .banner-middle .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

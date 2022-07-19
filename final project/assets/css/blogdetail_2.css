@@ -705,6 +705,9 @@ section {
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+    .page-wrapper, .box {
+        padding: 0px 20px;
+    }
 
 }
 
@@ -716,5 +719,9 @@ section {
     }
     .page-wrapper{
         padding: 0 10px;
+    }
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
     }
 }
