@@ -207,12 +207,6 @@ nav li:hover {
 }
 
 /* header :end */
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
 .section{
     position: relative;
     width: 100%;
@@ -332,7 +326,7 @@ nav li:hover {
 .section .noi-dung .form .icon-dang-nhap li i{
     font-size: 24px;
 }
-@media (max-width: 768px){
+@media (max-width: 950px){
     .section .img-bg{
         position: absolute;
         top: 0;
@@ -350,7 +344,7 @@ nav li:hover {
     }
     .section .noi-dung .form{
         width: 100%;
-        padding: 40px;
+        padding: 20px;
         background: rgba(255 255 255 / 0.9);
         margin: 50px;
     }
@@ -380,7 +374,6 @@ section {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
     padding: 55px 50px;
 }
 
@@ -550,3 +543,8 @@ section {
 }
 
 /* footer end */
+/* @media (max-width: 1300px){
+    .footer-distributed .footer-center i{
+        margin: 10px 0;
+    }
+} */

@@ -887,3 +887,13 @@ section {
         padding-right: 0;
     }
 }
+@media(max-width:1300px){
+    .banner-middle .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .banner-middle .row>*{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -537,3 +537,13 @@ section {
         left: 15%;
     }
 }
+@media (max-width:300px){
+    .single-contact p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .single-contact i.fa {
+        top: 45%;
+        left: 10%;
+    }
+}

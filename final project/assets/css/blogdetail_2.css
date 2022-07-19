@@ -540,7 +540,6 @@ section {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    font: bold 16px sans-serif;
     padding: 55px 50px;
 }
 
@@ -716,9 +715,6 @@ section {
 @media (max-width:576px){
     .sidebar-left{
         display: none;
-    }
-    .page-wrapper{
-        padding: 0 10px;
     }
     .search-bar form input[type="text"]:focus {
         width: 300px;
