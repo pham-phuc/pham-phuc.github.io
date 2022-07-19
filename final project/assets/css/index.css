@@ -416,7 +416,7 @@ hr {
 }
 
 .rokan-product-heading {
-    margin: 50px 0px
+    margin: 50px 0 0 0;
 }
 
 .product-image-container {
@@ -817,4 +817,63 @@ section {
 }
 .read-more-blog:hover a button{
     background: #222;
+}
+/* count-down */
+.banner-content{
+    margin-top: 50px;
+}
+.is-countdown h2 span{
+    display: block;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+.countdown-number{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.countdown-number div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+    0 2px 2px rgba(0,0,0,0.12),
+     0 4px 4px rgba(0,0,0,0.12),
+     0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+.countdown-number div:before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ff8f00;
+    color: #dddddd;
+    font-size: 0.35em;
+    line-height: 35px;
+}
+.countdown-number #day:before{
+    content: 'Ngày';
+}
+.countdown-number #hour:before{
+    content: 'Giờ';
+}
+.countdown-number #minute:before{
+    content: 'Phút';
+}
+.countdown-number #second:before{
+    content: 'Giây';
+}
+@media(max-width:576px){
+    .countdown-number div{
+        margin: 0 5px;
+    }
 }

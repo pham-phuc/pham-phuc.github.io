@@ -142,6 +142,9 @@ body {
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
+.nav-link a i{
+    color: white;
+}
 /* ô input */
 
   nav ul{

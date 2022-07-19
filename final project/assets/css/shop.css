@@ -263,7 +263,7 @@ nav li:hover {
 
 .filter h5 {
     margin-top: 10px;
-    font-size: 1.4em;
+    font-size: 2em;
     color: #292929;
     font-weight: 500;
     position: relative;
@@ -274,7 +274,7 @@ nav li:hover {
 }
 
 .filter form p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #292929;
     font-weight: 500;
     position: relative;
@@ -515,7 +515,7 @@ section {
     margin-bottom: 5px;
 }
 label{
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
 @media (max-width: 880px) {
     

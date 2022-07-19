@@ -710,8 +710,11 @@ section {
 
 /* footer end */
 
-@media (max-width:450px){
+@media (max-width:576px){
     .sidebar-left{
         display: none;
+    }
+    .page-wrapper{
+        padding: 0 10px;
     }
 }
