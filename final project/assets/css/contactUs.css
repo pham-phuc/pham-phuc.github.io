@@ -524,3 +524,16 @@ section {
 }
 
 /* footer end */
+
+@media (max-width: 880px){
+    .text-center .col-xl-4{
+        margin-top: 30px;
+    }
+    .single-contact{
+        text-align: center;
+    }
+    .single-contact i.fa{
+        top:45%;
+        left: 15%;
+    }
+}
