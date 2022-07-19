@@ -740,8 +740,13 @@ a:hover {
 .nut_dropdown a{
     color:white;
 }
-@media(max-width:500px){
+@media(max-width:576px){
     .sidebar-left{
         display: none;
+    }
+}
+@media(max-width:880px){
+    .page-wrapper {
+        padding: 0px 20px;
     }
 }

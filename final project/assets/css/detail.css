@@ -9,10 +9,12 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 }
-ul{
+
+ul {
     padding-left: 0;
 }
-/* * header :start */ 
+
+/* * header :start */
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +22,10 @@ ul{
 }
 
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -211,6 +214,7 @@ nav li:hover {
     width: 500px;
     background-color: white;
 }
+
 /* header :end */
 
 
@@ -280,7 +284,7 @@ nav li:hover {
 }
 
 .price {
-    
+
     font-weight: 400;
     font-family: 'Barlow', sans-serif;
     color: #888;
@@ -626,9 +630,11 @@ section {
     }
 
 }
-.page-footer{
+
+.page-footer {
     margin-top: 50px;
 }
+
 /* footer end */
 
 /* product-bestseller */
@@ -637,15 +643,22 @@ section {
     border-radius: 10px;
     margin-top: 20px;
 }
-.product-item-photo, .image-switch, .product-image-container, .product-image-wrapper {
+
+.product-item-photo,
+.image-switch,
+.product-image-container,
+.product-image-wrapper {
     display: inline-block;
 }
+
 .product-image-photo {
     width: 300px;
 }
+
 .product-info {
     padding: 0px 10px 10px 10px;
 }
+
 .product-item-name a {
     color: #333;
     text-overflow: ellipsis;
@@ -656,48 +669,172 @@ section {
     display: inline-block;
     text-decoration: none;
 }
+
 .add-to-card a {
     color: #666;
     text-decoration: none;
 }
-.attribute{
+
+.attribute {
     margin-top: 20px;
 }
-.box-tocart{
+
+.box-tocart {
     margin-top: 20px;
 }
-.image-product li img,.product-image-wrapper,.img-product-big{
+
+.image-product li img,
+.product-image-wrapper,
+.img-product-big {
     display: block;
     width: 100% \9;
     max-width: 100%;
     height: 100%;
     transition: all 0.1s ease-in-out;
 }
-@media(max-width:576px){
-    .image-product li{
+
+@media(max-width:576px) {
+    .image-product li {
         display: none;
     }
-    .box-inner1{
+
+    .box-inner1 {
         padding: 0px;
     }
+
     .search-bar form input[type="text"]:focus {
         width: 300px;
         background-color: white;
     }
 }
-@media (max-width: 880px){
-    .page-title-wrapper,.box-inner1{
+
+@media (max-width: 880px) {
+
+    .page-title-wrapper,
+    .box-inner1 {
         text-align: center;
     }
+
     .fieldset {
         justify-content: center;
-    }.box-inner1{
+    }
+
+    .box-inner1 {
         padding: 10px;
     }
-    .value{
+
+    .value {
         text-align: left;
     }
-    .title-top, .description{
+
+    .title-top,
+    .description {
         max-width: 100%;
     }
+}
+
+/* tabs */
+#wrapper {
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+.tabs {
+    border-bottom: 1px solid #666;
+}
+
+.nav-tab {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 3px solid #ddd;
+}
+
+.nav-tab li {
+    margin-right: 10px;
+}
+
+.nav-tab li a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    position: relative;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.nav-tab li a::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: transparent;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.nav-tab li.active a::after,
+.nav-tab li:hover a::after {
+    background: #333;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.tab-content {
+    padding: 20px 0;
+}
+
+.tab-content-item {
+    font-size: 14px;
+    width: 90%;
+}
+
+/* rating */
+#text-area {
+    font-size: 18px;
+    font-weight: 600;
+    color: darkslategrey;
+}
+
+.center {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.rate label {
+    float: right;
+    font-size: 0;
+    color: #E5E5E5;
+    margin: 5px;
+}
+
+.rate label::before {
+    content: "\f005";
+    font-family: 'Font Awesome 5 free';
+    font-size: 16px;
+}
+
+.rate label:hover,
+.rate label:hover~label {
+    color: #FCA311;
+    transition: 0.8s;
+    font-weight: 900;
+}
+
+.active {
+    color: #FCA311;
+    font-weight: 900;
+}
+
+.content-rating {
+    padding-right: 5px;
+}
+
+.rate {
+    padding-left: 5px;
 }
