@@ -94,12 +94,12 @@
           <div class="col-xl-2 col-md-4">
             <ul class="image-product">
               <li style="text-align:center">
-                <img src="../assets/images/coc_gia_vuot_den_dia_may_1.jpg" alt="" />
+                <img src="../assets/images/coc_gia_vuot_den_dia_may_1.jpg" alt="coc_gia_vuot_den_dia_may_1" />
               </li>
               <li style="text-align:center">
-                <img src="../assets/images/coc_gia_vuot_den_dia_may-a2_1.jpg" alt="" />
+                <img src="../assets/images/coc_gia_vuot_den_dia_may-a2_1.jpg" alt="coc_gia_vuot_den_dia_may-a2_1" />
               </li>
-              <li style="text-align:center">
+              <!-- <li style="text-align:center">
                 <img src="../assets/images/coc_gia_vuot_den_dia_may-a3_1.jpg" alt="" />
               </li>
               <li style="text-align:center">
@@ -107,7 +107,7 @@
                   src="../assets/images/coc_gia_vuot_den_dia_may-a4_1.jpg"
                   alt=""
                 />
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="col-xl-4 col-md-8">
@@ -221,6 +221,71 @@
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper" class="container">
+      <div class="tabs">
+        <ul class="nav-tab">
+          <li class="active"><a href="#detail">Detail</a></li>
+          <li><a href="#information">Information</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="detail" class="tab-content-item">
+            <p>
+              - Ingredient : 100% Arabica coffee beans.<br />- Useage: 1.
+              Prepareing intrustments. 2. Put coffee powder inside (20g). 3.
+              Gently shake and press the cap inside. 4. Pour 20ml of boiling
+              water. 5. Wait until coffee fully absorbed. 6. Fill up with
+              boiling water. 7. Add more 40ml of boiling water. 8. Wait until
+              coffee finish dripping, enjoy with suger or milk.<br />- Expiry
+              Date; 18 month<br />- Preserving in dry, cool place, avoid contact
+              with air.<br />- Contributor : Hương Mai Cafe <br />- Orginal :
+              Việt Nam
+            </p>
+          </div>
+          <div id="information" class="tab-content-item">
+            <div class="sku"><span>SKU </span> <span> CF000015</span></div>
+          </div>
+          <div id="reviews" class="tab-content-item">
+            <div class="rating">
+              <div>
+                <p id="text-area">Please, rate our service</p>
+              </div>
+        
+              <div class="center">
+                <div class="content-rating">Price</div>
+                <div id="rate" class="rate">
+                  <label id="star5" onclick="rate(5)"></label>
+                  <label id="star4" onclick="rate(4)"></label>
+                  <label id="star3" onclick="rate(3)"></label>
+                  <label id="star2" onclick="rate(2)"></label>
+                  <label id="star1" onclick="rate(1)"></label>
+                </div>
+              </div>
+              <div class="center">
+                <div class="content-rating">Value</div>
+                <div id="rate" class="rate">
+                  <label id="star5" onclick="rate(5)"></label>
+                  <label id="star4" onclick="rate(4)"></label>
+                  <label id="star3" onclick="rate(3)"></label>
+                  <label id="star2" onclick="rate(2)"></label>
+                  <label id="star1" onclick="rate(1)"></label>
+                </div>
+              </div>
+              <div class="center">
+                <div class="content-rating">Quality</div>
+                <div id="rate" class="rate">
+                  <label id="star5" onclick="rate(5)"></label>
+                  <label id="star4" onclick="rate(4)"></label>
+                  <label id="star3" onclick="rate(3)"></label>
+                  <label id="star2" onclick="rate(2)"></label>
+                  <label id="star1" onclick="rate(1)"></label>
                 </div>
               </div>
             </div>
@@ -469,6 +534,24 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
-    ></script>
+    ></script><script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".tab-content-item").hide();
+      $(".tab-content-item:first-child").fadeIn();
+      $(".nav-tab li").click(function () {
+        $(".nav-tab li").removeClass("active");
+        $(this).addClass("active");
+        let id_tab_content = $(this).children("a").attr("href");
+        $(".tab-content-item").hide();
+        $(id_tab_content).fadeIn();
+        return false;
+      });
+    });
+  </script>
   </body>
 </html>
