@@ -423,10 +423,10 @@ hr {
     width: 844px;
 }
 
-.product-image-photo {
+/* .product-image-photo {
     display: block;
     width: 325px;
-}
+} */
 
 .product-item-name {
     margin: 20px 0px;
@@ -770,9 +770,8 @@ section {
 
 .product-image-photo {
     display: block;
-    width: 100% \9;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     transition: all 0.1s ease-in-out;
 }
 
