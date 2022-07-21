@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 }
+
 /* * header :start */
 * {
     margin: 0;
@@ -17,9 +18,10 @@ body {
 }
 
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -143,22 +145,26 @@ body {
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
+
 /* ô input */
 
-  nav ul{
-    margin:0;
-    padding:0;
-    list-style-type:none;
-  }
-  nav li{
-    display:inline-block;
-  }
-  nav li a{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    padding:14px 16px;
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
 .search {
     position: relative;
     display: inline-block;
@@ -209,6 +215,7 @@ nav li:hover {
 /* header :end */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 .section {
     position: relative;
     width: 100%;
@@ -450,6 +457,7 @@ button:hover {
     clear: both;
     display: table;
 }
+
 /* footer :start */
 
 section {
@@ -638,3 +646,19 @@ section {
 }
 
 /* footer end */
+@media (max-height: 600px) {
+    .section .noi-dung .form h4 {
+        margin: 20px 0 10px;
+    }
+
+    .section .noi-dung .form h2 {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section .noi-dung .form {
+        margin: 20px;
+    }
+}
+
