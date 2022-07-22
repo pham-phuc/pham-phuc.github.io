@@ -523,6 +523,10 @@ section {
         margin-right: 0;
         margin-left: 0;
     }
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
 }
 @media (max-width: 300px){
     .shopping-cart .container{

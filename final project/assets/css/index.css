@@ -875,6 +875,10 @@ section {
     .countdown-number div{
         margin: 0 5px;
     }
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
 }
 @media(max-width:880px){
     .banner-middle .row{

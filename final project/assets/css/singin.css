@@ -103,6 +103,7 @@ body {
     color: white;
     padding: 16px;
     border: none;
+    margin: 0 0;
 }
 
 .nut_dropdown a {
@@ -219,7 +220,7 @@ nav li:hover {
 .section {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 650px;
     display: flex;
 }
 
@@ -389,7 +390,6 @@ nav li:hover {
     }
 }
 
-/* Full-width input fields */
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -415,7 +415,6 @@ hr {
     margin-bottom: 25px;
 }
 
-/* Set a style for all buttons */
 button {
     background-color: #4CAF50;
     color: white;
@@ -431,13 +430,11 @@ button:hover {
     opacity: 1;
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
 }
 
-/* Float cancel and signup buttons and add an equal width */
 .signupbtn {
     float: left;
     width: 100%;
@@ -446,12 +443,10 @@ button:hover {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Add padding to container elements */
 .container {
     padding: 16px;
 }
 
-/* Clear floats */
 .clearfix::after {
     content: "";
     clear: both;
@@ -659,6 +654,10 @@ section {
 @media (max-width: 576px) {
     .section .noi-dung .form {
         margin: 20px;
+    }
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
     }
 }
 

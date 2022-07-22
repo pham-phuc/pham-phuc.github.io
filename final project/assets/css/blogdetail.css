@@ -729,3 +729,9 @@ section {
         display: none;
     }
 }
+@media (max-width: 576px) {
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
+}

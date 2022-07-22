@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: #666;
@@ -9,7 +9,8 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 }
-p{
+
+p {
     font-family: 'Barlow';
 }
 
@@ -21,9 +22,10 @@ p{
 }
 
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -148,22 +150,26 @@ p{
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
+
 /* ô input */
 
-  nav ul{
-    margin:0;
-    padding:0;
-    list-style-type:none;
-  }
-  nav li{
-    display:inline-block;
-  }
-  nav li a{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    padding:14px 16px;
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
 .search {
     position: relative;
     display: inline-block;
@@ -263,9 +269,11 @@ nav li:hover {
     padding-top: 55px;
     text-align: center;
 }
+
 .page-main>.page-title-wrapper .page-title {
     display: block;
 }
+
 .page-title-wrapper h1 span {
     font-size: 60px;
     color: #333;
@@ -275,6 +283,7 @@ nav li:hover {
     margin-bottom: 20px;
     line-height: 1;
 }
+
 /* h1, h2, h3, h4, h5, h6 {
     color: #333;
     font-family: Marcellus;
@@ -287,17 +296,20 @@ nav li:hover {
     height: 100%;
     margin-bottom: 20px;
 }
+
 .about-us-container .about-us-content {
     text-align: justify;
     padding-bottom: 6px;
     color: #333;
 }
+
 .about-us-container .about-us-img img {
     max-width: 100%;
     height: auto;
     border: 0;
     vertical-align: middle;
 }
+
 .about-us-container .about-us-title {
     text-align: center;
     text-transform: uppercase;
@@ -306,7 +318,7 @@ nav li:hover {
     padding-top: 20px;
     border-bottom: 1px solid;
 }
- 
+
 /* footer :start */
 section {
     width: 100%;
@@ -494,3 +506,9 @@ section {
 }
 
 /* footer end */
+@media (max-width: 576px) {
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
+}

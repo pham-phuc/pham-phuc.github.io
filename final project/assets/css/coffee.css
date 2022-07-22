@@ -540,3 +540,9 @@ label{
 .page-footer{
     margin-top: 70px;
 }
+@media (max-width: 576px) {
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
+}
