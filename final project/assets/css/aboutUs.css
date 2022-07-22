@@ -511,4 +511,7 @@ section {
         width: 300px;
         background-color: white;
     }
+    .page-title-wrapper h1 span{
+       font-size: 30px;
+    }
 }
