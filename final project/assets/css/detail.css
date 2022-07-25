@@ -871,3 +871,11 @@ section {
 .actions:hover a button {
     opacity: 0.9;
 }
+@media(max-width:800px) and (min-width:700px){
+    .image-product{
+        display: none;
+    }
+    .col-md-8{
+        width: 100%;
+    }
+}
