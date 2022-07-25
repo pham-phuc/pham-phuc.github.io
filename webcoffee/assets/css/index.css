@@ -1,9 +1,10 @@
 body {
     background: #fff;
     font-family: 'Barlow', sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    color: #666;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #656565;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -20,6 +21,11 @@ h6 {
     color: #262626;
     font-family: Marcellus, sans-serif;
     font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
 }
 
 /* * header :start */
@@ -367,17 +373,10 @@ nav li:hover {
 /* header :end */
 /* content-start */
 /* our-delicious-offer-start */
-.our-delicious-offer {
-    background-image: url(../images/new-new-h1-bacground-img-3.jpg);
-    height: 600px;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
 
 .title-content-offer {
     text-align: center;
-    padding: 100px 0 30px 0;
+    padding: 0 0 30px 0;
 }
 
 .content-offer {
@@ -392,9 +391,11 @@ nav li:hover {
     text-transform: none;
     outline: 0;
 }
-.title-content{
+
+.title-content {
     font-size: 2.5em;
 }
+
 .offer-content-icon,
 .offer-icon {
     text-align: center;
@@ -418,5 +419,74 @@ nav li:hover {
     color: #656565;
 }
 
+.our-delicious-offer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
 /* our-delicious-offer-end */
+
+/* coffee-herald-start */
+.coffee-herald {
+    background-image: url(../images/new-new-h1-bacground-img-3.jpg);
+    /* height: 600px; */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.blog-herald-title:hover a{
+    color: #be9c79;
+    transition: color .2s ease-out;
+}
+.wraper-coffee-herald {
+    text-align: center;
+}
+
+.blog-herald-img img {
+    width: 100%;
+    height: auto;
+}
+
+.read-more {
+    color: #262626;
+    font-size: 0.9em;
+    line-height: 1.15em;
+    letter-spacing: .15em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.blog-coffee-herald {
+    padding-top: 70px;
+}
+
+/* coffee-herald-end */
+
+/* middle-wraper-start */
+
+.item-middle-wraper{
+    text-align: center;
+}
+.title-middle{
+    color: #262626;
+}
+.number-middle{
+    display: inline-block!important;
+    vertical-align: middle;
+    font-size: 55px;
+    font-family: Marcellus,sans-serif;
+    color: #be9c79;
+    letter-spacing: .05em;
+    line-height: .9em;
+    overflow: hidden;
+}
+.wraper-content-middle{
+    background: #fff;
+    padding: 125px 0 55px 0;
+}
+/* middle-wraper-end */
+
 /* content-end */
