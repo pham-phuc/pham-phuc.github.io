@@ -17,6 +17,12 @@ body {
     box-sizing: border-box;
 }
 
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
+}
+
 
 .nav-link a {
     color: White;
@@ -591,6 +597,7 @@ section {
         margin: 20px;
     }
 }
+
 @media (max-width: 576px) {
     .search-bar form input[type="text"]:focus {
         width: 300px;

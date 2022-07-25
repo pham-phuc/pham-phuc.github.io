@@ -24,6 +24,12 @@ h2 {
     box-sizing: border-box;
 }
 
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
+}
+
 
 .nav-link a {
     color: White;
@@ -515,22 +521,35 @@ section {
 
 @media (max-width: 576px) {
     .shopping-cart .container {
-        padding:10px;
+        padding: 10px;
     }
-    td .row{
+
+    td .row {
         padding-right: 0;
         padding-left: 0;
         margin-right: 0;
         margin-left: 0;
     }
+
     .search-bar form input[type="text"]:focus {
         width: 300px;
         background-color: white;
     }
 }
-@media (max-width: 300px){
-    .shopping-cart .container{
+
+@media (max-width: 300px) {
+    .shopping-cart .container {
         padding: 0;
         margin: 0;
     }
+}
+.btn-danger{
+    background: #fff;
+    border: none;
+    color:#606060
+}
+.btn-info{
+    background: #fff;
+    border: none;
+    color:#000;
 }

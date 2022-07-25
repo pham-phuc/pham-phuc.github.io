@@ -22,9 +22,10 @@ body {
 }
 
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -148,22 +149,26 @@ body {
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
+
 /* ô input */
 
-  nav ul{
-    margin:0;
-    padding:0;
-    list-style-type:none;
-  }
-  nav li{
-    display:inline-block;
-  }
-  nav li a{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    padding:14px 16px;
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
 .search {
     position: relative;
     display: inline-block;
@@ -239,7 +244,6 @@ nav li:hover {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
-    max-width: var(--width-container);
     width: 100%;
 }
 
@@ -311,6 +315,7 @@ nav li:hover {
     color: var(--text-lighter);
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
+
 /* bolg-template-end*/
 
 
@@ -419,9 +424,9 @@ hr {
     margin: 50px 0 0 0;
 }
 
-.product-image-container {
+/* .product-image-container {
     width: 844px;
-}
+} */
 
 /* .product-image-photo {
     display: block;
@@ -757,7 +762,7 @@ section {
     color: #666;
     text-decoration: none;
 }
- 
+
 /* product-bestseller */
 .owl-item:hover .product-item .product-info .add-to-card a {
     color: #ff8500;
@@ -780,6 +785,7 @@ section {
     opacity: 0.7;
     padding: 0;
 }
+
 /* product-bestseller */
 
 /* slide */
@@ -795,43 +801,53 @@ section {
     text-align: center;
     font-size: 2.5em;
 }
-@media(max-width:880px){
-    .carousel-control-prev-icon,.carousel-control-next-icon{
+
+@media(max-width:880px) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         display: none;
     }
 }
 
-.read-more-blog{
-    width:100%;
+.read-more-blog {
+    width: 100%;
     text-align: center;
 }
-.read-more-blog a button{
+
+.read-more-blog a button {
     padding: 20px;
     background: #333;
     border-radius: 20px;
-    color:white;
+    color: white;
 }
-.hero-section{
+
+.hero-section {
     padding: 10px 0;
 }
-.read-more-blog:hover a button{
+
+.read-more-blog:hover a button {
     background: #222;
 }
+
 /* count-down */
-.banner-content{
+.banner-content {
     margin-top: 50px;
 }
-.is-countdown h2 span{
+
+.is-countdown h2 span {
     display: block;
     letter-spacing: 6px;
     font-size: 0.2em;
 }
-.countdown-number{
+
+.countdown-number {
     display: flex;
     margin-top: 50px;
     justify-content: center;
 }
-.countdown-number div{
+
+.countdown-number div {
     position: relative;
     width: 100px;
     height: 100px;
@@ -841,13 +857,14 @@ section {
     color: #fff;
     margin: 0 15px;
     font-size: 3em;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
-    0 2px 2px rgba(0,0,0,0.12),
-     0 4px 4px rgba(0,0,0,0.12),
-     0 8px 8px rgba(0,0,0,0.12),
-    0 16px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+        0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12),
+        0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
 }
-.countdown-number div:before{
+
+.countdown-number div:before {
     content: "";
     position: absolute;
     bottom: -30px;
@@ -859,49 +876,70 @@ section {
     font-size: 0.35em;
     line-height: 35px;
 }
-.countdown-number #day:before{
+
+.countdown-number #day:before {
     content: 'Ngày';
 }
-.countdown-number #hour:before{
+
+.countdown-number #hour:before {
     content: 'Giờ';
 }
-.countdown-number #minute:before{
+
+.countdown-number #minute:before {
     content: 'Phút';
 }
-.countdown-number #second:before{
+
+.countdown-number #second:before {
     content: 'Giây';
 }
-@media(max-width:576px){
-    .countdown-number div{
+
+@media(max-width:576px) {
+    .countdown-number div {
         margin: 0 5px;
     }
+
     .search-bar form input[type="text"]:focus {
         width: 300px;
         background-color: white;
     }
 }
-@media(max-width:880px){
-    .banner-middle .row{
+
+@media(max-width:880px) {
+    .banner-middle .row {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .banner-middle .row>*{
+
+    .banner-middle .row>* {
         padding-left: 0;
         padding-right: 0;
     }
 }
-@media(max-width:1300px){
-    .banner-middle .row{
+
+@media(max-width:1300px) {
+    .banner-middle .row {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .banner-middle .row>*{
+
+    .banner-middle .row>* {
         padding-left: 0;
         padding-right: 0;
     }
 }
-@media(max-width:500px){
-    .carousel-item h3{
+
+@media(max-width:500px) {
+    .carousel-item h3 {
         font-size: 18px;
     }
+}
+
+.border-top {
+    border-top: none !important;
+}
+
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
 }

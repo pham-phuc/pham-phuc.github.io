@@ -21,6 +21,12 @@ ul {
     box-sizing: border-box;
 }
 
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
+}
+
 
 .nav-link a {
     color: White;
@@ -838,26 +844,30 @@ section {
 .rate {
     padding-left: 5px;
 }
-@media(max-width:300px){
-    .fieldset .field{
+
+@media(max-width:300px) {
+    .fieldset .field {
         margin-right: 0;
     }
-    .tocart{
+
+    .tocart {
         width: 130px;
     }
 }
-@media(max-width:500px){
-    
-}
+
+@media(max-width:500px) {}
+
 .owl-item:hover .product-item .product-info .add-to-card a {
     color: #ff8500;
     text-decoration: underline;
 }
+
 .owl-item:hover img {
     transform: scale(1, 0.98);
     opacity: 0.7;
     padding: 0;
 }
-.actions:hover a button{
+
+.actions:hover a button {
     opacity: 0.9;
 }

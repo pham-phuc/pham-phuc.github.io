@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: #666;
@@ -17,10 +17,16 @@ body {
     box-sizing: border-box;
 }
 
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
+}
 
-.nav-link a{
+.nav-link a {
     color: White;
 }
+
 .navbar-code {
     position: relative;
     background: Black;
@@ -144,22 +150,26 @@ body {
 .dropdown:hover .nut_dropdown {
     background-color: black;
 }
+
 /* ô input */
 
-  nav ul{
-    margin:0;
-    padding:0;
-    list-style-type:none;
-  }
-  nav li{
-    display:inline-block;
-  }
-  nav li a{
-    display:inline-block;
-    text-decoration:none;
-    color:white;
-    padding:14px 16px;
-  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+}
+
 .search {
     position: relative;
     display: inline-block;
@@ -211,36 +221,43 @@ nav li:hover {
 
 .pb-100 {
     padding-bottom: 100px;
-  }
-  .pt-100 {
+}
+
+.pt-100 {
     padding-top: 100px;
-  }
-  .mb-100 {
+}
+
+.mb-100 {
     margin-bottom: 100px;
-  }
-  a {
+}
+
+a {
     text-decoration: none;
     color: #333;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  .section-title {
+}
+
+.section-title {
     position: relative;
-  }
-  .section-title p {
+}
+
+.section-title p {
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: 400;
-  }
-  .section-title h4 {
+}
+
+.section-title h4 {
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
     position: relative;
     padding-bottom: 20px;
     display: inline-block;
-  }
-  .section-title h4::before {
+}
+
+.section-title h4::before {
     position: absolute;
     content: "";
     width: 80px;
@@ -249,8 +266,9 @@ nav li:hover {
     bottom: 0;
     left: 50%;
     margin-left: -40px;
-  }
-  .section-title h4::after {
+}
+
+.section-title h4::after {
     position: absolute;
     content: "";
     width: 50px;
@@ -260,8 +278,9 @@ nav li:hover {
     bottom: 0;
     left: 50%;
     margin-left: -25px;
-  }
-  .contact {
+}
+
+.contact {
     background-image: url("../images/shutterstock_580206145_bclj.jpg");
     background-size: cover;
     background-position: center;
@@ -269,9 +288,10 @@ nav li:hover {
     position: relative;
     z-index: 2;
     color: #fff;
-  }
-  .contact-form input,
-  textarea {
+}
+
+.contact-form input,
+textarea {
     width: 100%;
     border: 1px solid white;
     padding: 5px 10px;
@@ -279,8 +299,9 @@ nav li:hover {
     margin-top: 15px;
     background-color: transparent;
     color: #fff;
-  }
-  .contact:before {
+}
+
+.contact:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -291,51 +312,60 @@ nav li:hover {
     z-index: -1;
     opacity: .85;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-  }
-  .single-contact {
+}
+
+.single-contact {
     text-align: left;
     position: relative;
     padding-left: 70px;
     margin-bottom: 50px;
     margin-top: 10px;
-  }
-  .single-contact i.fa {
+}
+
+.single-contact i.fa {
     position: absolute;
     left: 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     background-color: #FF7200;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 3px;
-  }
-  .single-contact h5 {
+}
+
+.single-contact h5 {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: 500;
-  }
-  .single-contact p {
+}
+
+.single-contact p {
     font-size: 15px;
     font-weight: 400;
-  }
-  .contact-form input[type="submit"] {
+}
+
+.contact-form input[type="submit"] {
     background-color: #FF7200;
     border: 0px;
     cursor: pointer;
     font-size: 16px;
     -webkit-transition: .4s;
     transition: .4s
-  }
-  .contact-form input[type="submit"]:hover {
+}
+
+.contact-form input[type="submit"]:hover {
     background-color: #CC5B00
-  }
-  .contact-form input:focus, textarea:focus {
+}
+
+.contact-form input:focus,
+textarea:focus {
     border-color: #CC5B00
-  }
-  /* footer :start */
+}
+
+/* footer :start */
 
 section {
     width: 100%;
@@ -525,28 +555,33 @@ section {
 
 /* footer end */
 
-@media (max-width: 880px){
-    .text-center .col-xl-4{
+@media (max-width: 880px) {
+    .text-center .col-xl-4 {
         margin-top: 30px;
     }
-    .single-contact{
+
+    .single-contact {
         text-align: center;
     }
-    .single-contact i.fa{
-        top:45%;
+
+    .single-contact i.fa {
+        top: 45%;
         left: 15%;
     }
 }
-@media (max-width:300px){
+
+@media (max-width:300px) {
     .single-contact p {
         font-size: 14px;
         font-weight: 400;
     }
+
     .single-contact i.fa {
         top: 45%;
         left: 10%;
     }
 }
+
 @media (max-width: 576px) {
     .search-bar form input[type="text"]:focus {
         width: 300px;

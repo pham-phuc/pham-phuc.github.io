@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 14px;
     line-height: 22px;
     color: #666;
@@ -22,6 +22,12 @@ body {
 }
 
 /* 1 */
+
+.navbar-left .nav-link,
+.noidung_dropdown a,
+.nut_dropdown a {
+    font-size: 16px;
+}
 
 
 /* * header :start */
@@ -109,6 +115,7 @@ body {
         border-left: 1px solid DimGray;
         cursor: pointer;
     }
+
     li .zoom-image-thumb {
         float: none !important;
     }
@@ -336,15 +343,19 @@ h1 {
 a:hover {
     color: #ff8500;
 }
-.noidung_dropdown a{
+
+.noidung_dropdown a {
     color: black;
 }
-.nut_dropdown a{
-    color:white;
+
+.nut_dropdown a {
+    color: white;
 }
+
 .widget-post-cat ul li {
     padding: 10px 0 0 0;
 }
+
 .title-post-tab a {
     color: #333;
 }
@@ -476,13 +487,16 @@ a {
     text-decoration: none;
 }
 
-.page-wrapper,.box{
+.page-wrapper,
+.box {
     padding: 0px 70px;
 }
-textarea{
+
+textarea {
     width: 100%;
 }
-#submit-comment{
+
+#submit-comment {
     font-size: 12px;
     line-height: 1.15em;
     letter-spacing: .15em;
@@ -491,12 +505,14 @@ textarea{
     padding: 19px 35px;
     background: #365899;
     border-color: #365899;
-    color:white;
+    color: white;
 }
-.comment-blog-bottom h4{
+
+.comment-blog-bottom h4 {
     color: #1c1e21;
     margin-bottom: 10px;
 }
+
 /* right */
 .blog-header {
     text-align: center;
@@ -504,32 +520,37 @@ textarea{
     margin-top: 30px;
 }
 
-.blog-header .post-tags-info,.blog-header .post-date {
+.blog-header .post-tags-info,
+.blog-header .post-date {
     display: inline-block;
     font-size: 12px;
     margin-bottom: 12px;
 }
 
-.blog-header .post-tags-info a{
+.blog-header .post-tags-info a {
     color: #ff8500;
 }
-.post-title{
+
+.post-title {
     color: #333;
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 700;
     line-height: 1.35;
 }
-.blog-header h3 a{
+
+.blog-header h3 a {
     font-weight: 700;
     color: #333;
     font-size: 1.2em;
 }
-.post-content .post-description p{
+
+.post-content .post-description p {
     font-size: 14px;
     line-height: 30px;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 /* content-end */
 
 /* footer :start */
@@ -724,11 +745,12 @@ section {
 
 /* footer end */
 
-@media (max-width:450px){
-    .sidebar-left{
+@media (max-width:450px) {
+    .sidebar-left {
         display: none;
     }
 }
+
 @media (max-width: 576px) {
     .search-bar form input[type="text"]:focus {
         width: 300px;

@@ -9,6 +9,9 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
 }
+.navbar-left .nav-link,.noidung_dropdown a, .nut_dropdown a{
+    font-size: 16px;
+}
 
 .nav-link a:hover{
     color: white;
