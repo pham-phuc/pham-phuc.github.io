@@ -53,6 +53,9 @@ a {
 .navbar-code {
     position: relative;
     background: Black;
+    position:fixed;
+    width: 100%;
+    z-index: 1004;
 }
 
 .navbar-left {
@@ -556,7 +559,7 @@ nav li:hover {
     font-weight: 600;
 }
 
-.addtocard:hover a {
+.addtocard:hover {
     text-decoration: underline;
 }
 

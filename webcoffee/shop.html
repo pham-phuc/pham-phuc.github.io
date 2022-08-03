@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <input
+          id="navbar-indicator"
+          class="navbar-collapse"
+          type="checkbox"
+          checked
+        />
+        <nav class="navbar-code">
+          <a class="navbar-brand" href="index.html"> COFFEE SHOP </a>
+
+          <div class="navbar-left">
+            <a class="nav-link" href="index.html">HOME</a>
+            <div class="dropdown">
+              <button class="nut_dropdown">
+                <a href="shop.html">SHOP</a>
+              </button>
+              <div class="noidung_dropdown">
+                <a href="coffee.html">Coffee</a>
+                <a href="tea.html">Tea</a>
+                <a href="giftset.html">Gift Set</a>
+              </div>
+            </div>
+            <a class="nav-link" href="aboutUs.html">ABOUT US</a>
+            <a class="nav-link" href="contactUs.html">CONTACT US</a>
+            <a class="nav-link" href="blog.html">BLOG</a>
+          </div>
+
+          <div class="navbar-right">
+            <div class="nav-link search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div class="search-bar">
+                <form>
+                  <input type="text" name="search" placeholder="Search.." />
+                </form>
+              </div>
+            </div>
+            <div class="nav-link">
+              <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div
+              class="nav-link"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          <a href=""></a>
+          <label class="navbar-toggler" for="navbar-indicator"> + </label>
+        </nav>
+        <!-- sửa -->
+      </div>
+      <div class="header">
+        <div class="container-header">
+          <h1 class="heading">
+            <span class="heading-title">Product List</span>
+          </h1>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Shopping Card</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table id="cart" class="table table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th style="width: 50%">Tên sản phẩm</th>
+                  <th style="width: 7%">Giá</th>
+                  <th style="width: 8%">Số lượng</th>
+                  <th style="width: 15%" class="text-center">Thành tiền</th>
+                  <th style="width: 20%"></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr class="visible-xs">
+                  <td class="text-center">
+                    <strong>Mã Khuyến Mãi :</strong>
+                    <span
+                      ><i class="fa-solid fa-percent"></i> Chọn hoặc nhập khuyến
+                      mãi
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="shop.html" class="btn btn-warning"
+                      ><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a
+                    >
+                  </td>
+                  <td colspan="2" class="hidden-xs"></td>
+                  <td class="hidden-xs text-center">
+                    <strong class="total-price"
+                      >Tổng tiền <span>00</span>.00 $
+                    </strong>
+                  </td>
+                  <td>
+                    <a
+                      href="payment.html"
+                      class="btn btn-success btn-block payment"
+                      >Thanh toán<i
+                        style="padding-left: 2px"
+                        class="fa fa-angle-right"
+                      ></i
+                    ></a>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body-start -->
+    <div class="product-list-wraper">
+      <div class="grid-product-list-wraper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-md-12">
+              <div class="lis-product">
+                <div class="row">
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-3.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">KENYA COFFEE</h5>
+                        <div class="price-product">
+                          <span>14.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-5.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">COLUMBIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>13.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-8.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">GUATEMALA COFFEE</h5>
+                        <div class="price-product">
+                          <span>12.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="product-list-shop">
+                      <img
+                        src="assets/images/product-img-1.png"
+                        alt="product-img-1"
+                      />
+                      <div class="info-product">
+                        <h5 class="name-product">ETHIOPIA COFFEE</h5>
+                        <div class="price-product">
+                          <span>15.00</span><span> $</span>
+                        </div>
+                      </div>
+                      <div class="addtocard" id="add">+ Add To Card</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pagination-shop">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-12">
+              <div class="product-cagotery-wraper">
+                <h5>PRODUCT CATEGORIES</h5>
+                <div class="product-cagotery-content">
+                  <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Bean Varieties</a></li>
+                    <li><a href="#">Coffee Cups</a></li>
+                    <li><a href="#">Espresso Machines</a></li>
+                    <li><a href="#">Fresh Coffee</a></li>
+                    <li><a href="#">Italian Coffee</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products-tags">
+                <h5>PRODUCT TAGS</h5>
+                <div class="product-tags-content">
+                  <span><a href="#">Aroma, </a></span
+                  ><span><a href="#"> Beans, </a></span
+                  ><span><a href="#"> Black, </a></span
+                  ><span><a href="#">Casual, </a></span
+                  ><span><a href="#"> Classic, </a></span
+                  ><span><a href="#">Cream, </a></span
+                  ><span><a href="#">Elegant, </a></span
+                  ><span><a href="#"> Fresh.</a></span>
+                </div>
+              </div>
+              <div class="top-rated-product">
+                <h5>TOP RATED PRODUCTS</h5>
+                <div class="top-rated-product-content">
+                  <div class="top-rated-product">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          class="img-product-top-rated"
+                          src="assets/images/product-img-1.png"
+                          alt="product-img-1"
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="info-product-top-rated">
+                          <div class="name">ETHIOPIA COFFEE</div>
+                          <div class="star-rated">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="price">$15.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-rated-product">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          class="img-product-top-rated"
+                          src="assets/images/product-img-1.png"
+                          alt="product-img-1"
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="info-product-top-rated">
+                          <div class="name">ETHIOPIA COFFEE</div>
+                          <div class="star-rated">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="price">$15.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="top-rated-product">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          class="img-product-top-rated"
+                          src="assets/images/product-img-1.png"
+                          alt="product-img-1"
+                        />
+                      </div>
+                      <div class="col-8">
+                        <div class="info-product-top-rated">
+                          <div class="name">ETHIOPIA COFFEE</div>
+                          <div class="star-rated">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <div class="price">$15.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body-end -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
