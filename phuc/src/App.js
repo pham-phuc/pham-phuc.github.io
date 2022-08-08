@@ -1,26 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-import {useState} from "react"
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
 function App() {
-  const [number, setNumber] = useState(1);
-  const [text, printfText] = useState("");
-  const incrementNumber = () => {
-    setNumber((number) => number + 1);
-  }
-  const decrementNumber = () => {
-    setNumber((number) => number - 1);
-  }
-  return (    
+  return (
     <div className="App">
-     <AppText text={text}/>
-     <AppText text={number}/>
-     <button onClick={incrementNumber}>IncrementNumber</button>
-     <button onClick={decrementNumber}>DecrementNumber</button>
-     
+      <AppText />
     </div>
   );
 }
-function AppText(props){
-  return <h1 class="AppText "> hello, {props.text}</h1>
+function AppText() {
+  const [name, setName] = useState("");
+  const [src, Setsrc] = useState("");
+  const [qly, Setqly] = useState("");
+  function handleClick() {
+    console.log({
+      name
+    });
+  }
+  return (
+    <div className="App">
+      <h1>Hãy Nhập Thông Tin Tại Đây</h1>
+      <div>
+        <span>Name : </span>
+        <input
+          type={"name"}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+
+      <div>
+        <span>SRC Image : </span>
+        <input
+          type={"src"}
+          value={src}
+          onChange={(e) => Setsrc(e.target.value)}
+        />
+      </div>
+      <div>
+        <span>Quality </span>
+        <input
+          type={"number"}
+          value={qly}
+          min="1"
+          onChange={(e) => Setqly(e.target.value)}
+        />
+      </div>
+      <button onClick={handleClick}>Submit</button>
+    </div>
+  );
 }
 export default App;

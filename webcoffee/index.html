@@ -34,15 +34,15 @@
           type="checkbox"
           checked
         />
-        <nav class="navbar-code">
-          <a class="navbar-brand" href="index.html"> COFFEE SHOP </a>
+        <nav class="navbar-code" id="scrollWraper">
+          <a class="navbar-brand logo-header" href="index.html"> <img style="height: 45px;" src="assets/images/logo-light.png" alt="logo-light"> </a>
 
           <div class="navbar-left">
             <a class="nav-link" href="index.html">HOME</a>
             <div class="dropdown">
-              <button class="nut_dropdown">
+              <div class="nut_dropdown">
                 <a href="shop.html">SHOP</a>
-              </button>
+              </div>
               <div class="noidung_dropdown">
                 <a href="coffee.html">Coffee</a>
                 <a href="tea.html">Tea</a>
@@ -67,7 +67,7 @@
               <a href="login.html"><i class="fa-regular fa-user"></i></a>
             </div>
             <div class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-solid fa-cart-shopping cart"></i>
             </div>
           </div>
           <a href=""></a>
@@ -75,7 +75,7 @@
         </nav>
         <!-- sửa -->        
       </div>
-      <div class="header">
+      <div class="header" id="header">
         <div class="container-header">
           <h1 class="heading">
             <span class="heading-title">Coffee Factory</span>
@@ -346,8 +346,8 @@
                     />
                     <div class="info-product">
                       <h5 class="name-product">ETHIOPIA COFFEE</h5>
-                      <div class="price-product"><span>15.00</span><span> $</span></div>
                     </div>
+                    <div class="price-product"><span>15.00</span><span> $</span></div>
                     <div class="addtocard" id="add">+ Add To Card</div>
                   </div>
                 </div>
@@ -359,8 +359,8 @@
                     />
                     <div class="info-product">
                       <h5 class="name-product">KENYA COFFEE</h5>
-                      <div class="price-product"><span>14.00</span><span> $</span></div>
                     </div>
+                    <div class="price-product"><span>14.00</span><span> $</span></div>
                     <div class="addtocard" id="add">+ Add To Card</div>
                   </div>
                 </div>
@@ -372,8 +372,8 @@
                     />
                     <div class="info-product">
                       <h5 class="name-product">COLUMBIA COFFEE</h5>
-                      <div class="price-product"><span>13.00</span><span> $</span></div>
                     </div>
+                    <div class="price-product"><span>13.00</span><span> $</span></div>
                     <div class="addtocard" id="add">+ Add To Card</div>
                   </div>
                 </div>
@@ -385,8 +385,8 @@
                     />
                     <div class="info-product">
                       <h5 class="name-product">GUATEMALA COFFEE</h5>
-                      <div class="price-product"><span>12.00</span><span> $</span></div>
                     </div>
+                    <div class="price-product"><span>12.00</span><span> $</span></div>
                     <div class="addtocard" id="add">+ Add To Card</div>
                   </div>
                 </div>
@@ -658,7 +658,7 @@
                 </tr>
               </thead>
               <tbody>                                
-              
+                
               </tbody>
               <tfoot>
                 <tr class="visible-xs">
@@ -678,7 +678,7 @@
                   </td>
                   <td colspan="2" class="hidden-xs"></td>
                   <td class="hidden-xs text-center">
-                    <strong class="total-price">Tổng tiền  <span>00</span>.00 $ </strong>
+                    <strong class="total-price">Tổng tiền  <span>15</span>.00 $ </strong>
                   </td>
                   <td>
                     <a href="payment.html" class="btn btn-success btn-block payment"
@@ -716,6 +716,7 @@
    ></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
    <script>
+    
     $(document).ready(function () {
       $(".customer-logos").slick({
         slidesToShow: 6,
@@ -742,6 +743,6 @@
       });
     });
    </script>
-   <script src="assets/js/index.js"></script>
+   <script src="assets/js/index1.js"></script>
   </body>
 </html>

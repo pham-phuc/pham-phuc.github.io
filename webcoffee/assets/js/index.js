@@ -11,6 +11,19 @@ add.forEach(function (a, index) {
 });
 function addCart(productImg, productName, productPrice) {
   var addTr = document.createElement("tr");
+  var cardItem = document.querySelectorAll("tbody tr");
+  let qly;
+  let qlystart = document.querySelector(".qly input");
+  for (var i = 0; i < cardItem.length; i++) {
+    var productT = document.querySelectorAll(".nomargin");
+    if (productT[i].innerHTML == productName) {
+      alert("Sản Phẩm Đã Có Trong Giỏ Hàng ");
+      qly = parseInt(qlystart.value) + 1;
+      console.log(qly);
+      qlystart.value = qly;
+      return;
+    }
+  }
   var trContent = `<tr>
     <td data-th="Product">
       <div class="row">
@@ -23,12 +36,12 @@ function addCart(productImg, productName, productPrice) {
           />
         </div>
         <div class="col-sm-9">
-          <h4 class="nomargin">${productName}</h4>                        
+          <h4 class="nomargin">${productName}</h4>
         </div>
       </div>
     </td>
     <td data-th="Price"><span class="price">${productPrice}</span> $</td>
-    <td data-th="Quantity">
+    <td class="qly" data-th="Quantity">
       <input
         class="form-control text-center"
         value="1"
@@ -46,20 +59,48 @@ function addCart(productImg, productName, productPrice) {
       </button>
     </td>
   </tr>`;
-  addTr.innerHTML=trContent
+  addTr.innerHTML = trContent;
   var cardTable = document.querySelector("tbody");
   cardTable.append(addTr);
-  cardTotal()
+  cardTotal();
+  deleteCart();
 }
-function cardTotal(){
-    var cardItem =document.querySelectorAll("tbody tr")
-    var totalPrice=0
-    for(var i=0;i<cardItem.length;i++){
-        var inputvalue = cardItem[i].querySelector("input").value
-        var priceProduct = cardItem[i].querySelector("span").innerHTML
-        totalPriceProduct= (inputvalue*priceProduct )
-        totalPrice = totalPrice + totalPriceProduct
-    }
-    var cardTotal = document.querySelector(".total-price span")
-    cardTotal.innerHTML = totalPrice
+function cardTotal() {
+  var cardItem = document.querySelectorAll("tbody tr");
+  var totalPrice = 0;
+  for (var i = 0; i < cardItem.length; i++) {
+    var inputvalue = cardItem[i].querySelector("input").value;
+    var priceProduct = cardItem[i].querySelector("span").innerHTML;
+    totalPriceProduct = inputvalue * priceProduct;
+    totalPrice = totalPrice + totalPriceProduct;
+  }
+  var cardTotal = document.querySelector(".total-price span");
+  cardTotal.innerHTML = totalPrice;
+  inputChange();
 }
+function deleteCart() {
+  var cardItem = document.querySelectorAll("tbody tr");
+  for (var i = 0; i < cardItem.length; i++) {
+    var productT = document.querySelectorAll(".actions .remove");
+    productT[i].addEventListener("click", function (event) {
+      var removeCart = event.target;
+      var cartDelete = removeCart.parentElement.parentElement;
+      console.log(removeCart.parentElement.parentElement);
+      cartDelete.remove();
+      return;
+    });
+  }
+}
+function inputChange() {
+  var cardItem = document.querySelectorAll("tbody tr");
+  for (var i = 0; i < cardItem.length; i++) {
+    var inputValue = cardItem[i].querySelector(".qly input");
+    inputValue.addEventListener("change", function () {
+      cardTotal();
+    });
+  }
+}
+
+window.addEventListener('scroll',(event) => {
+  document.getElementById("scrollWraper").style.background="#333";
+});
