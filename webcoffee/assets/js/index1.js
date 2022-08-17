@@ -33,7 +33,6 @@ function addItemToLocal(product) {
     products.push(product);
   }
   localStorage.setItem("prdInCart", JSON.stringify(products));
-  window.location.reload();
 }
 function dispCartItem() {
   let html = "";
@@ -69,7 +68,7 @@ function dispCartItem() {
           <button class="btn btn-sm edit">
             <i class="fa fa-edit"></i>
           </button>
-          <button class="btn btn-sm remove">
+          <button class="btn btn-sm remove" onclick ="removeItem(${item.name})" >
             <i class="fa-solid fa-trash"></i>
           </button>
         </td>
@@ -79,4 +78,12 @@ function dispCartItem() {
 }
 dispCartItem();
 
-
+// const removeItem = name =>{
+//   let cartItem = JSON.parse(localStorage.getItem("prdInCart"));
+//   let storage = localStorage.getItem("prdInCart");
+//   if(storage){
+//     products = cartItem;
+//   }
+//   products = products.filter(item => item.name != name) ;
+//   localStorage.setItem('products',JSON.stringify(products));
+// }

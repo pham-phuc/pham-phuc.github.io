@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/shop.css" />
+    <link rel="stylesheet" href="assets/css/cartmodal.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -25,139 +26,102 @@
       @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap");
     </style>
   </head>
-  <body>
+  <body> 
     <header>
-      <div class="header-top">
-        <input
-          id="navbar-indicator"
-          class="navbar-collapse"
-          type="checkbox"
-          checked
-        />
-        <nav class="navbar-code">
-          <a class="navbar-brand" href="index.html"> COFFEE SHOP </a>
-
-          <div class="navbar-left">
-            <a class="nav-link" href="index.html">HOME</a>
-            <div class="dropdown">
-              <button class="nut_dropdown">
-                <a href="shop.html">SHOP</a>
-              </button>
-              <div class="noidung_dropdown">
-                <a href="coffee.html">Coffee</a>
-                <a href="tea.html">Tea</a>
-                <a href="giftset.html">Gift Set</a>
-              </div>
-            </div>
-            <a class="nav-link" href="aboutUs.html">ABOUT US</a>
-            <a class="nav-link" href="contactUs.html">CONTACT US</a>
-            <a class="nav-link" href="blog.html">BLOG</a>
-          </div>
-
-          <div class="navbar-right">
-            <div class="nav-link search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <div class="search-bar">
-                <form>
-                  <input type="text" name="search" placeholder="Search.." />
-                </form>
-              </div>
-            </div>
-            <div class="nav-link">
-              <a href="login.html"><i class="fa-regular fa-user"></i></a>
-            </div>
-            <div
-              class="nav-link"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
+      <section class="header">
+        <nav class="navbar navbar-expand-lg cus-padding-0 fixed-top" style="background: #666;">
+          <div class="container-md" style="padding: 8px 0;">
+            <a class="navbar-brand p-0 m-0" href="index.html">
+              <img src="assets/images/logo-light.png" alt="" width="80" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav-header"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0 cus-margin-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">BLOG</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-search">
+                      <!-- <img src="assets/images/search.png" alt="" /> -->
+                      <i style="color: while;" class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-user">
+                      <!-- <img src="assets/images/user.png" alt="" /> -->
+                      <i style="color: while;" class="fa-solid fa-user"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link">
+                    <div class="nav-cart">
+                      <!-- <img src="assets/images/cart.png" alt="" /> -->
+                      <i style="color: while;" class="fa-solid fa-cart-shopping"></i>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <a href=""></a>
-          <label class="navbar-toggler" for="navbar-indicator"> + </label>
         </nav>
-        <!-- sửa -->
+      </section>
+  
+      <!-- section modal -->
+      <div class="modal-cart">
+        <div class="modal-cart-content">
+          <span class="close"><i class="fa-solid fa-xmark"></i></span>
+          <div class="wrap-cart-content">
+            <div class="list-items"></div>
+            <div class="cart-content-bot">
+              <div class="sub-total">
+                <p>Tạm tính: <span>30</span><Span>$</Span></p>
+              </div>
+              <div class="gr-button">
+                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="header">
+      <div class="header-top">
         <div class="container-header">
           <h1 class="heading">
             <span class="heading-title">Product List</span>
           </h1>
         </div>
-      </div>
+      </div>     
     </header>
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Shopping Card</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <table id="cart" class="table table-hover table-condensed">
-              <thead>
-                <tr>
-                  <th style="width: 50%">Tên sản phẩm</th>
-                  <th style="width: 7%">Giá</th>
-                  <th style="width: 8%">Số lượng</th>
-                  <th style="width: 15%" class="text-center">Thành tiền</th>
-                  <th style="width: 20%"></th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-              <tfoot>
-                <tr class="visible-xs">
-                  <td class="text-center">
-                    <strong>Mã Khuyến Mãi :</strong>
-                    <span
-                      ><i class="fa-solid fa-percent"></i> Chọn hoặc nhập khuyến
-                      mãi
-                    </span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="shop.html" class="btn btn-warning"
-                      ><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a
-                    >
-                  </td>
-                  <td colspan="2" class="hidden-xs"></td>
-                  <td class="hidden-xs text-center">
-                    <strong class="total-price"
-                      >Tổng tiền <span>00</span>.00 $
-                    </strong>
-                  </td>
-                  <td>
-                    <a
-                      href="payment.html"
-                      class="btn btn-success btn-block payment"
-                      >Thanh toán<i
-                        style="padding-left: 2px"
-                        class="fa fa-angle-right"
-                      ></i
-                    ></a>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+      
+    
     <!-- body-start -->
     <div class="product-list-wraper">
       <div class="grid-product-list-wraper">
@@ -166,7 +130,7 @@
             <div class="col-xl-9 col-md-12">
               <div class="lis-product">
                 <div class="row">
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-1.png"
@@ -181,7 +145,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-3.png"
@@ -196,7 +160,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-5.png"
@@ -211,7 +175,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-2.jpg"
@@ -226,7 +190,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-4.jpg"
@@ -241,7 +205,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-6.jpg"
@@ -256,7 +220,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-8.png"
@@ -271,7 +235,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-9.jpg"
@@ -286,7 +250,7 @@
                       <div class="addtocard" id="add">+ Add To Card</div>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-md-6">
+                  <div class="col-xl-4 col-md-6 col-sm-6">
                     <div class="product-list-shop">
                       <img
                         src="assets/images/product-img-7.jpg"
@@ -436,8 +400,22 @@
               <div class="box-input">
                 <div class="box">
                   <div class="container-4">
-                    <input type="search" id="search" placeholder="Search..." />
-                    <button class="icon"><i class="fa fa-search"></i></button>
+                    <!-- <form action=""> -->
+                      <input type="text" id="search" list ="topic" placeholder="Search..."/>
+                    
+                      <button class="icon" id = "btnSearch" onclick="search()"><i class="fa fa-search"></i></button>
+                    <!-- </form> -->
+                    <datalist id = "topic">
+                      <option value="COFFEE KETTLE"></option>
+                      <option value="COLUMBIA COFFEE"></option>
+                      <option value="KENYA COFFEE"></option>
+                      <option value="ETHIOPIA COFFEE"></option>
+                      <option value="DOLCE GUSTO"></option>
+                      <option value="GUATEMALA COFFEE"></option>
+                      <option value="ESPRESSO MACHINE"></option>
+                      <option value="FILTER HANDLE"></option>
+                      <option value="FRENCH PRESS"></option> 
+                    </datalist>
                   </div>
                 </div>
               </div>
@@ -523,6 +501,8 @@
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/modalcart.js"></script>
+    <script src="assets/js/search.js"></script>   
   </body>
 </html>

@@ -1058,9 +1058,10 @@ nav li a {
 
 /* card-modal-end */
 
-.nav-link div i {
+.nav-link div i{
     color: white;
 }
+
 
 /* contact us */
 .pb-100 {
@@ -1206,7 +1207,4 @@ textarea {
 .contact-form input:focus,
 textarea:focus {
     border-color: #CC5B00
-}
-.contact .container{
-    padding: 0;
 }

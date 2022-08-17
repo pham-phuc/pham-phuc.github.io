@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="like_button.js" ></script> -->
+  </body>
+</html>
+<script>
+  const ulLi = document.createElement('ul');
+  ulLi.style = "color : green ; font-size :50px";
+  const liOne = document.createElement('li');
+  liOne.innerHTML = "JAVASCRIPT "
+  const liTwo = document.createElement('li');
+  liTwo.innerHTML = "HTML CSS "
+  ulLi.appendChild(liOne);
+  ulLi.appendChild(liTwo);
+  document.body.appendChild(ulLi);
+
+</script>

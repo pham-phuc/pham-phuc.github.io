@@ -1,5 +1,9 @@
+/* body{
+  background: greenyellow;
+} */
 .App {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 50px;
 }
 
 .App-logo {
@@ -32,7 +36,33 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+ 
+/* button{
+  padding: 5px;
+}
+input{
+  padding: 10px;
+  border: 2px solid #282c34;
+}
+.addTasks{
+  padding-bottom: 20px;
+}
+.addTasks button{
+  padding : 10px;
+  background: green;
+} */
+.padding-button{
+  padding: 10px 0;
+}
+.padding-button button{
+  margin-right: 10px;
+  padding: 3px;
+}
+input, button{
+  padding: 3px;
 }
