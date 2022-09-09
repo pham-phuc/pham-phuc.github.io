@@ -205,14 +205,14 @@ nav li a {
     font-size: 16px;
 }
 
-.header-bot {
+/* .header-bot {
     height: 700px;
     background-image: url("../images/home-1-slider-image-1.jpg");
     background-size: cover;
     background-position: bottom;
     position: relative;
     background-attachment: fixed;
-}
+} */
 
 .logo {
     position: absolute;
@@ -393,7 +393,6 @@ nav li a {
 /* coffee-herald-start */
 .coffee-herald {
     background-image: url(../images/new-new-h1-bacground-img-3.jpg);
-    /* height: 600px; */
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -1207,6 +1206,13 @@ textarea {
 textarea:focus {
     border-color: #CC5B00
 }
-.contact .container{
+
+.contact .container {
     padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .our-delicious-offer{
+        padding-top: 30px;
+    }
 }

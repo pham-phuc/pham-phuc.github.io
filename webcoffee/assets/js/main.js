@@ -32,6 +32,46 @@ let products = [
     quantity: 1,
     incart: 0,
   },
+  {
+    name: "FRENCH PRESS",
+    tag: "frenchpress",
+    img: "assets/images/product-img-2.jpg",
+    price: 12,
+    quantity: 1,
+    incart: 0,
+  },
+  {
+    name: "DOLCE GUSTO",
+    tag: "dolcegusto",
+    img: "assets/images/product-img-4.jpg",
+    price: 15,
+    quantity: 1,
+    incart: 0,
+  },
+  {
+    name: "COFFEE KETTLE",
+    tag: "coffeekettle",
+    img: "assets/images/product-img-6.jpg",
+    price: 15,
+    quantity: 1,
+    incart: 0,
+  },
+  {
+    name: "FILTER HANDLE",
+    tag: "filterhandle",
+    img: "assets/images/product-img-9.jpg",
+    price: 15,
+    quantity: 1,
+    incart: 0,
+  },
+  {
+    name: "ESPRESSO MACHINE",
+    tag: "espressomachine",
+    img: "assets/images/product-img-7.jpg",
+    price: 15,
+    quantity: 1,
+    incart: 0,
+  },
 ];
 
 function onLoadCartNumber() {
@@ -40,7 +80,7 @@ function onLoadCartNumber() {
     document.querySelector(".nav-link span").textContent = productNumbers;
   }
 }
-onLoadCartNumber();
+
 function cartNumbers(product) {
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
@@ -92,7 +132,7 @@ function displayCart() {
   if (cartItems && productContainer) {
     productContainer.innerHTML = ``;
     Object.values(cartItems).map((item) => {
-      productContainer.innerHTML += `<div class="list-items"><div class="item">
+      productContainer.innerHTML += `<div class="item">
       <div class="item-main">
         <div class="item-img">
           <img src="${item.img}" alt="">
@@ -106,18 +146,22 @@ function displayCart() {
       <div class="item-remove">
         <i class="fa-solid fa-trash-can"></i>
       </div>
-    </div>
-      </div>`;
+
+    </div>`;
     });
-    document.querySelector(".sub-total p span").innerHTML =
-      cartCost;
+    document.querySelector(".sub-total p span").innerHTML = cartCost;
   }
 }
-displayCart();
-
 for (let i = 0; i < btnCart.length; i++) {
   btnCart[i].addEventListener("click", () => {
     cartNumbers(products[i]);
     totalCost(products[i]);
+  });
+}
+onLoadCartNumber();
+
+for (let i = 0; i < btnCart.length; i++) {
+  btnCart[i].addEventListener("click", () => {
+    renderCart();
   });
 }

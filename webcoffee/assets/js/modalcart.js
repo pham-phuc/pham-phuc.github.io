@@ -1,6 +1,3 @@
-let cartItems = localStorage.getItem("productsInCart");
-cartItems = JSON.parse(cartItems);
-// let btnCart = document.querySelectorAll(".addtocard");
 let btnCart1 = document.querySelector(".header .nav-cart");
 let close = document.querySelector("span.close");
 let modalCart = document.querySelector(".modal-cart");
@@ -10,12 +7,9 @@ let countItemCart = document.querySelector(".header .nav-cart span");
 // nav cart
 btnCart1.addEventListener("click", () => {
   modalCart.style.display = "block";
+  displayCart();
 });
-for (let i = 0; i < btnCart.length; i++) {
-  btnCart[i].addEventListener("click", () => {
-    renderCart();
-  });
-}
+
 close.addEventListener("click", () => {
   modalCart.style.display = "none";
 });
@@ -27,8 +21,11 @@ window.onclick = function (event) {
 };
 
 function renderCart() {
-  if (Object.values(cartItems).length > 0) {
-    console.log(Object.values(cartItems).length)
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+  let productNumbers = localStorage.getItem("cartNumbers");
+  productNumbers = parseInt(productNumbers);
+  if (productNumbers > 0) {
     document.querySelector(
       ".modal-cart .gr-button"
     ).innerHTML = `<a href="cart.html" class="hide">
@@ -42,7 +39,6 @@ function renderCart() {
     document.querySelector(".modal-cart .sub-total").classList.remove("hide");
     document.querySelector(".header .nav-cart span").textContent =
       Object.values(cartItems).length;
-      console.log(Object.values(cartItems).length)
   } else {
     countItemCart.classList.add("hide");
     document.querySelector(
@@ -54,14 +50,12 @@ function renderCart() {
         `;
     document.querySelector(
       ".modal-cart .gr-button"
-    ).innerHTML = `<a href="products.html" >
+    ).innerHTML = `<a href="shop.html" >
       <button>Tiếp tục mua hàng</button>
     </a>`;
     document.querySelector(".modal-cart .sub-total").classList.add("hide");
   }
   document.querySelector(".header .nav-cart span").textContent =
     Object.values(cartItems).length;
-    console.log(Object.values(cartItems).length)
 }
 renderCart();
-console.log(Object.values(cartItems).length);

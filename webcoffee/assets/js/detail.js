@@ -71,6 +71,7 @@ $(document).ready(function () {
 
   $(".qtyminus").on("click", function () {
     var now = $(".qty").val();
+    console.log(now);
     if ($.isNumeric(now)) {
       if (parseInt(now) - 1 > 0) {
         now--;

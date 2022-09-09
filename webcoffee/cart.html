@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>shopping-card</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/cartmodal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap');
+      </style>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <nav
+          class="navbar navbar-expand-lg cus-padding-0 fixed-top"
+          style="background: #666"
+        >
+          <div class="container-md" style="padding: 8px 0">
+            <a class="navbar-brand p-0 m-0" href="index.html">
+              <img src="assets/images/logo-light.png" alt="" width="80" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav-header"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0 cus-margin-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">BLOG</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="nav-search">
+                      <!-- <img src="assets/images/search.png" alt="" /> -->
+                      <i
+                        style="color: while"
+                        class="fa-solid fa-magnifying-glass"
+                      ></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">
+                    <div class="nav-user">
+                      <!-- <img src="assets/images/user.png" alt="" /> -->
+                      <i style="color: while" class="fa-solid fa-user"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link">
+                    <div class="nav-cart">
+                      <!-- <img src="assets/images/cart.png" alt="" /> -->
+                      <i style="color: while" class="fa-solid fa-cart-shopping"></i>
+                      <span>0</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- section modal -->
+      <div class="modal-cart">
+        <div class="modal-cart-content">
+          <span class="close"><i class="fa-solid fa-xmark"></i></span>
+          <div class="wrap-cart-content">
+            <div class="list-items"></div>
+            <div class="cart-content-bot">
+              <div class="sub-total">
+                <p>Tạm tính: <span>30</span><span>$</span></p>
+              </div>
+              <div class="gr-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- cart-shopping-start -->
+    <div class="shopping-cart">
+      <h2 class="text-center">Shopping Cart</h2>
+    <div class="container"> 
+      <table id="cart" class="table table-hover table-condensed"> 
+        <thead> 
+         <tr> 
+          <th style="width:45%">Tên sản phẩm</th> 
+          <th style="width:10%">Giá</th> 
+          <th style="width:8%">Số lượng</th> 
+          <th style="width:22%" class="text-center">Thành tiền</th> 
+          <th style="width:15%"> </th> 
+         </tr> 
+        </thead> 
+        <tbody>
+           
+         
+        
+        </tbody>
+        <tfoot> 
+          <tr class="visible-xs"> 
+           <td class="text-center"><strong>Mã Khuyến Mãi :</strong>
+             <span><i class="fa-solid fa-percent"></i> Chọn hoặc nhập khuyến mãi </span>
+           </td> 
+          </tr> 
+          <tr> 
+           <td><a href="shop.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+           </td> 
+           <td colspan="2" class="hidden-xs"> </td> 
+           <td class="hidden-xs text-center"><strong>Tổng tiền $ <span>25</span>.00</strong>
+           </td> 
+           <td><a href="checkout.html" class="btn btn-success btn-block">Thanh toán<i style="padding-left:2px" class="fa fa-angle-right"></i></a>
+           </td> 
+          </tr> 
+         </tfoot> 
+       </table>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <div class="page-footer">
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>COFFEE SHOP</h3>
+  
+          <p class="footer-links">
+            <a href="index.html" class="link-1">Home</a>
+  
+            <a href="blog.html">Blog</a>
+  
+            <a href="aboutUs.html">About Us</a>
+  
+            <a href="fqa.html">FAQ'S</a>
+  
+            <a href="contactUs.html">Contact Us</a>
+          </p>
+  
+          <p class="footer-company-name">
+            Open hour : 08:00 am - 10:00 pm/ Monday - Sunday
+          </p>
+        </div>
+  
+        <div class="footer-center">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>Viwaseen Tower</span> 48 Tố Hữu, quận Nam Từ Liêm, Hà Nội</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+0.123.456.7890/+0.334.526.840</p>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">CoffeeshopMaiDinh@gmail.com</a></p>
+          </div>
+        </div>
+  
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the Coffee Shop</span>
+            Muốn nếm vị cà phê phải chờ đợi pha chế, đó là nét tinh hoa được chắt chiu lại mỗi giây sống chậm với cuộc đời.
+          </p>
+  
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--footer end-->
+    <!-- cart-shopping-end -->
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+   <script src="assets/js/modalcart.js"></script>
+   <script src="assets/js/cart.js"></script>
+   
+  </body>
+</html>

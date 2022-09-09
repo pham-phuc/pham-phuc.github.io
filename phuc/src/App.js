@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useMemo, useState } from "react";
 
-
 const sortTypes = ["All", "Completed Tasks", "Active Tasks"];
 
 function App() {
@@ -67,7 +66,6 @@ function App() {
     switch (sortType) {
       case sortTypes[1]:
         return list.filter((item) => item.isDone === true);
-
       case sortTypes[2]:
         return list.filter((item) => item.isDone === false);
 
@@ -78,16 +76,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-name">
-        Todo Matic
-      </h1>
+      <h1 className="app-name">Todo Matic</h1>
       <h1>What need to be done?</h1>
-      <div  >
-        <div >
-          <input
-            value={taskName}
-            onChange={onChangeTaskName}
-          />
+      <div>
+        <div>
+          <input value={taskName} onChange={onChangeTaskName} />
           <button
             onClick={isEdit ? handleEditItem : onAddTodoItem}
             type="primary"
@@ -115,7 +108,12 @@ function App() {
                   <form action="#">
                     <div>
                       <p>
-                        <input type="checkbox" id={index} />
+                        <input
+                          type="checkbox"
+                          id={index}
+                          isChecked={item.isDone}
+                          onChange={onToggleTodoItem(item)}
+                        />
                         <label for={index} key={index}>
                           {item.name}
                         </label>

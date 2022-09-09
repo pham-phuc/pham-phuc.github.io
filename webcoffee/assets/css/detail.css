@@ -366,8 +366,9 @@ a {
     color: White;
 }
 
-
-
+.header{
+    height : 100px;
+}
 
 .logo {
     position: absolute;
