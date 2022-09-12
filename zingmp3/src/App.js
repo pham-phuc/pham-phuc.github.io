@@ -21,16 +21,12 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <div class="content-wrapper">
-          <div class="content ">
-            <Songs.Provider value={{ DataSongs, song, handleSetSong }}>
-              <div className="h-[633px] overflow-hidden overflow-y-scroll">               
-                <Routes />
-              </div>
-              <Playing />
-            </Songs.Provider>
+        <Songs.Provider value={{ DataSongs, song, handleSetSong }}>
+          <div className="h-[633px] ">
+            <Routes handleSetSong={handleSetSong} />
           </div>
-        </div>
+          <Playing />
+        </Songs.Provider>
       </Router>
     </div>
   );

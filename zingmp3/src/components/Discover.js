@@ -1,22 +1,38 @@
 import React, { useContext } from "react";
 import { Songs } from "../Context";
-
+import { Carousel } from "antd";
+import { DatePicker } from "antd";
+import "antd/dist/antd.css";
+import "../App.css";
 export default function DetailSong() {
   const { song } = useContext(Songs);
-  return (
-    <div className="col-span-1 p-3">
-      <h2 className="text-cyan-500 font-bold">Now playing</h2>
-      <h2 className="text-neutral-400 text-2xl">{song.name}</h2>
-      <div className="w-[240px] m-auto mt-10">
-        <img className="w-full" src={song.links.images[0].url} alt="avatar" />
+  const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
+  const Slide = () => (
+    <Carousel autoplay>
+      <div style={{width : '50%'}}>
+        <h3 style={contentStyle}>1</h3>
       </div>
-      <div className="flex justify-evenly items-center mt-10">
-        <img
-          className="w-[70px] rounded-full"
-          src={song.links.images[1].url}
-          alt="avatar"
-        />
-        <span className="text-xl text-white">{song.author}</span>
+      <div style={{width : '50%'}}>
+        <h3 style={contentStyle}>2</h3>
+      </div>
+      <div style={{width : '50%'}}>
+        <h3 style={contentStyle}>3</h3>
+      </div>
+      <div style={{width : '50%'}}>
+        <h3 style={contentStyle}>4</h3>
+      </div>
+    </Carousel>
+  );
+  return (
+    <div class="content-wrapper">
+      <div class="content ">
+        <Slide />
       </div>
     </div>
   );

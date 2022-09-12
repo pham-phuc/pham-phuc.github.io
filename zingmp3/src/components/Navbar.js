@@ -1,5 +1,5 @@
 import React from "react";
-import './Navbar.css';
+// import './Navbar.css';
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         <span class="open-menu-btn"></span>
       </div>
       <ul class="vertical-menu">
-        <li>
+        <li>          
           <Link to="/">
             <i class="fa-solid fa-user pr-2"></i>Cá Nhân
           </Link>
