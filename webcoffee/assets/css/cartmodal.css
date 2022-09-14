@@ -344,8 +344,8 @@
 
 .modal-cart .gr-button a:last-child button,
 .modal-cart .gr-button a:nth-child(2) button {
-    border: 1px solid var(--secondary);
-    background-color: var(--secondary);
+    border: 1px solid #198754;
+    background-color: #198754;
     color: #fff;
     transition: linear 0.3s;
 }
@@ -353,7 +353,7 @@
 .modal-cart .gr-button a:last-child:hover button,
 .modal-cart .gr-button a:nth-child(2):hover button {
     background-color: #fff;
-    color: var(--secondary);
+    color: #198754;
 }
 
 /* Navigation */

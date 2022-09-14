@@ -513,6 +513,7 @@ nav li a {
 
 .addtocard:hover {
     text-decoration: underline;
+    color: #ff8500;
 }
 
 /* coffee-online-shop-end */
@@ -1212,7 +1213,28 @@ textarea:focus {
 }
 
 @media screen and (max-width: 450px) {
-    .our-delicious-offer{
+    .our-delicious-offer {
         padding-top: 30px;
     }
+}
+
+.read-more:hover a {
+    text-decoration: underline;
+    color: #ff8500;
+}
+
+.product .product-online-shop:hover img {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.product .product-online-shop img {
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+
+.product .product-online-shop:hover .name-product {
+    color: #ff8500;
 }

@@ -85,4 +85,5 @@ $(document).ready(function () {
       $(".qty").val(parseInt(now) + 1);
     }
   });
+  
 });

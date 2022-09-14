@@ -1,5 +1,4 @@
 let btnPlaceOrder = document.querySelector(".summary .place-order");
-console.log(btnPlaceOrder)
 let listFormMessage = document.querySelectorAll(
   "#check-out .input-box .form-message"
 );
@@ -52,7 +51,7 @@ function renderCheckOut() {
   let cartCheckOut = document.querySelector("#check-out .list-items-order");
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
-  let listProduct =  document.querySelector('.list-products');
+  let listProduct = document.querySelector(".list-products");
   Object.values(cartItems).map((item) => {
     listProduct.innerHTML += `<div class="item-order">
         <div class="wrap-item-order-info">
@@ -74,11 +73,11 @@ function renderCheckOut() {
           </div>
         </div>
         <div class="remove-item-order">
-        <i class="fa-solid fa-trash"></i>
+        <i class="fa-regular fa-trash-can"></i>
         </div>
       </div>`;
   });
-  document.getElementById('total-price').innerHTML = cartCost;
-  document.getElementById('total-bill').innerHTML = parseInt(cartCost) + 5;
+  document.getElementById("total-price").innerHTML = cartCost;
+  document.getElementById("total-bill").innerHTML = parseInt(cartCost) + 5;
 }
 renderCheckOut();

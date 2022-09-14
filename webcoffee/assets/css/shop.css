@@ -32,6 +32,10 @@ a {
     color: #262626;
 }
 
+.image-right img{
+    width: 100%;
+}
+
 /* * header :start */
 * {
     margin: 0;
@@ -840,4 +844,23 @@ datalist{
     .heading-title{
         font-size: 55px;
     }
+}
+
+.product .product-list-shop:hover img {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.product .product-list-shop img{
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+.addtocard:hover {
+    text-decoration: underline;
+    color: #ff8500;
+}
+.product .product-list-shop:hover .name-product{
+    color: #ff8500;
 }

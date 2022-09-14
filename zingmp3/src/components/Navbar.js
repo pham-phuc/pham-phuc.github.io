@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/category">
             <i class="fa-solid fa-icons pr-2"></i> Thể Loại
           </Link>
         </li>
