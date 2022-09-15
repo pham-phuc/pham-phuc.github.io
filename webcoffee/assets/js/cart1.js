@@ -31,7 +31,7 @@ function renderCartMain() {
           <button class="plus-quantity-detail-product">+</button>
         </div>                           
         </td>
-        <td data-th="Subtotal" class="text-center"> <span class="into-price">${item.price}</span></td>
+        <td data-th="Subtotal" class="text-center"></td>
         <td class="actions" data-th="">
           <button class="btn btn-sm edit">
             <i class="fa fa-edit"></i>

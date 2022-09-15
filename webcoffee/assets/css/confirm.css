@@ -60,7 +60,7 @@
   }
   
   .customer-detail p {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 12px;
     line-height: 22px;
   }
@@ -103,7 +103,8 @@
   }
   
   .order-detail td {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
   }
   
   .order-detail table tr:nth-child(even),
@@ -113,10 +114,13 @@
   
   .bill-total p {
     margin-bottom: 12px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
+    font-weight: 600;
   }
-  
+  .wrap-confirm-right h5{
+    font-size: 25px;
+  }
   .bill-total p span {
     font-size: 16px;
     font-weight: 500;

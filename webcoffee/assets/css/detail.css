@@ -231,7 +231,7 @@
 
 .round-black-btn:hover,
 .round-black-btn:focus {
-    background: transparent;
+    background: #be9c79;
     color: #212529;
     text-decoration: none;
 }
@@ -366,8 +366,8 @@ a {
     color: White;
 }
 
-.header{
-    height : 100px;
+.header {
+    height: 100px;
 }
 
 .logo {
@@ -868,4 +868,38 @@ a {
 
 .item:hover {
     cursor: pointer;
+}
+
+.review-form .row .col-md-6 {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 600px){
+    .product-info{
+        margin-top:  30px;
+    }
+    .name-product{
+        font-size: 15px;
+    }
+    .product{
+        margin-bottom: 20px;
+    }
+}
+.product .product-online-shop:hover img {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.product .product-online-shop img{
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+}
+.addtocard:hover {
+    text-decoration: underline;
+    color: #be9c79;
+}
+.product .product-online-shop:hover .name-product{
+    color: #be9c79;
 }

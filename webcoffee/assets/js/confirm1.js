@@ -17,12 +17,12 @@ function renderCustomerInfo() {
     "#confirm .wrap-confirm-right .customer-detail"
   );
   let content = customerInfo.map((item) => {
-    return `<h5>Thông tin khách hàng</h5>
-        <p>Họ tên: ${item.name}</p>
-        <p>Email: ${item.email}</p>
-        <p>Điện thoại: ${item.phone}</p>
-        <p>Địa chỉ: ${item.address}, ${item.district}, ${item.city}</p>
-        <p>Ghi chú: ${item.note}</p>`;
+    return `<h5>Customer Information</h5>
+        <p>Full Name : ${item.name}</p>
+        <p>Email : ${item.email}</p>
+        <p>Phone : ${item.phone}</p>
+        <p>Address : ${item.address}, ${item.district}, ${item.city}</p>
+        <p>Note : ${item.note}</p>`;
   });
   confirm.innerHTML = content.join("");
 }

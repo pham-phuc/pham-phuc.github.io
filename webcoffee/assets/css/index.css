@@ -513,7 +513,7 @@ nav li a {
 
 .addtocard:hover {
     text-decoration: underline;
-    color: #ff8500;
+    color: #be9c79;
 }
 
 /* coffee-online-shop-end */
@@ -1220,7 +1220,7 @@ textarea:focus {
 
 .read-more:hover a {
     text-decoration: underline;
-    color: #ff8500;
+    color: #be9c79;
 }
 
 .product .product-online-shop:hover img {
@@ -1236,5 +1236,134 @@ textarea:focus {
 }
 
 .product .product-online-shop:hover .name-product {
-    color: #ff8500;
+    color: #be9c79;
+}
+
+/* count-down */
+.section-element {
+    margin-bottom: 70px;
+}
+
+.is-countdown h2 span {
+    display: block;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+
+.countdown-number {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.countdown-number div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+        0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12),
+        0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.countdown-number div:before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #ff8f00;
+    color: #fff;
+    font-size: 0.35em;
+    line-height: 35px;
+}
+
+.countdown-number #day:before {
+    content: 'Day';
+}
+
+.countdown-number #hour:before {
+    content: 'Hours';
+}
+
+.countdown-number #minute:before {
+    content: 'Minute';
+}
+
+.countdown-number #second:before {
+    content: 'Second';
+}
+
+@media(max-width:576px) {
+    .countdown-number div {
+        margin: 0 5px;
+    }
+
+    .search-bar form input[type="text"]:focus {
+        width: 300px;
+        background-color: white;
+    }
+}
+
+@media(max-width:880px) {
+    .banner-middle .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .banner-middle .row>* {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(max-width:1300px) {
+    .banner-middle .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .banner-middle .row>* {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.title-top,
+.description {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .product-info {
+        margin-top: 30px;
+    }
+
+    .name-product {
+        font-size: 15px;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+
+    .title-content {
+        padding: 0 15px;
+    }
+
+    .content-coffee-herald,
+    .content-online-shop,
+    .content-gallery,
+    .countdown-description,
+    .content-title-offer {
+        padding: 0 15px;
+    }
 }

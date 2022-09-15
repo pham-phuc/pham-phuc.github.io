@@ -859,8 +859,19 @@ datalist{
 }
 .addtocard:hover {
     text-decoration: underline;
-    color: #ff8500;
+    color: #be9c79;
 }
 .product .product-list-shop:hover .name-product{
-    color: #ff8500;
+    color: #be9c79;
+}
+@media screen and (max-width: 600px){
+    .product-info{
+        margin-top:  30px;
+    }
+    .name-product{
+        font-size: 15px;
+    }
+    .product{
+        margin-bottom: 20px;
+    }
 }

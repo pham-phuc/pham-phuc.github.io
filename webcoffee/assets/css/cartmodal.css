@@ -116,7 +116,7 @@
     background-color: var(--bg-section);
     border-radius: 4px;
     padding: 18px 0;
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid #ff8500;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     max-width: 320px;
     transition: all linear 0.3s;
@@ -140,14 +140,14 @@
 
 .toast__icon {
     font-size: 24px;
-    color: var(--primary);
+    color: #ff8500;
 }
 
 .toast__tittle {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-    color: var(--primary);
+    color: #ff8500;
     margin-bottom: 0;
 }
 
@@ -309,7 +309,7 @@
 
 .modal-cart .sub-total p span {
     font-size: 24px;
-    color: var(--secondary);
+    color: #333;
 }
 
 .modal-cart .gr-button {
@@ -376,7 +376,7 @@
 }
 
 .nav-header ul:first-child li a:hover {
-    color: var(--primary);
+    color: #be9c79;
 }
 
 .nav-cart,
@@ -417,7 +417,7 @@
 .nav-search:hover,
 .nav-user:hover {
     transition: linear 0.3s;
-    border: 1px solid var(--primary);
-    background-color: #d5eaeb;
+    border: 1px solid #be9c79;
+    background-color: #be9c79;
 }
 
