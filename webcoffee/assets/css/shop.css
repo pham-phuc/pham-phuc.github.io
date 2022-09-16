@@ -3,7 +3,7 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    color: #656565;
+    color: #333;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -56,7 +56,7 @@ a {
 
 .navbar-code {
     position: relative;
-    background: Black;
+    background: #111;
     position: fixed;
     width: 100%;
     z-index: 1004;
@@ -71,7 +71,7 @@ a {
     display: inline-block;
     margin-left: 15px;
     position: absolute;
-    top: 0;
+    top: 10%;
     right: 0;
 }
 
@@ -94,7 +94,10 @@ a {
     color: LightGray;
 }
 
-
+/* .navbar-collapse,
+.navbar-toggler {
+    display: none;
+} */
 
 @media (max-width: 842px) {
     .navbar-left {
@@ -119,16 +122,24 @@ a {
         overflow: hidden;
     }
 
-    .navbar-toggler {
+    /* .navbar-toggler {
         color: White;
         display: inline-block;
+        padding: 15px 25px;
         position: absolute;
         top: 0;
         right: 0;
+        border: 2px solid DimGray;
         border-radius: 0 0 0 8px;
         cursor: pointer;
-    }
+    } */
+
+    /* .logo-header {
+        padding: 0;
+        padding-left: 30px;
+    } */
 }
+
 
 /* ô input */
 

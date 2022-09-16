@@ -3,7 +3,7 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 14px;
     line-height: 22px;
-    color: #666;
+    color: #333;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -659,16 +659,7 @@ hr {
     margin-bottom: 25px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
+
 
 button:hover {
     opacity: 1;
@@ -878,13 +869,16 @@ section {
 }
 
 /* footer end */
-@media (max-height: 600px) {
+@media (max-height: 700px) {
     .section .noi-dung .form h4 {
         margin: 20px 0 10px;
     }
 
     .section .noi-dung .form h2 {
         margin-bottom: 5px;
+    }
+    section {
+        height: 50px;
     }
 }
 

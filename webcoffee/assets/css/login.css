@@ -3,7 +3,7 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 14px;
     line-height: 22px;
-    color: #666;
+    color: #333;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -389,6 +389,7 @@ section {
         background-color: white;
     }
 }
+
 /* card-modal-start */
 .shopping-cart {
     margin: 50px 0px;
@@ -833,6 +834,12 @@ nav li a {
 
     .heading-sub {
         display: none;
+    }
+}
+
+@media (max-width:700px) {
+    section {
+        height: 50px;
     }
 }
 

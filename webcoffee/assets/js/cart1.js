@@ -19,7 +19,7 @@ function renderCartMain() {
             </div>
           </div>
         </td>
-        <td data-th="Price"><span class="price">${item.price}</span>$</td>
+        <td data-th="Price : "><span class="price">${item.price}</span>$</td>
         <td class="qly" data-th="Quantity">
         <div class="quantity-product-weight-group">
           <button class="minus-quantity-detail-product">-</button>
@@ -31,7 +31,7 @@ function renderCartMain() {
           <button class="plus-quantity-detail-product">+</button>
         </div>                           
         </td>
-        <td data-th="Subtotal" class="text-center"></td>
+        <td data-th="Product editing" ></td>
         <td class="actions" data-th="">
           <button class="btn btn-sm edit">
             <i class="fa fa-edit"></i>
