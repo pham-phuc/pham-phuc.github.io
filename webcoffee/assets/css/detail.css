@@ -898,8 +898,8 @@ a {
 }
 .addtocard:hover {
     text-decoration: underline;
-    color: #be9c79;
+    color: #ff8500;
 }
-.product .product-online-shop:hover .name-product{
+.name-product:hover{
     color: #be9c79;
 }

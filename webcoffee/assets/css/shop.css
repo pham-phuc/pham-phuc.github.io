@@ -870,9 +870,9 @@ datalist{
 }
 .addtocard:hover {
     text-decoration: underline;
-    color: #be9c79;
+    color: #ff8500;
 }
-.product .product-list-shop:hover .name-product{
+.name-product:hover{
     color: #be9c79;
 }
 @media screen and (max-width: 600px){
