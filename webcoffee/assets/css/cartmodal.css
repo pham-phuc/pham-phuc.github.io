@@ -116,7 +116,7 @@
     background-color: var(--bg-section);
     border-radius: 4px;
     padding: 18px 0;
-    border-left: 4px solid #ff8500;
+    border-left: 4px solid #198754;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     max-width: 320px;
     transition: all linear 0.3s;
@@ -140,14 +140,14 @@
 
 .toast__icon {
     font-size: 24px;
-    color: #ff8500;
+    color: #198754;
 }
 
 .toast__tittle {
     font-size: 16px;
     font-weight: 600;
     color: #333;
-    color: #ff8500;
+    color: #198754;
     margin-bottom: 0;
 }
 

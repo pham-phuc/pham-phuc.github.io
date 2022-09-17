@@ -1093,14 +1093,12 @@ a {
     font-weight: 400;
 }
 
-.section-title h4 {
-    font-size: 40px;
-    font-weight: 600;
+/* .section-title h4 {
     text-transform: capitalize;
     position: relative;
     padding-bottom: 20px;
     display: inline-block;
-}
+} */
 
 .section-title h4::before {
     position: absolute;
