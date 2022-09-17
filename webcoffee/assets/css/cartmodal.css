@@ -285,13 +285,14 @@
 }
 
 .modal-cart .item-remove i {
-    color: var(--secondary);
+    color: #333;
     opacity: 0.6;
     cursor: pointer;
 }
 
 .modal-cart .item-remove:hover i {
     opacity: 1;
+    color: #eb2f06;
 }
 
 .modal-cart .sub-total {

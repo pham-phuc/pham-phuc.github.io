@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 20px 0;
+    margin: 10px 0;
     color: #262626;
     font-family: Marcellus, sans-serif;
     font-weight: 400;
@@ -117,18 +117,6 @@ a {
         max-height: 50px;
         overflow: hidden;
     }
-
-    /* .navbar-toggler {
-        color: White;
-        display: inline-block;
-        padding: 15px 25px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 2px solid DimGray;
-        border-radius: 0 0 0 8px;
-        cursor: pointer;
-    } */
 
     .logo-header {
         padding: 0;
@@ -425,7 +413,7 @@ nav li a {
 }
 
 .blog-coffee-herald {
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 /* coffee-herald-end */
@@ -477,7 +465,7 @@ nav li a {
 }
 
 .title-content-online-shop {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .title-content-online-shop,
@@ -588,7 +576,7 @@ nav li a {
 }
 
 .gallery-title-content {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 
 /* wraper-gallery-end */
@@ -1073,7 +1061,7 @@ nav li a {
 }
 
 .mb-100 {
-    margin-bottom: 100px;
+    margin-bottom:50px;
 }
 
 a {
@@ -1087,11 +1075,11 @@ a {
     position: relative;
 }
 
-.section-title p {
+/* .section-title p {
     font-size: 16px;
     margin-bottom: 5px;
     font-weight: 400;
-}
+} */
 
 /* .section-title h4 {
     text-transform: capitalize;
@@ -1170,7 +1158,7 @@ textarea {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #FF7200;
+    background-color: #be9c79;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -1190,7 +1178,7 @@ textarea {
 }
 
 .contact-form input[type="submit"] {
-    background-color: #FF7200;
+    background-color: #be9c79;
     border: 0px;
     cursor: pointer;
     font-size: 16px;
@@ -1199,7 +1187,7 @@ textarea {
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #CC5B00
+    background-color: #be9c79
 }
 
 .contact-form input:focus,
@@ -1251,8 +1239,9 @@ textarea:focus {
 
 .countdown-number {
     display: flex;
-    margin-top: 50px;
+    margin-top: 20px;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .countdown-number div {

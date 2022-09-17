@@ -7,7 +7,7 @@
 .slider-item-content {
   position: absolute;
   top: 50%;
-  left: 38%;
+  left: 44%;
   transform: translateY(-50%);
   color: #fff;
   text-align: center;
@@ -29,10 +29,10 @@
 .slider-item-content a {
   text-decoration: none;
   font-size: 18px;
-  color: #be9c79;
+  color: #fff;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
+  background-color: #be9c79;
+  border: 1px solid #be9c79;
   border-radius: 8px;
   padding: 12px 40px;
   transition: linear 0.3s;
@@ -41,7 +41,7 @@
 .slider-item-content a:hover {
   cursor: pointer;
   color: #fff;
-  background-color: #be9c79;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid #be9c79;
 }
 

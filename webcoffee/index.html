@@ -735,7 +735,7 @@
         <div class="row">
           <div class="col-xl-6 mx-auto text-center">
             <div class="section-title mb-100">
-              <h2 style="color: white;">Get In Touch</h2>
+              <h2 style="color: white">Get In Touch</h2>
               <p>
                 Please let your information and what's on your mind. We will support
                 you!
@@ -892,7 +892,7 @@
     });
    </script>
    <script>
-    var timeToDeal = new Date("oct,15,2022").getTime();
+    var timeToDeal = new Date("sep,21,2022").getTime();
     function newDeal() {
       var ngayHienTai = new Date().getTime();  
       console.log(ngayHienTai);  
@@ -911,6 +911,12 @@
       document.getElementById("hour").innerText = h;
       document.getElementById("minute").innerText = m;
       document.getElementById("second").innerText = s;
+      if(thoigianConLai==0 || thoigianConLai < 0 ){
+        document.getElementById("day").innerText = 0;
+        document.getElementById("hour").innerText = 0;
+        document.getElementById("minute").innerText = 0;
+        document.getElementById("second").innerText = 0;
+      }
     }
     setInterval(function () {
       newDeal();
