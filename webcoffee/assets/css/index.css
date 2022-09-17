@@ -502,7 +502,7 @@ nav li a {
 
 .addtocard:hover {
     text-decoration: underline;
-    color: #be9c79;
+    color: #ff8500;
 }
 
 /* coffee-online-shop-end */
@@ -1222,7 +1222,7 @@ textarea:focus {
     transition: all 0.9s ease;
 }
 
-.product .product-online-shop:hover .name-product {
+.name-product:hover {
     color: #be9c79;
 }
 
@@ -1361,3 +1361,4 @@ textarea:focus {
         padding-right: 0;
     }
 }
+ 
