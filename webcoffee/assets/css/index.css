@@ -1061,7 +1061,7 @@ nav li a {
 }
 
 .mb-100 {
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 a {
@@ -1355,10 +1355,30 @@ textarea:focus {
         padding: 0 15px;
     }
 }
-@media screen and (max-width:280px){
-    .row>*{
+
+@media screen and (max-width:280px) {
+    .row>* {
         padding-left: 0;
         padding-right: 0;
     }
 }
- 
+
+.footer-icons a:hover {
+    background-color: #fff;
+}
+
+.footer-icons a:hover .fa-facebook-f {
+    color: #3B5998;
+}
+
+.footer-icons a:hover .fa-twitter {
+    color: #1DA1F2;
+}
+
+.footer-icons a:hover .fa-instagram {
+    color: #BC2A8D;
+}
+
+.footer-icons a:hover .fa-youtube {
+    color: #f00;
+}

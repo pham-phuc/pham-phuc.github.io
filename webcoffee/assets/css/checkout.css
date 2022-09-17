@@ -654,3 +654,22 @@ a {
     max-width: 100%;
     object-fit: cover;
 }
+.footer-icons a:hover {
+    background-color: #fff;
+}
+
+.footer-icons a:hover .fa-facebook-f {
+    color: #3B5998;
+}
+
+.footer-icons a:hover .fa-twitter {
+    color: #1DA1F2;
+}
+
+.footer-icons a:hover .fa-instagram {
+    color: #BC2A8D;
+}
+
+.footer-icons a:hover .fa-youtube {
+    color: #f00;
+}
