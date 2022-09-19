@@ -80,7 +80,8 @@ let close = document.querySelector("span.close");
 let modalCart = document.querySelector(".modal-cart");
 let modalCartContent = document.querySelector(".modal-cart-content");
 let countItemCart = document.querySelector(".header .nav-cart span");
-
+mybutton = document.getElementById("go-to-top");
+window.onscroll = function() {scrollFunction()};
 // nav cart
 btnCart.addEventListener("click", () => {
   modalCart.style.display = "block";
@@ -98,7 +99,17 @@ window.onclick = function (event) {
     modalCart.style.display = "none";
   }
 };
-
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 function renderCart() {
   if (cart.length > 0) {
     // nếu có sản phẩm thì render ở đây

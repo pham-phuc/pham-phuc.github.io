@@ -27,11 +27,16 @@
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/cartmodal.css" />
     <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/goToTop.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400&family=Marcellus&display=swap");
     </style>    
   </head>
   <body>
+    <button onclick="topFunction()" id="go-to-top" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <header>
       <section class="header">
         <nav
@@ -895,7 +900,6 @@
     var timeToDeal = new Date("sep,21,2022").getTime();
     function newDeal() {
       var ngayHienTai = new Date().getTime();  
-      console.log(ngayHienTai);  
       thoigianConLai = timeToDeal-ngayHienTai ;
       var giay = 1000;
       var phut = giay * 60;

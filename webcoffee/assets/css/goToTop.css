@@ -1,0 +1,23 @@
+/* go to top */
+#go-to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ff8500;
+    color: white;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 50%;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+    scroll-behavior: smooth;
+}
+
+#go-to-top:hover {
+    opacity: 0.8;
+    transition: linear 0.3s;
+}
