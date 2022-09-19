@@ -2,7 +2,7 @@
     "plugins": [
       ["module-resolver", {
         "alias": {
-          "~": "./test"
+          "~": "./src"
         }
       }]
     ]
