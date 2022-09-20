@@ -12,8 +12,8 @@ export default function Playing() {
     handleSetSong(song.id - 1);
   };
   return (
-    <div class="content-wrapper">
-      <div class="content ">
+    <div className="content-wrapper">
+      <div className="content ">
         <AudioPlayer
           className="player"
           src={song.url}

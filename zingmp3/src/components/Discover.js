@@ -1,38 +1,46 @@
-import React, { useContext } from "react";
+// import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Songs } from "../Context";
-import { Carousel } from "antd";
-import { DatePicker } from "antd";
-import "antd/dist/antd.css";
 import "../App.css";
 export default function DetailSong() {
-  const { song } = useContext(Songs);
-  const contentStyle = {
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
+  const { DataSongs, handleSetSong, song } = useContext(Songs);
+  const [idSong, setidSong] = useState(0);
+  const handlePlaySong = (idSong) => {
+    setidSong(idSong);
+    handleSetSong(idSong);
   };
-  const Slide = () => (
-    <Carousel autoplay>
-      <div style={{width : '50%'}}>
-        <h3 style={contentStyle}>1</h3>
-      </div>
-      <div style={{width : '50%'}}>
-        <h3 style={contentStyle}>2</h3>
-      </div>
-      <div style={{width : '50%'}}>
-        <h3 style={contentStyle}>3</h3>
-      </div>
-      <div style={{width : '50%'}}>
-        <h3 style={contentStyle}>4</h3>
-      </div>
-    </Carousel>
-  );
+  useEffect(() => {
+    setidSong(song.id);
+  }, [song]);
   return (
-    <div class="content-wrapper">
-      <div class="content ">
-        <Slide />
+    <div className="content-wrapper">
+      <div className="content ">
+        <div className="w-[100%] h-[633px] overflow-hidden overflow-y-scroll ml-5">
+          {DataSongs.map((song, index) => (
+            <div
+              key={index}
+              className={` h-12 text-gray-500 hover:bg-slate-600 flex-1 ${
+                idSong === song.id && "bg-slate-600 text-teal-400"
+              }`}
+              onClick={() => handlePlaySong(song.id)}
+            >
+              <div>{index + 1}</div>
+              <div>{song.name}</div>
+              <div className="text-center w-[30%] h-[50%] flex-1">
+                <img
+                  className="w-full w-[100%] h-[300px] "
+                  src={song.links.images[0].url}
+                  alt="avatar"
+                />
+              </div>
+              <div className="text-center">
+                <a href={song.url}>
+                  <i className="fa fa-download"></i>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

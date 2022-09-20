@@ -12,11 +12,11 @@ export default function ListSongs() {
     setidSong(song.id);
   }, [song]);
   return (
-    <div class="content-wrapper">
-      <div class="content ">
+    <div className="content-wrapper">
+      <div className="content ">
         <div className="w-[100%] h-[633px] overflow-hidden overflow-y-scroll">
           <div className="text-4xl pt-12 pb-2 ml-16 text-white">
-            Nhạc Mới <i class="fa-solid fa-circle-play"></i>
+            Nhạc Mới <i className="fa-solid fa-circle-play"></i>
           </div>
           <table className="table-auto w-full">
             <thead className="text-white h-12 ">

@@ -4,8 +4,8 @@ import "../App.css";
 export default function DetailSong() {
   const { song } = useContext(Songs);
   return (
-    <div class="content-wrapper">
-      <div class="content ">
+    <div className="content-wrapper">
+      <div className="content ">
         <div className="flex h-[633px]">
           <div className="w-[30%] p-3 pl-10">
             <h2 className="text-cyan-500 font-bold">Now playing</h2>
