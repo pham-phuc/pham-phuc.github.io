@@ -19,25 +19,27 @@ export default function DetailSong() {
           {DataSongs.map((song, index) => (
             <div
               key={index}
-              className={` h-12 text-gray-500 hover:bg-slate-600 flex-1 ${
+              className={`  text-gray-500 hover:bg-slate-600 inline-grid grid-cols-2 gap-2  ${
                 idSong === song.id && "bg-slate-600 text-teal-400"
               }`}
               onClick={() => handlePlaySong(song.id)}
             >
-              <div>{index + 1}</div>
-              <div>{song.name}</div>
-              <div className="text-center w-[30%] h-[50%] flex-1">
-                <img
-                  className="w-full w-[100%] h-[300px] "
-                  src={song.links.images[0].url}
-                  alt="avatar"
-                />
+              {/* <div>{index + 1}</div> */}
+              {/* <div>{song.name}</div> */}
+              <div>
+                <div className="text-center w-[30%] h-[100%]">
+                  <img
+                    className="w-full w-[100%] h-[100%]"
+                    src={song.links.images[0].url}
+                    alt="avatar"
+                  />
+                </div>
               </div>
-              <div className="text-center">
+              {/* <div className="text-center">
                 <a href={song.url}>
                   <i className="fa fa-download"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
