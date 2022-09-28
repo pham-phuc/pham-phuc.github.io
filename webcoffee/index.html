@@ -897,7 +897,7 @@
     });
    </script>
    <script>
-    var timeToDeal = new Date("sep,25,2022").getTime();
+    var timeToDeal = new Date("sep,20,2022").getTime();
     function newDeal() {
       var ngayHienTai = new Date().getTime();  
       thoigianConLai = timeToDeal-ngayHienTai ;
@@ -916,10 +916,7 @@
       document.getElementById("minute").innerText = m;
       document.getElementById("second").innerText = s;
       if(thoigianConLai==0 || thoigianConLai < 0 ){
-        document.getElementById("day").innerText = 0;
-        document.getElementById("hour").innerText = 0;
-        document.getElementById("minute").innerText = 0;
-        document.getElementById("second").innerText = 0;
+        timeToDeal += 259200000;
       }
     }
     setInterval(function () {
