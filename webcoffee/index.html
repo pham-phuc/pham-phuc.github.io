@@ -916,12 +916,15 @@
       document.getElementById("minute").innerText = m;
       document.getElementById("second").innerText = s;
       if(thoigianConLai==0 || thoigianConLai < 0 ){
-        timeToDeal += 259200000;
+         timeToDeal += 259200000;
       }
     }
     setInterval(function () {
       newDeal();
     }, 1000);
+    // function myStopFunction() {
+    //   clearInterval(timeToDeal);
+    // }
   </script>
    <script src="assets/js/main1.js"></script>
    <script src="assets/js/main2.js"></script>
