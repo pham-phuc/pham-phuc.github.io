@@ -642,3 +642,7 @@ nav li a {
 .footer-icons a:hover .fa-youtube {
     color: #f00;
 }
+.about-us-content p{
+    font-size: 18px;
+    /* font-weight: 700px; */
+}
