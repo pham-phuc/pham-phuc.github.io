@@ -9,7 +9,7 @@
 body {
     background: url(https://anhdepfree.com/wp-content/uploads/2021/01/hinh-anh-goc-may-don-gian-cuc-dep.jpg);
     background-size: cover;
-    background-position-y: -20px;
+    /* background-position-y: -20px; */
 }
 
 li {
@@ -46,13 +46,12 @@ a:hover {
     height:100%;
     background-color:white;
     z-index:-1;
-    /* border: 2px solid black; */
 }
 
 #bg-l {
     width:30%;
     height:100%;
-    background-color:rgb(98, 98, 98);
+    background: linear-gradient(145deg, #232222, #181717);
 }
 
 #content {
@@ -68,12 +67,9 @@ a:hover {
 #header {
     width:100%;
     height:100px;
-    /* background-color:#DDDDDF; */
     opacity:1;
     margin-top: 80px;
     position:relative;
-    /* border-left: 2px solid black ;
-    border-right: 2px solid black ; */
 }
   
   
@@ -85,22 +81,6 @@ a:hover {
     margin-top:-25px;
     margin-left: 45px;
 }
-
-/* #header:hover {
-    background-color:#b7b7cf;
-} */
-
-/* #header:hover img{
-    width:180px;
-    height:180px;
-    margin-top:-40px;
-    margin-left: 30px;
-    cursor:zoom-in;
-}
-  
-#header:hover #tit{
-    margin-left: 85px;
-} */
 
 
 #header #tit {
@@ -127,6 +107,7 @@ a:hover {
     width:100%;
     margin-top:40px;
     font-size: 11px;
+    padding-bottom: 20px;
 }
   
 
@@ -149,15 +130,13 @@ a:hover {
 .c-l  li{
     padding-bottom: 10px;
 }
-/* .c-l li b{
-    margin-bottom: 20px;
-} */
+
 .c-l,  
 .c-l a,
 .c-l p,
 .c-l h2,
 .c-l hr{
-    color:#EFEFEF;
+    color:#FFFFFF;
 }
   
 .c-r {
@@ -206,17 +185,14 @@ a:hover {
 #footer{
     width:100%;
     height:40px;
-    background-color:#454549;
+    background: #181717;
     margin-top: 20px;
 }
 
 
-#footer:hover {
-    background-color:#b7b7cf;
-}
-
 
 #footer p{ 
+    color : #FFFFFF;
     text-align: center;
     line-height: 40px;
     font-size:11px;
