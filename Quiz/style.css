@@ -1,43 +1,52 @@
-* {
-    margin: 0px;
-    padding: 0px;
-  }
-  .accordion {
-    max-width: 700px;
-    margin: 0px auto;
-  }
-  h1 {
-    text-align: center;
-  }
-  .accordion-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background: #3498db;
-    padding: 10px 10px;
-    margin-bottom:10px;
-    cursor:pointer;
-  }
-  ul{
-    margin-left:10px;
-  }
-  .accordion-body {
-    padding: 10px 10px;
-    display:none;
-  }
-  .accordion-header:hover{
-    background:#16a085;
-  }
-  .accordion-header.active{
-    background: #1abc9c;
-  }
-  .accordion-header.active .arrow{
-    transform:rotate(180deg);
-  }
-  .accordion-item.active .arrow{
-    transform:rotate(180deg);
-  }
-  .arrow{
-    transition:all 0.7s;
-  }
-  
+ * {
+   margin: 0px;
+   padding: 0px;
+ }
+
+ .accordion {
+   max-width: 700px;
+   margin: 0px auto;
+ }
+
+ h1 {
+   text-align: center;
+ }
+
+ .accordion-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #3498db;
+   padding: 10px 10px;
+   margin-bottom: 10px;
+   cursor: pointer;
+ }
+
+ ul {
+   margin-left: 10px;
+ }
+
+ .accordion-body {
+   padding: 10px 10px;
+   display: none;
+ }
+
+ .accordion-header:hover {
+   background: #16a085;
+ }
+
+ .accordion-header.active {
+   background: #1abc9c;
+ }
+
+ .accordion-header.active .arrow {
+   transform: rotate(180deg);
+ }
+
+ .accordion-item.active .arrow {
+   transform: rotate(180deg);
+ }
+
+ .arrow {
+   transition: all 0.7s;
+ }
