@@ -1,0 +1,8 @@
+body {
+    background-image: linear-gradient(0deg, #FFF0F5, #F5F5DC);
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

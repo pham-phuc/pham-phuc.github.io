@@ -1,0 +1,177 @@
+
+.game-board {
+    margin: 15px;
+    width: 450px;
+    height: 450px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.game-cell {
+    border: 1px solid#ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 80px;
+    box-shadow: rgb(149, 157, 165, 0.2) 8px 8px 24px;
+}
+
+.is-x {
+    color: aqua;
+    box-shadow: rgb(0, 255, 255) 2px 2px 5px;
+    text-shadow: 5px 2px 2px  #FF00FF;
+}
+
+.is-o {
+    color: orangered;
+    box-shadow: rgb(255, 69, 0) 2px 2px 5px;
+    text-shadow:5px 2px 2px  #FFFF00;
+}
+
+.game-reset {
+    margin: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #3c40c6;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.game-winner {
+    padding: 15px;
+    font-size: 30px;
+    -webkit-animation: game-winner  750ms infinite;
+    -moz-animation: game-winner  750ms infinite;
+    -o-animation: game-winner  750ms infinite;
+    animation: game-winner  750ms infinite;
+}
+
+@-webkit-keyframes game-winner  {
+    0% {
+        color: #00FF00;
+    }
+
+    50% {
+        color: #228B22;
+    }
+
+    100% {
+        color: #00FF00;
+    }
+}
+
+@-moz-keyframes game-winner  {
+    0% {
+        color: #00FF00;
+    }
+
+    50% {
+        color: #228B22;
+    }
+
+    100% {
+        color: #00FF00;
+    }
+}
+
+@-o-keyframes game-winner  {
+    0% {
+        color: #00FF00;
+    }
+
+    50% {
+        color: #228B22;
+    }
+
+    100% {
+        color: #00FF00;
+    }
+}
+
+@keyframes game-winner  {
+    0% {
+        color: #00FF00;
+    }
+
+    50% {
+        color: #228B22;
+    }
+
+    100% {
+        color: #00FF00;
+    }
+}
+
+.game-name {
+    font-size: 50px;
+    text-shadow: 2px 2px 2px  #FF00FF;
+    -webkit-animation: game-name  600ms infinite;
+    -moz-animation: game-name  600ms infinite;
+    -o-animation: game-name  600ms infinite;
+    animation: game-name  600ms infinite;
+}
+
+@-webkit-keyframes game-name  {
+    0% {
+        color: #EE82EE;
+    }
+
+    50% {
+        color: #800080;
+    }
+
+    100% {
+        color: #EE82EE;
+    }
+}
+
+@-moz-keyframes game-name  {
+    0% {
+        color: #EE82EE;
+    }
+
+    50% {
+        color: #800080;
+    }
+
+    100% {
+        color: #EE82EE;
+    }
+}
+
+@-o-keyframes game-name  {
+    0% {
+        color: #EE82EE;
+    }
+
+    50% {
+        color: #800080;
+    }
+
+    100% {
+        color: #EE82EE;
+    }
+}
+
+@keyframes game-name  {
+    0% {
+        color: #EE82EE;
+    }
+
+    50% {
+        color: #800080;
+    }
+
+    100% {
+        color: #EE82EE;
+    }
+}
+.game-instruct {
+    font-size: 30px;
+}
