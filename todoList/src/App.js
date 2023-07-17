@@ -1,5 +1,3 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useMemo, useState } from "react";
 
 const sortTypes = ["All", "Completed Tasks", "Active Tasks"];
