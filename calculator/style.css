@@ -35,9 +35,9 @@ body {
     box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
   }
   
-  .buttons {}
-  
-  .operators {}
+#clear{
+    background:orange
+}
   
   .operators div {
     display: inline-block;
@@ -53,10 +53,11 @@ body {
   }
   
   .operators div:hover {
-    background-color: #ddd;
+    background-color: black;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #aaa;
+    color: #fff;
   }
   
   .operators div:active {
