@@ -1,0 +1,29 @@
+
+#input1, #input2, #result{
+    height:50px;
+    width:50px;
+    text-align: center;
+  }
+  .allContent{
+    text-align:center;
+    width:500px;
+    height:150px;
+    border:1px solid black;
+    background:#ffffff;
+  }
+  #check{
+    border:none;
+    background:#3498db;
+    margin-left:20px;
+  }
+  p{
+    margin-left:50px;
+    margin-top:0px;
+    background:#3498db;
+    max-width:400px;
+    padding:10px 0px;
+  }
+  .size{
+    width:40px;
+    heigth:50px;
+  }
