@@ -1208,3 +1208,48 @@
     text-align: center;
   }
 }
+#tabs-detail {
+  min-height: 80vh;
+  padding: 20px 0;
+  background-color: var(--bg-section);
+}
+#tabs-detail ul#myTab {
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+#tabs-detail ul#myTab .nav-link.active {
+  color: var(--primary);
+  border-bottom: 3px solid var(--primary);
+  background-color: transparent;
+}
+#tabs-detail ul#myTab .nav-link {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  padding: 5px 12px 10px 12px;
+  /* margin-right: 24px; */
+}
+
+#tabs-detail .nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 40px;
+}
+
+#tabs-detail #myTabContent p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 415px) {
+  #tabs-detail ul#myTab .nav-link {
+    font-size: 14px;
+    padding: 5px 12 10px 12;
+    font-weight: 500;
+  }
+  #tabs-detail .tab-pane p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
