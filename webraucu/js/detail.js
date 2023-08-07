@@ -65,4 +65,20 @@ btnAddToCartDetail.addEventListener("click", () => {
   }
 });
 
-
+function addToCartDetail() {
+    let name = detailProduct.querySelector(".name").innerText;
+    let objectDetail = {};
+    products.forEach((element) => {
+      if (element.name.toLocaleLowerCase() == name.toLocaleLowerCase()) {
+        objectDetail = element;
+        console.log(objectDetail);
+      }
+    });
+    objectDetail.weight = parseFloat(
+      document.querySelector("#detail-product .quantity-product-weight").value
+    );
+    document.querySelector("#detail-product .quantity-product-weight").value = 1;
+    checkItem(objectDetail);
+    document.querySelector(".header .nav-cart span").classList.remove("hide");
+    document.querySelector(".header .nav-cart span").textContent = cart.length;
+  }
