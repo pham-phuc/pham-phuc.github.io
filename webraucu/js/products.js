@@ -100,3 +100,13 @@ function filterOrigin1(x) {
     }
   });
 }
+//function filter xuat xu ko phai Viet nam
+function filterOrigin2(x) {
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let origin = item.querySelector(".product-origin").textContent;
+    if (!origin.includes(x)) {
+      item.classList.remove("hide");
+    }
+  });
+}
