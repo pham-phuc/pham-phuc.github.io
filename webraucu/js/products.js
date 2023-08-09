@@ -84,3 +84,19 @@ function filterType(x) {
     }
   });
 }
+function showAllItem() {
+  listItems.forEach((item) => {
+    item.classList.remove("hide");
+  });
+}
+
+//function loc xuat xu Viet Nam
+function filterOrigin1(x) {
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let origin = item.querySelector(".product-origin").textContent;
+    if (origin.includes(x)) {
+      item.classList.remove("hide");
+    }
+  });
+}
