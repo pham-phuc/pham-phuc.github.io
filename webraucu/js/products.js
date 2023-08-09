@@ -1,0 +1,86 @@
+const btnNext = document.querySelector(".cus-pagination .next");
+const btnPrev = document.querySelector(".cus-pagination .prev");
+let searchProduct = document.querySelector(`.form-search input[type="search"]`);
+
+// function render product
+function renderProduct(arr) {
+  const content = arr.map(function (e, index) {
+    return `<div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                  <div class="product-item">
+                    <div class="product-container">
+                      <div class="discount">${e.sale}%</div>
+                      <div class="product-img">
+                        <img
+                          src="${e.img}"
+                          alt=""
+                        />
+                      </div>
+                      <p class="product-name cus-margin-top-bot-8px">
+                        ${e.name}
+                      </p>
+                      <div class="product-price cus-margin-top-bot-8px">
+                        <span class="old-price">${e.price.toFixed(2)} VNĐ</span>
+                        <span class="current-price">${parseFloat(
+                          e.price * (1 - e.sale / 100)
+                        ).toFixed(2)} VNĐ</span>
+                      </div>
+                      <p class="product-origin cus-margin-top-bot-8px">
+                        <span class="bold">Xuất xứ:</span> ${e.origin}
+                      </p>
+                      <p class="product-type cus-margin-top-bot-8px">
+                        <span class="bold"> Loại sản phẩm:</span> <span>${
+                          e.type
+                        }</span>  
+                      </p>
+                      <p class="product-weight cus-margin-top-bot-8px">
+                        <span class="bold">Khối lượng:</span> ${e.weight} Kg
+                      </p>
+                    </div>
+                    <button class="add-to-cart">
+                      Thêm vào giỏ hàng <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                  </div>
+                </div>`;
+  });
+  document.querySelector("#product-category .category-main .row").innerHTML =
+    content.join("");
+}
+
+renderProduct(products);
+
+// onSearchProduct();
+// add to cart
+let listItems = document.querySelectorAll(".category-main .col-sm-6");
+let listBtnAddToCart = document.querySelectorAll("button.add-to-cart");
+
+listItems.forEach((item) => {
+  item.onclick = function () {
+    window.location.href = "./detail.html";
+  };
+});
+// function tim kiem
+function onSearchProduct() {
+  let x = searchProduct.value.toLowerCase();
+  console.log(x);
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let nameProduct = item
+      .querySelector(".product-name")
+      .innerText.toLocaleLowerCase();
+    if (nameProduct.includes(x)) {
+      item.classList.remove("hide");
+    }
+  });
+}
+
+searchProduct.addEventListener("keyup", onSearchProduct);
+
+function filterType(x) {
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let type = item.querySelector(".product-type").textContent;
+    if (type.includes(x)) {
+      item.classList.remove("hide");
+    }
+  });
+}
