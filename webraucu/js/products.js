@@ -113,11 +113,20 @@ function filterOrigin2(x) {
 //fuction sort gia tu cao xuong thap
 
 function filterPrice1() {
-    listItems.forEach((item) => {
-      item.classList.add("hide");
-      let price = item.querySelector(".current-price").textContent;
-      if (parseFloat(price) < 10) {
-        item.classList.remove("hide");
-      }
-    });
-  }
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let price = item.querySelector(".current-price").textContent;
+    if (parseFloat(price) < 10) {
+      item.classList.remove("hide");
+    }
+  });
+}
+function filterPrice2() {
+  listItems.forEach((item) => {
+    item.classList.add("hide");
+    let price = item.querySelector(".current-price").textContent;
+    if (parseFloat(price) >= 10 && parseFloat(price) < 20) {
+      item.classList.remove("hide");
+    }
+  });
+}
