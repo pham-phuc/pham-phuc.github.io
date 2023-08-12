@@ -74,3 +74,7 @@ totalPriceCheckOut();
 let btnContinueShopping = document.querySelector(
   "#confirm .continue-shopping "
 );
+btnContinueShopping.onclick = function () {
+    localStorage.clear();
+  };
+  
