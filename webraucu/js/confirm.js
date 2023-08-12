@@ -28,5 +28,24 @@ function renderCustomerInfo() {
   }
   renderCustomerInfo();
   
+  function renderOrderDetail() {
+    let tableProduct = document.querySelector("#confirm .order-detail table");
+    let content = cart.map((item) => {
+      return `<tr>
+              <td>${item.name}</td>
+              <td>${parseFloat(item.price * (1 - item.sale / 100)).toFixed(
+                2
+              )} VNĐ</td>
+              <td>${item.weight} Kg</td>
+              <td>${(
+                parseFloat(item.price * (1 - item.sale / 100)).toFixed(2) *
+                parseFloat(item.weight)
+              ).toFixed(2)} VNĐ</td>
+            </tr>`;
+    });
+    tableProduct.innerHTML += content.join("");
+  }
+  renderOrderDetail();
+  
 
   
