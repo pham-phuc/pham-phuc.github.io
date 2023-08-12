@@ -47,5 +47,5 @@ function renderCustomerInfo() {
   }
   renderOrderDetail();
   
-
+  
   
