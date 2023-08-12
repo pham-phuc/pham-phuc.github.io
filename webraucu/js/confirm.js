@@ -70,4 +70,7 @@ function totalPriceCheckOut() {
       " VNĐ";
   }
 }
-
+totalPriceCheckOut();
+let btnContinueShopping = document.querySelector(
+  "#confirm .continue-shopping "
+);
