@@ -1937,3 +1937,93 @@
   font-size: 14px;
 }
 
+.order-detail table tr:nth-child(even),
+.order-detail table th {
+  background-color: var(--border);
+}
+
+.bill-total p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bill-total p span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bill-total {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+}
+
+/* about us */
+
+#about-us {
+  padding: 0 0 20px 0;
+}
+
+#about-us .row {
+  margin-bottom: 40px;
+}
+
+#about-us h6 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#about-us .contact-content {
+  display: flex;
+  gap: 32px;
+}
+#about-us .contact-content .contact-form-wrap,
+#about-us .contact-content .contact-info {
+  width: 50%;
+}
+
+#about-us ul {
+  list-style: none;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+#about-us ul li {
+  display: flex;
+  margin: 16px 0;
+}
+
+#about-us ul input {
+  height: 40px;
+}
+
+#about-us ul input,
+#about-us ul textarea {
+  flex: 1;
+  padding: 0 12px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+#about-us ul label {
+  min-width: 100px;
+}
+
+#about-us .contact-form-wrap button {
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 48px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+  transition: linear 0.3s;
+  cursor: pointer;
+  margin: 28px 0 32px 0;
+}
+
+#about-us .contact-form-wrap button:hover {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+
