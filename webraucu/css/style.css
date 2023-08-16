@@ -1929,4 +1929,11 @@
   text-transform: capitalize;
 }
 
+.order-detail th {
+  font-size: 16px;
+}
+
+.order-detail td {
+  font-size: 14px;
+}
 
