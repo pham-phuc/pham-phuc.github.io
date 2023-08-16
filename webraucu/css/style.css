@@ -2045,4 +2045,15 @@
   }
 }
 
-
+/* pagination */
+.cus-pagination {
+  margin-top: 40px;
+}
+.cus-pagination .pagination {
+  justify-content: center;
+}
+.cus-pagination .pagination a {
+  color: var(--primary);
+  display: block;
+  padding: 8px 16px;
+}
