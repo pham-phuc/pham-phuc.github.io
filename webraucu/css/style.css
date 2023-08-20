@@ -1942,3 +1942,22 @@
   background-color: var(--border);
 }
 
+.bill-total p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bill-total p span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bill-total {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px;
+}
+
+/* about us */
+
