@@ -1890,3 +1890,23 @@
   padding: 12px 40px;
 }
 
+.customer-detail p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 22px;
+}
+.wrap-confirm-right h3 {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  text-transform: uppercase;
+}
+
+.wrap-confirm-right h5 {
+  padding: 12px 0;
+}
+
+.wrap-confirm-right .customer-detail {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
