@@ -1873,3 +1873,20 @@
   display: block;
 }
 
+#confirm button:hover {
+  background-color: #fff;
+  transition: linear 0.3s;
+}
+#confirm button:hover a {
+  color: var(--primary);
+}
+
+#confirm button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  padding: 12px 40px;
+}
+
