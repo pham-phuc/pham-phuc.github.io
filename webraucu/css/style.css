@@ -1910,3 +1910,35 @@
   border-bottom: 1px solid var(--border);
 }
 
+.wrap-confirm-right .order-detail {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-detail table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+}
+
+.order-detail td,
+.order-detail th {
+  text-align: left;
+  padding: 8px;
+  text-transform: capitalize;
+}
+
+.order-detail th {
+  font-size: 16px;
+}
+
+.order-detail td {
+  font-size: 14px;
+}
+
+.order-detail table tr:nth-child(even),
+.order-detail table th {
+  background-color: var(--border);
+}
+
