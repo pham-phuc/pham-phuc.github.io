@@ -1865,3 +1865,11 @@
   width: 75%;
 }
 
+#confirm button {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  margin: 32px auto 48px auto;
+  display: block;
+}
+
