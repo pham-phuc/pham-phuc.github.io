@@ -1858,4 +1858,10 @@
   margin-bottom: 16px;
 }
 
+.wrap-confirm-left p.bot {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 75%;
+}
 
