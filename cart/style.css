@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151320;
+    height: 100vh;
+    font-family: Roboto;
+    display: grid;
+    place-items: center center;
+    color: #fff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.cards .card .container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.container::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.6;
+}
+
+.card1>.container:after {
+    background-image: linear-gradient(135deg, #48c6ef, #6f86d6);
+}
+
+.card2>.container:after {
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.card3>.container:after {
+    background-image: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.noi-dung {
+    padding: 20px 10px;
+}
+
+.noi-dung h3 {
+    font-size: 24px;
+    margin: 10px 0 15px 0;
+}
+
+.noi-dung p {
+    color: #a0a0a0;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+button {
+    display: block;
+    margin-top: 20px;
+    float: right;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn1 {
+    background-image: linear-gradient(135deg, #48c6ef, #6f86d6);
+}
+
+.btn2 {
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.btn3 {
+    background-image: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
