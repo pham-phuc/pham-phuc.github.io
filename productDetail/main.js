@@ -85,3 +85,7 @@ $(document).ready(function () {
     }
   });
 });
+
+function tinhtong (){
+    
+}
