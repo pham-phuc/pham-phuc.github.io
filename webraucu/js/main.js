@@ -525,7 +525,7 @@ function checkItem(objProduct) {
     // giống tên thì + weight
     cart.forEach((e) => {
       if (e.name == objProduct.name) {
-        return (e.weight = e.weight + objProduct.weight);
+        return (e.weight = e.weight + 1);
       }
     });
     window.localStorage.setItem("cart", JSON.stringify(cart));
