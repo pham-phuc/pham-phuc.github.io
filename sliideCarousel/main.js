@@ -203,17 +203,16 @@ class Slide {
   }
 }
 
-
 const settings = {
-  container: "mySlider", 
-  textColor: "white", 
+  container: "mySlider",
+  textColor: "white",
   ctaBackground: "#81C784",
-  autoplay: true, 
-  autoplaySpeed: 10000, 
-  ctaColor: "white", 
-  navArrows: true, 
-  dots: true, 
-  marginTop: 0, 
+  autoplay: true,
+  autoplaySpeed: 10000,
+  ctaColor: "white",
+  navArrows: true,
+  dots: true,
+  marginTop: 0,
 };
 
 var miaslider = new Slider(settings);
@@ -243,3 +242,4 @@ miaslider.newSlide(
 );
 
 miaslider.init();
+
