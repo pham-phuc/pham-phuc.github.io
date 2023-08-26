@@ -1,9 +1,19 @@
-/* body{
-  background: greenyellow;
-} */
+body{
+  background: blink;
+}
 .App {
-  /* text-align: center; */
+  text-align: center;
   margin-left: 50px;
+}
+
+input{
+  border:3px solid #61dafb;
+  border-radius: 8%;
+}
+
+div button{
+  background-color: #61dafb;
+  border:3px solid #282c34;
 }
 
 .App-logo {
