@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-
+import './App.css'
 const sortTypes = ["All", "Completed Tasks", "Active Tasks"];
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="app-name">Todo Matic</h1>
+      <h1 className="app-name">TODO MATIC</h1>
       <h1>What need to be done?</h1>
       <div>
         <div>
