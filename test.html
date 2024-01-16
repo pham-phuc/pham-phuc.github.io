@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fc7059ae57.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ivy-project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 70px;
+        align-items: center;
+      }
+
+      .logo {
+        flex: 1;
+      }
+      .menu {
+        flex: 3;
+        display: flex;
+      }
+      .menu > li {
+        padding: 0 12px;
+        position: relative;
+      }
+      .menu > li:hover .sub-menu {
+        visibility: visible;
+        top: 30px;
+      }
+      .sub-menu {
+        position: absolute;
+        width: 150px;
+        border: 1px solid #ccc;
+        padding: 10px 0 10px 20px;
+        visibility: hidden;
+        top: 50px;
+        transition: 0.3s;
+      }
+      .sub-menu ul {
+        padding-left: 20px;
+      }
+      .sub-menu li a {
+        font-weight: normal;
+        font-size: 12px !important;
+      }
+      .menu > li > a {
+        font-size: 12px;
+        font-weight: bold !important;
+        display: block;
+        line-height: 20px;
+      }
+      .others {
+        flex: 1;
+        display: flex;
+      }
+      .others > li {
+        padding: 0 12px;
+      }
+      .others > li:first-child {
+        position: relative;
+      }
+      .others > li:first-child input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #333;
+      }
+
+      .others > li:first-child i {
+        position: absolute;
+        right: 10px;
+      }
+      .aspect-ratio-169 {
+        display: block;
+        position: relative;
+        padding-top: 56.25%;
+        transition: 0.3s;
+      }
+
+      .aspect-ratio-169 iframe {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" alt="" />
+      </div>
+      <div class="menu">
+        <li>
+          <a href="">MEN</a>
+          <ul class="sub-menu">
+            <li><a href="">Hàng mới về</a></li>
+            <li><a href="">collection</a></li>
+            <li>
+              <a href="">Áo</a>
+              <ul>
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Áo khoác</a></li>
+                <li><a href="">Áo len</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Quần</a>
+              <ul>
+                <li><a href="">Quần jean</a></li>
+                <li><a href="">Quần short</a></li>
+                <li><a href="">Quần âu</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">WOMEN</a></li>
+        <li><a href="">KID</a></li>
+        <li><a href="">SALE</a></li>
+        <li><a href="">LIST</a></li>
+        <li><a href="">MARK</a></li>
+        <li><a href="">INFORMATION</a></li>
+      </div>
+      <div class="others">
+        <li>
+          <input placeholder="Tìm kiếm " type="text" /><i
+            class="fas fa-search"
+          ></i>
+        </li>
+        <li><a class="fa fa-paw" href=""></a></li>
+        <li><a class="fa fa-user" href=""></a></li>
+        <li><a class="fa fa-shopping-bag" href=""></a></li>
+      </div>
+    </header>
+    <section id="Slider">
+      <div class="aspect-ratio-169">
+        <img
+          src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg"
+        />
+        <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" />
+        <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" />
+        <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" />
+        <img src="https://anhvienpiano.com/wp-content/uploads/2020/05/gio-vang-chup-anh-qua-trinh.jpg" />
+      </div>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
+    const imgContainer = document.querySelector(".aspect-ratio-169");
+    let imgNuber = imgPosition.length;
+    let index = 0;
+
+    imgPosition.forEach(function (image, index) {
+      image.style.left = index * 100 + "%";
+    });
+    function imgSlide() {
+      index++;
+      console.log(index);
+      if (index >= imgNuber) {
+        index = 0;
+      }
+      imgContainer.style.left = "-" + index * 100 + "%";
+    }
+    setInterval(imgSlide, 5000);
+  </script>
+</html>
