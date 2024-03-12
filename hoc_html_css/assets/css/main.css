@@ -1,0 +1,43 @@
+body {
+    line-height: 1;
+    padding: 0;
+    font-size: 100%;
+}
+
+div {
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity o.2s ease;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn + .btn{
+    margin-left: 16px;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
