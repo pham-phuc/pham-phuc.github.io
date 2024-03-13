@@ -41,3 +41,8 @@ div {
 .btn--danger {
     background-color: #ff623d;
 }
+
+.btn--disabled{
+    opacity: 0.5 !important;
+    cursor: default;
+}
