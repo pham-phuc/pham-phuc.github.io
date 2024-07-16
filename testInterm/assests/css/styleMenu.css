@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    display: inline-flex;
+    height: 100rem;
+    width: 100rem;
+    flex-shrink: 0;
+}
+
+.menu-left {
+    background-image: url(/assests/img/Rectangle\ 34625506.png );
+    background: linear-gradient(180deg, #122718 20%, rgba(18, 39, 24, 0.00) 35%, rgba(18, 39, 24, 0.00) 70%, #122718 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 40.125rem;
+    flex-shrink: 0;
+}
+
+.menu-right {
+    background-image: url(/assests/img/Rectangle\ 34625506.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 40.125rem;
+    flex-shrink: 0;
+}
+
+.logoImg {
+
+    width: 9.625rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.iconLogo {
+    position: absolute;
+    left: 4.6rem;
+    top: 1.07rem;
+}
