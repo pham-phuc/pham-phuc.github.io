@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-style: normal;
+    font-family: "Trip Sans";
+}
+
+:root {
+    --color: #FFFFFF;
+    --Orange-Normal: #E64827;
+}
+
+
+.header {
+    width: 100%;
+    height: 49.25rem;
+    background: var(--green-normal-hover, #206545);
+    background-image: url(/assests/img/Rectangle\ 34624945.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+.header-vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-vector img {
+    fill: lightgray -66.797px -287.721px / 115.173% 160.791% no-repeat;
+    width: 30.3125rem;
+    height: 32.5625rem;
+    flex-shrink: 0;
+}
+
+.text-bgr p {
+    line-height: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.text-bgr p:nth-child(1) {
+    color: var(--color, #FFF);
+    font-size: 1.125rem;
+    line-height: 100%;
+    opacity: 0.4;
+    font-weight: 800;
+}
+
+.text-bgr p:nth-child(2),
+.text-bgr p:nth-child(3) {
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 1) 131.51%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.text-bgr p:nth-child(3) {
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 131.51%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vector-img {
+    position: relative;
+}
+
+.text-bgr {
+    position: absolute;
+}
+
+/* header nav */
+.hader-nav {
+    display: flex;
+    width: calc(100% - 1.5rem - 5rem);
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImg {
+
+    width: 9.625rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.iconLogo {
+    position: absolute;
+    left: 4.6rem;
+    top: 1.07rem;
+}
+
+/* menu button */
+
+.menu-button {
+    background-color: var(--Orange-Normal, #E64827);
+    ;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+
+/* panel */
+.panel {
+    display: inline-flex;
+    padding: 0.75rem 0.75rem 0.75rem 2rem;
+    align-items: center;
+    gap: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-panel {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 10px;
+}
+
+.booking-option {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: .5rem;
+    padding: 0.5rem 0rem 0 1.5rem;
+
+}
+
+.booking-option:last-child {
+    margin-right: 0;
+}
+
+.option-label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.00375rem;
+
+}
+
+.option-value {
+    color: #333333;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.booking-button {
+    background-color: #ff5a00;
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-self: center;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+.booking-button .booking-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.booking-button .booking-panel-text {
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 1.05rem;
+    letter-spacing: 0.00875rem;
+}
+
+.booking-button:hover {
+    background-color: #e64a00;
+}
+
+.panel-icon {
+    display: flex;
+    width: 0.45669rem;
+    height: 0.72406rem;
+    padding: 0.13794rem 0.25rem 0.138rem 0.29331rem;
+    justify-content: center;
+    align-items: center;
+}
+.flex-icon{
+    display: flex;
+    flex-direction: column;
+}
