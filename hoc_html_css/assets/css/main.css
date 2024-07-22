@@ -100,19 +100,37 @@ p {
 
 /* content */
 
-.body {
+.content {
     display: grid;
     grid-template-columns: auto auto;
     gap: 5rem;
     margin: 1rem auto;
     justify-content: center;
 }
-.content-left{
+
+.content-left {
     padding: 1rem;
     font-size: 2rem;
     font-weight: 800;
 }
-.content-right div{
- padding: 1rem;
- color: #95a5a6;
+
+.content-right div {
+    padding: 1rem;
+    color: #95a5a6;
+}
+
+/* Slide */
+
+.container-slide {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.logo-slide{
+    max-width: 58rem;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #ff8159;
+    font-size: 5rem;
 }
