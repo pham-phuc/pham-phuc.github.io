@@ -87,12 +87,32 @@ p {
     text-align: center;
 }
 
-.contact-img-header{
+.contact-img-header {
     position: absolute;
     right: 6.5rem;
     bottom: 5rem;
 }
-.phone{
+
+.phone {
     font-size: 1.5rem;
     font-weight: 800;
+}
+
+/* content */
+
+.body {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    margin: 1rem auto;
+    justify-content: center;
+}
+.content-left{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.content-right div{
+ padding: 1rem;
+ color: #95a5a6;
 }
