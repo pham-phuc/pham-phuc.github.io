@@ -123,14 +123,58 @@ p {
 
 .container-slide {
     max-width: 60rem;
-    margin: 0 auto;
-}
-.logo-slide{
-    max-width: 58rem;
+    margin: 7rem auto;
 }
 
-.slick-next:before,
-.slick-prev:before {
+.slider-nav {
+    max-width: 60rem;
+}
+
+.slider-nav,
+div img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    background-color: #ff8159;
     color: #ff8159;
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+.img-body {
+    max-width: 60rem;
+    margin: 0 auto;
+
+}
+
+/* Our Service */
+
+.our-service {
+    max-width: 60rem;
+    margin: 7rem auto;
+    text-align: center;
+}
+
+.our-service h2 {
+    font-size: 2rem;
+    margin: 0 0 4rem 0;
+}
+
+.item-our-service {
+    text-align: center;
+}
+
+.item-our-service img,
+.item-our-service h3,
+.item-our-service div {
+    padding: 0.5rem;
+}
+.learn-more {
+    font-size: 0.5 rem;
+    color: #e58e26;
+}
+.learn-more i{
+    padding: 1rem;
+    font-size: 0.7rem;
 }
