@@ -150,9 +150,21 @@ div img {
 
 /* Our Service */
 
+.h-50-2{
+    background-color: #dfe6e9;
+    height: 50%;
+    padding: 0 20rem;
+}
+
+.container-service {
+    background-color: #dfe6e9;
+
+}
+
 .our-service {
     max-width: 60rem;
-    margin: 7rem auto;
+    margin: 0 auto;
+    padding: 10rem 0;
     text-align: center;
 }
 
@@ -170,11 +182,13 @@ div img {
 .item-our-service div {
     padding: 0.5rem;
 }
+
 .learn-more {
     font-size: 0.5 rem;
     color: #e58e26;
 }
-.learn-more i{
+
+.learn-more i {
     padding: 1rem;
     font-size: 0.7rem;
 }
