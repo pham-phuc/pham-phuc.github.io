@@ -19,6 +19,10 @@ a {
     justify-content: space-between;
 }
 
+.p-1 {
+    padding: 1rem;
+}
+
 .cusor-pt {
     cursor: pointer;
 }
@@ -150,7 +154,7 @@ div img {
 
 /* Our Service */
 
-.h-50-2{
+.h-50-2 {
     background-color: #dfe6e9;
     height: 50%;
     padding: 0 20rem;
@@ -164,7 +168,7 @@ div img {
 .our-service {
     max-width: 60rem;
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: 10rem 0 5rem 0;
     text-align: center;
 }
 
@@ -191,4 +195,54 @@ div img {
 .learn-more i {
     padding: 1rem;
     font-size: 0.7rem;
+}
+
+/* featured film */
+.container-featured-film {
+
+    margin: 0 5rem;
+    padding: 5rem 0;
+}
+
+.title-featured-film{
+    text-align: center;
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.item {
+    display: grid;
+    grid-template-columns: 28.3rem 28.3rem 28.3rem;
+}
+
+.featured-film-item div img {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.bgr-film:nth-child(1),
+.bgr-film:nth-child(3),
+.bgr-film:nth-child(4),
+.bgr-film:nth-child(6) {
+    background-color: #dfe6e9;
+}
+
+.bgr-film:nth-child(2) {
+    background-color: #fff;
+}
+
+.studio {
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0 0 0.5rem 0;
+    text-align: unset;
+}
+
+.name-featured-film {
+    font-size: 1.2rem;
+}
+
+.icon-film i {
+    font-size: 1rem;
+    font-weight: 600;
 }
