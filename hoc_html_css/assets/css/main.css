@@ -246,3 +246,35 @@ div img {
     font-size: 1rem;
     font-weight: 600;
 }
+
+/* Testimonial */
+
+.container-testimonial{
+    text-align: center;
+}
+
+.avatar-testimonial img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.title-testimonial{
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.testimonial-content{
+    font-size: 1.5rem;
+    color: #95a5a6;
+    padding: 1rem;
+    padding: 0 0 2rem 0;
+}
+.name-avatar{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.2rem 0 0.5rem 0;
+}
+.des-avatar{
+    color: #95a5a6;
+}
