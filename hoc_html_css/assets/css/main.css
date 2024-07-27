@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    font-family: "Bookman", serif;
+}
 ul li {
     list-style: none;
 }
@@ -204,12 +206,13 @@ div img {
     padding: 5rem 0;
 }
 
-.title-featured-film{
+.title-featured-film {
     text-align: center;
     padding: 3rem;
     font-size: 2rem;
     font-weight: 700;
 }
+
 .item {
     display: grid;
     grid-template-columns: 28.3rem 28.3rem 28.3rem;
@@ -249,98 +252,223 @@ div img {
 
 /* Testimonial */
 
-.container-testimonial{
+.container-testimonial {
     text-align: center;
 }
 
-.avatar-testimonial img{
+.avatar-testimonial img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
 }
 
-.title-testimonial{
+.title-testimonial {
     padding: 3rem;
     font-size: 2rem;
     font-weight: 700;
 }
-.testimonial-content{
+
+.testimonial-content {
     font-size: 1.5rem;
     color: #95a5a6;
     padding: 1rem;
     padding: 0 0 2rem 0;
 }
-.name-avatar{
+
+.name-avatar {
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1.2rem 0 0.5rem 0;
 }
-.des-avatar{
+
+.des-avatar {
     color: #95a5a6;
 }
-.avatar-testimonial{
+
+.avatar-testimonial {
     padding: 0 0 5rem 0;
 }
 
 /* from our blog */
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 22rem 22rem 22rem;
     gap: 1.5rem;
     justify-content: center;
 }
-.blog-container{
+
+.blog-container {
     padding: 5rem 0;
     background-color: #dfe6e9;
 }
+
 /* .blog-items{
     width: 20rem;
 } */
-.blog-item div img{
+.blog-item div img {
     height: 12rem;
     object-fit: cover;
 }
-.title-blog{
+
+.title-blog {
     padding: 0 0 3rem 0;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
-.date-blog{
+
+.date-blog {
     width: 2rem;
     height: 2rem;
-    padding: 1rem ;
+    padding: 1rem;
     border: 1px solid #718093;
     text-align: center;
 }
-.date-blog p{
+
+.date-blog p {
     color: #718093;
     font-weight: 700;
 }
-.day{
+
+.day {
     font-size: 1.5rem;
 }
-.blog-content{
+
+.blog-content {
     padding-left: 2rem;
 }
-.mg-1{
+
+.mg-1 {
     margin: 1rem 0;
 }
-.blog-studio{
-    padding:0 0 0.5rem 0;
+
+.blog-studio {
+    padding: 0 0 0.5rem 0;
     color: #718093;
 }
-.title-blog-item{
+
+.title-blog-item {
     font-size: 1.2rem;
     font-weight: 700;
 }
-.blog-continue{
+
+.blog-continue {
     padding: 1.5rem 0 0 0;
     color: #e58e26;
     font-size: 0.8rem;
     font-weight: 600;
 }
+
 /* slide logo footer */
-.slidelogo-Footer{
-background-color: #95a5a6;
+.slidelogo-Footer {
+    background-color: #95a5a6;
+}
+
+/* footer */
+.pd-bt {
+    padding-bottom: 2rem;
+}
+
+.footer-container {
+    padding: 5rem;
+}
+
+.footer-wapper {
+    max-width: 69rem;
+    display: grid;
+    grid-template-columns: 17rem 12rem 12rem 25rem;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+.logo-footer .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo-text {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+.title-footer {
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+.footer-services ul li {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    color: #bdc3c7;
+}
+
+.footer-links ul li {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    color: #bdc3c7;
+}
+
+.subscription div {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    color: #bdc3c7;
+}
+
+.subscription .lower {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 700;
+}
+
+input {
+    padding: 0.25rem;
+    width: 13rem;
+}
+
+.submit-sub {
+    padding: 0.25rem;
+    width: 6rem;
+    background-color: #cc8e35;
+    border: 2px solid #aaa69d;
+}
+
+.footer-bottom-container {
+    background-color: #111;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+.footer-bottom,
+.contact-wapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .contact-wapper {
+    justify-content: flex-end;
+} */
+
+.footer-bottom {
+    max-width: 69rem;
+    margin: 0 auto;
+}
+
+.contact-wapper div:nth-child(3) {
+    padding: 0 0rem 0 1rem;
+}
+
+.contact-wapper div {
+    padding: 0 1rem 0 1rem;
+}
+
+.contact-wapper {
+    /* padding-left: 3rem; */
+}
+
+.footer-bottom div {
+    color: #bdc3c7;
+}
+
+.footer-bottom div span {
+    color: #EAB543
 }
