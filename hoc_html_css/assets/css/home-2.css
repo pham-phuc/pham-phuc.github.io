@@ -1,0 +1,55 @@
+body {
+    font-family: "Bookman", serif;
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-container {
+    /* width: 100rem; */
+
+}
+
+.header-wapper {
+    /* background-color: black; */
+}
+
+.header-nav {
+    margin: 0 5rem;
+    /* color: #fff; */
+}
+
+.header-nav,
+.nav-items ul,
+.nav-icons {
+    display: flex;
+}
+
+.header-nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items ul li {
+    padding: 0.5rem 1rem;
+    color:#CAD3C8
+}
+
+.pd-r-1 {
+    padding-right: 1rem;
+}
+
+.nav-search {
+    padding-right: 1rem;
+}
+.nav-logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color:#EAB543
+}
