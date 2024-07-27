@@ -38,7 +38,7 @@ a {
 
 .nav-items ul li {
     padding: 0.5rem 1rem;
-    color:#CAD3C8
+    color: #CAD3C8
 }
 
 .pd-r-1 {
@@ -48,8 +48,61 @@ a {
 .nav-search {
     padding-right: 1rem;
 }
-.nav-logo{
+
+.nav-logo {
     font-size: 2rem;
     font-weight: 800;
-    color:#EAB543
+    color: #EAB543
+}
+
+/* Our project */
+.our-project {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-project {
+    font-size: 3rem;
+}
+
+.des-project {
+    font-size: 0.8rem;
+    color: #636e72;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.our-project-items {
+    padding: 6rem 0;
+}
+
+.our-project-item div img {
+    width: 100%;
+    object-fit: cover;
+    height: 25em;
+}
+
+.our-project-item {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 3rem;
+    align-items: center;
+    color:#b2bec3
+}
+
+.item-studio {
+    font-size: 0.8rem;
+}
+
+.item-title {
+    margin: 0.2rem 0 1rem 0;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.item-content {
+    padding: 0 0 2rem 0;
+    font-size: 0.8rem;
 }
