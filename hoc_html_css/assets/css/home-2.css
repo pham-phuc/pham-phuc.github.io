@@ -59,6 +59,7 @@ a {
 .our-project {
     margin: 0 auto;
     text-align: center;
+    padding: 0 0 6rem 0;
 }
 
 .title-project {
@@ -75,7 +76,7 @@ a {
 }
 
 .our-project-items {
-    padding: 6rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 .our-project-item div img {
@@ -89,7 +90,7 @@ a {
     grid-template-columns: 50% 40%;
     gap: 3rem;
     align-items: center;
-    color:#b2bec3
+    color: #b2bec3
 }
 
 .item-studio {
@@ -102,7 +103,30 @@ a {
     color: #222;
 }
 
+
+.project-right:nth-child(1){
+    text-align: right;
+}
+
 .item-content {
     padding: 0 0 2rem 0;
     font-size: 0.8rem;
+}
+
+.loading {
+    text-align: center;
+    padding: 1rem 0 6rem 0;
+}
+
+.loading i,
+.loading span {
+    padding: 0.5rem;
+    color: #b2bec3;
+}
+
+.footer{
+    background-color: #2d3436;
+}
+ul{
+    padding: 0;
 }
