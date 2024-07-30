@@ -1,0 +1,14 @@
+.content-container{
+    margin: 0 5rem;
+    padding: 5rem 0 9rem 0;
+}
+.content-items{
+    display: grid;
+    grid-template-columns: 20.5rem 20.5rem 20.5rem 20.5rem;
+    gap: 1rem;
+}
+.content-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+}
