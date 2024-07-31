@@ -1,0 +1,31 @@
+.content {
+    margin: 0 5rem;
+}
+
+.content-nav ul {
+    display: flex;
+}
+
+.content-nav ul li {
+    padding: 1rem 2rem 0 0;
+}
+
+.content-img {
+    /* margin: 0 5rem; */
+    display: grid;
+    grid-template-columns: 27rem 27rem 27rem;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.img-item img {
+    max-width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.load {
+    text-align: center;
+    padding-bottom: 5rem;
+    color: #bdc3c7;
+}
