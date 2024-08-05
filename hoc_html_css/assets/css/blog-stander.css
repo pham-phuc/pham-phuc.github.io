@@ -19,9 +19,6 @@
 
 .blog-item {
     padding: 2rem 0;
-    /* display: grid; */
-    gap: 2rem;
-    grid-template-columns: 17rem 24rem;
 }
 
 .blog-item div img {
@@ -44,10 +41,11 @@
     color: #fff;
 }
 
-.day{
+.day {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 /* search bar */
 
 .wrap {
@@ -123,8 +121,16 @@
 .popular-content {
     font-size: 1rem;
 }
-.content-blog{
+
+.content-blog {
     display: grid;
     grid-template-columns: 10% 70%;
     gap: 5%;
+}
+
+.blog-studio {
+    padding: 1rem 0 0.5rem 0;
+}
+.title-content{
+    padding: 0.5rem 0 0.5rem 0;
 }
