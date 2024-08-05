@@ -19,7 +19,7 @@
 
 .blog-item {
     padding: 2rem 0;
-    display: grid;
+    /* display: grid; */
     gap: 2rem;
     grid-template-columns: 17rem 24rem;
 }
@@ -30,14 +30,11 @@
 
 }
 
-.blog-img {
+/* .blog-img {
     position: relative;
-}
+} */
 
 .day-month {
-    position: absolute;
-    top:1.5rem;
-    z-index: 10;
     width: 3rem;
     height: 3rem;
     padding: 0.5rem;
@@ -125,4 +122,9 @@
 
 .popular-content {
     font-size: 1rem;
+}
+.content-blog{
+    display: grid;
+    grid-template-columns: 10% 70%;
+    gap: 5%;
 }
