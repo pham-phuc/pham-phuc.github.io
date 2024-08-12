@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Bookman", serif;
+}
+.about-header{
+    text-align: center;
+   padding: 3rem 0;
+}
+.about-title{
+font-size: 1rem;
+color:#bdc3c7;
+padding: 0 0 1rem 0;
+}
+.about-tag{
+font-size: 1.5rem;
+}
