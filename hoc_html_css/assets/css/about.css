@@ -10,7 +10,7 @@ body {
 
 .about-header {
     text-align: center;
-    padding: 3rem 0;
+    padding: 3rem 0 5rem 0;
 }
 
 .about-title {
@@ -33,6 +33,7 @@ body {
     display: grid;
     grid-template-columns: 30rem 30rem;
     gap: 1rem;
+    padding-bottom: 5rem;
 }
 
 .about-item div img {
@@ -102,5 +103,101 @@ body {
 
 .studio-author {
     font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+
+/*  */
+.wrapper-slogan {
+    padding: 6rem;
+    background: #dfe6e9;
+}
+
+.about-slogan {
+    max-width: 61rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+.avatar {
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+}
+
+.avatar img {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content-slogan {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.author,
+.position {
+    font-size: 1rem;
+}
+
+.position {
+    color: #636e72;
+}
+
+/*  */
+.board-wrapper {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    gap: 1rem;
+}
+
+.img-board img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.items-author {
+    padding: 1rem 0;
+}
+
+.board-author {
+    display: grid;
+    grid-template-columns: 3rem 10rem;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.meet {
+    color: #ff7675;
+}
+
+
+
+.avatar-board img {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.board-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.board-dicreption {
+    font-size: 1rem;
     color: #bdc3c7;
 }
