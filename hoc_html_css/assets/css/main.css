@@ -152,7 +152,9 @@ div img {
 
 .slick-next:before,
 .slick-prev:before {
-    color: #333
+    font-family: fontawesome ;
+    font-size: 20px;
+    color: #333;
 }
 
 /* Our Service */
