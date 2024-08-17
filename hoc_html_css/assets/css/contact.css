@@ -1,0 +1,111 @@
+.content {
+    max-width: 61rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.content-header {
+    padding: 0 0 3rem 0;
+}
+
+.tag-contact {
+    font-size: 1rem;
+    padding: 0 0 1rem 0;
+}
+
+.tag-contact span {
+    color: #b2bec3;
+}
+
+.title-contact {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-items {
+    display: grid;
+    grid-template-columns: 20rem 40rem;
+    gap: 1rem;
+}
+
+.item-right {
+    padding: 1rem 0 0 0;
+}
+
+.title-info {
+    color: #b2bec3;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 1rem 0 1rem 0;
+}
+
+.info {
+    font-weight: 600;
+    padding: 0rem 0 1rem 0;
+}
+
+.contac-item {
+    display: grid;
+    grid-template-columns: 5rem 5rem;
+    column-gap: 2rem;
+    row-gap: 0.5rem;
+}
+
+.item a {
+    color: #e74c3c;
+}
+
+.title-input {
+    padding: 0 0 1rem 0.2rem;
+}
+
+.input {
+    padding: 0 0 2rem 0;
+}
+
+.input-name,
+.input-email {
+    width: 18.5rem;
+    height: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.input-name {
+    margin-right: 1rem;
+}
+
+.select-input {
+    padding: 0 0 2rem 0;
+}
+
+#select {
+    width: 40rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+#select option {
+    color: #b2bec3;
+}
+
+
+.input-message-contact {
+    width: 40rem;
+    height: 8rem;
+    border: none;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.button-submit {
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+}
+
+.submit {
+    width: 10rem;
+    padding: 1rem;
+    background: #e58e26;
+    border: 1px solid #e58e26;
+}
