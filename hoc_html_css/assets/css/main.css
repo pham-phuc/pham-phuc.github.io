@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Bookman", serif;
 }
+
 ul li {
     list-style: none;
 }
@@ -141,17 +143,17 @@ div img {
     width: 100%;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    background-color: #ff8159;
-    color: #ff8159;
-    font-size: 3rem;
-}
+
 
 .img-body {
     max-width: 60rem;
     margin: 0 auto;
 
+}
+
+.slick-next:before,
+.slick-prev:before {
+    color: #333
 }
 
 /* Our Service */
@@ -363,4 +365,3 @@ div img {
 .slidelogo-Footer {
     background-color: #95a5a6;
 }
-
