@@ -32,8 +32,8 @@
 
 .pagination a.active {
     color: #FFF;
-    background-color: #0096FF;
-    border: 1px solid #0096FF;
+    background-color: #766643;
+    border: 1px solid #766643;
 }
 
 .pagination a:hover:not(.active) {
