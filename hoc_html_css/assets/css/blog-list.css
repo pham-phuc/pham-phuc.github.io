@@ -36,20 +36,23 @@
 
 .day-month {
     position: absolute;
-    top:1.5rem;
+    top: 1.5rem;
     z-index: 10;
-    width: 3rem;
-    height: 3rem;
-    /* padding: 0.5rem; */
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
     text-align: center;
     margin: auto 0;
-    background: #EAB543;
+    background: #766643;
     color: #fff;
 }
 
-.day{
+.day {
     font-size: 1.5rem;
     font-weight: 700;
+}
+.month{
+    font-size: 0.8rem;
 }
 /* search bar */
 
@@ -61,8 +64,8 @@
     border: 1px solid #dfe6e9;
     border-right: none;
     padding: 5px;
-    height: 26px;
-    border-radius: 5px 0 0 5px;
+    height: 2.2rem;
+    /* border-radius: 5px 0 0 5px; */
     outline: none;
     color: #9DBFAF;
 }
@@ -74,11 +77,11 @@
 .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #f7b731;
-    background: #f7b731;
+    border: 1px solid #766643;
+    background: #766643;
     text-align: center;
     color: #fff;
-    border-radius: 0 5px 5px 0;
+    /* border-radius: 0 5px 5px 0; */
     cursor: pointer;
     font-size: 20px;
 }
@@ -87,20 +90,22 @@
     padding: 3rem 0;
 }
 
-.posts-title {
-    font-size: 1rem;
+.posts-title,
+.categories-title,
+.popular-title {
+    font-size: 0.8rem;
     padding-bottom: 2rem;
-    color: #d1d8e0;
+    color: #95a5a6;
 }
 
 .post-content {
-    /* font-size: 0.9rem; */
-    color: #d1d8e0;
+    font-size: 0.9rem;
+    color: #95a5a6;
     padding-bottom: 0.5rem;
 }
 
 .categories {
-    color: #d1d8e0;
+    color: #95a5a6;
     padding-bottom: 3rem;
 }
 
@@ -125,4 +130,32 @@
 
 .popular-content {
     font-size: 1rem;
+}
+
+.blog-des,
+.blog-studio {
+    color: #95a5a6
+}
+
+.title-content {
+    padding: 0.5rem 0;
+}
+
+.blog-des {
+    font-size: 0.9rem;
+}
+
+.continue {
+    padding: 1.5rem 0;
+}
+
+.continue a {
+    font-size: 0.9rem;
+    color: #766643;
+}
+
+.continue i {
+    font-size: 0.5rem;
+    padding-left: 0.2rem;
+
 }
