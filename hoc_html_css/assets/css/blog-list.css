@@ -5,7 +5,7 @@
 
 .blog-header {
     padding: 5rem 0;
-    background-color: #dfe6e9;
+    background-color: #95a5a6;
 }
 
 .blog-list-container {
@@ -51,9 +51,11 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
-.month{
+
+.month {
     font-size: 0.8rem;
 }
+
 /* search bar */
 
 .wrap {
@@ -61,7 +63,7 @@
 }
 
 .searchTerm {
-    border: 1px solid #dfe6e9;
+    border: 1px solid #95a5a6;
     border-right: none;
     padding: 5px;
     height: 2.2rem;
@@ -98,7 +100,8 @@
     color: #95a5a6;
 }
 
-.post-content {
+.post-content,
+.popular-content {
     font-size: 0.9rem;
     color: #95a5a6;
     padding-bottom: 0.5rem;
