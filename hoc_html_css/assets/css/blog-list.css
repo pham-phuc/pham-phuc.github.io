@@ -18,7 +18,7 @@
 }
 
 .blog-item {
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: grid;
     gap: 2rem;
     grid-template-columns: 17rem 24rem;
@@ -161,4 +161,11 @@
     font-size: 0.5rem;
     padding-left: 0.2rem;
 
+}
+hr{
+    border-top: 1px solid #9DBFAF;
+    
+}
+.pagination-page{
+    padding: 2rem  0 0 0;
 }
