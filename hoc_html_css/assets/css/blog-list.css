@@ -45,6 +45,9 @@
     margin: auto 0;
     background: #766643;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .day {
@@ -54,6 +57,7 @@
 
 .month {
     font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 /* search bar */
@@ -162,10 +166,12 @@
     padding-left: 0.2rem;
 
 }
-hr{
+
+hr {
     border-top: 1px solid #9DBFAF;
-    
+
 }
-.pagination-page{
-    padding: 2rem  0 0 0;
+
+.pagination-page {
+    padding: 2rem 0 0 0;
 }

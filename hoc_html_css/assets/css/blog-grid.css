@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    
+
 }
 
 .header-blog {
@@ -9,9 +9,11 @@ a {
     padding: 5rem 0;
     background-color: #dfe6e9;
 }
-.blog-tag{
+
+.blog-tag {
     padding: 1rem 0;
 }
+
 .blog-grid {
     max-width: 60rem;
     margin: 0 auto;
@@ -32,9 +34,12 @@ a {
 }
 
 .day-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 4rem;
     height: 4rem;
-    padding: 0.5rem;
+    align-items: center;
     text-align: center;
     color: #000;
     border: 1px solid #95afc0;
@@ -42,10 +47,16 @@ a {
 
 
 .day {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: Garamond, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+.month {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
 
 .blog-item {
     max-width: 100%;
@@ -63,13 +74,13 @@ a {
     padding: 1rem 0 1.5rem 0;
 }
 
-.continue {
+.continue a {
     font-size: 0.9rem;
+    color: #766643;
 }
 
 .blog-studio,
-.continue a,
 .day,
 .month {
-    color:#95afc0
+    color: #95afc0
 }
