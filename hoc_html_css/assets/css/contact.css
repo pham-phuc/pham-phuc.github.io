@@ -101,12 +101,16 @@
 .button-submit {
     padding: 5rem 0 3rem 0;
     text-align: center;
+    /* cursor: pointer; */
 }
 
 .submit {
     width: 10rem;
     padding: 1rem;
-    background: #e58e26;
-    border: 1px solid #e58e26;
+    background: #cc8e35;
+    border: 1px solid #cc8e35;
 }
 
+.button-submit .submit a {
+    color: #fff;
+}

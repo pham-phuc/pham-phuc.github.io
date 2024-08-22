@@ -157,8 +157,8 @@ body {
 
 .board {
     display: grid;
-    grid-template-columns: 30rem 30rem;
-    gap: 1rem;
+    grid-template-columns: 29rem 29rem;
+    gap: 3rem;
 }
 
 .img-board img {
@@ -177,8 +177,8 @@ body {
     padding: 1rem 0;
 }
 
-.meet {
-    color: #ff7675;
+.meet a {
+    color: #cc8e35;
 }
 
 
@@ -201,3 +201,10 @@ body {
     font-size: 1rem;
     color: #bdc3c7;
 }
+
+.slidelogo-Footer,
+.slidelogo-Footer .wrapper {
+    background-color: #f1f2f6;
+    padding: 1rem 0;
+}
+

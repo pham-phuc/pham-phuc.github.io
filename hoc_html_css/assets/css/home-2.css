@@ -11,50 +11,6 @@ a {
     text-decoration: none;
 }
 
-.header-container {
-    /* width: 100rem; */
-
-}
-
-.header-wapper {
-    padding: 1rem 0;
-}
-
-.header-nav {
-    margin: 0 5rem;
-    /* color: #fff; */
-}
-
-.header-nav,
-.nav-items ul,
-.nav-icons {
-    display: flex;
-}
-
-.header-nav {
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-items ul li {
-    padding: 0.5rem 1rem;
-    color: #CAD3C8
-}
-
-.pd-r-1 {
-    padding-right: 1rem;
-}
-
-.nav-search {
-    padding-right: 1rem;
-}
-
-.nav-logo {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #EAB543
-}
-
 /* Our project */
 .our-project {
     margin: 0 auto;
@@ -124,9 +80,7 @@ a {
     color: #b2bec3;
 }
 
-.footer{
-    background-color: #2d3436;
-}
+
 ul{
     padding: 0;
 }
