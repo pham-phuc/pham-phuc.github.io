@@ -79,6 +79,12 @@ a {
     color: #766643;
 }
 
+.continue i {
+    font-size: 0.5rem;
+    padding-left: 0.2rem;
+
+}
+
 .blog-studio,
 .day,
 .month {
