@@ -1,0 +1,142 @@
+body {
+    font-family: "Bookman", serif;
+    font-size: 1rem;
+}
+
+a {
+    color: #333;
+}
+
+.header {
+    background-color: #353b48;
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.content {
+    /* width: 56rem; */
+    margin: 0 auto;
+    padding: 0rem 0 3rem 0;
+}
+
+.our-project {
+    padding: 0 0 3rem 0;
+}
+
+.title-project {
+    font-size: 2.5rem;
+    padding: 0 0 1rem 0;
+    text-align: center;
+}
+
+.des-project {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.bold {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #EAB543;
+}
+
+.img-item {
+    height: 15rem;
+    position: relative;
+}
+
+.hover-watch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    border: #fff;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    display: none;
+}
+
+.wrapper-items {
+    width: 56rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 18.5rem 18.5rem 18.5rem;
+    gap: 1rem;
+}
+
+.img-item img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.content-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* background-color: #ecf0f1; */
+    padding: 1.5rem;
+}
+
+.item-our-project:hover {
+
+    .hover-watch {
+        display: block;
+    }
+
+    cursor: pointer;
+}
+
+.studio {
+    color: #95a5a6;
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.hover-watch i {
+    font-size: 0.7rem;
+    padding: 0 0.4rem 0 0;
+}
+
+.hover-watch span {
+    font-size: 0.9rem;
+}
+
+.loading {
+    width: 56rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #95a5a6;
+    padding: 2rem 0 0 0;
+}
+
+.loading div i {
+    font-size: 0.8rem;
+    padding: 0 0.5rem 0 0;
+    color: #95a5a6;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 0rem 0;
+}
+
+.tag-item {
+    color: #95a5a6;
+    font-size: 1rem;
+    padding: 0 2rem 0 0;
+}
+
+.tag-item:nth-child(1) {
+    color: #EAB543;
+}
