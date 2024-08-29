@@ -35,25 +35,27 @@ p {
     object-fit: cover;
 }
 
-.story {
+.story,
+.winning-awards {
     width: 60rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 15rem 45rem;
-
+    padding: 0 0 2rem 0;
 }
-.story-left{
+
+.story-left {
     font-weight: bold;
     font-size: 0.8rem;
-    display: flex;
-    align-content: center;
 }
-.story-left span i{
+
+.tich {
     font-size: 0.6rem;
     padding: 0 0.5rem 0 0;
     align-items: center;
     color: #ffda79;
 }
+
 .story-1 {
     color: #333;
     font-size: 1.2rem;
@@ -65,4 +67,12 @@ p {
     color: #95afc0;
     font-size: 0.9rem;
     padding: 0 0 1rem 0;
+}
+.winning-awards-right{
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem 8rem;
+}
+.winning-awards-right img{
+    width: 100%;
+    object-fit: cover;
 }
