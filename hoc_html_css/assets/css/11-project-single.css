@@ -36,7 +36,8 @@ p {
 }
 
 .story,
-.winning-awards {
+.winning-awards,
+.cast_crew {
     width: 60rem;
     margin: 0 auto;
     display: grid;
@@ -44,7 +45,9 @@ p {
     padding: 0 0 2rem 0;
 }
 
-.story-left {
+.story-left,
+.cast_crew-left,
+.winning-awards-left {
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -68,11 +71,47 @@ p {
     font-size: 0.9rem;
     padding: 0 0 1rem 0;
 }
-.winning-awards-right{
+
+.winning-awards-right {
     display: grid;
     grid-template-columns: 8rem 8rem 8rem 8rem;
 }
-.winning-awards-right img{
+
+.winning-awards-right img {
     width: 100%;
     object-fit: cover;
+}
+
+.wrapper-cast_crew-partners {
+    background-color: #ecf0f1;
+
+}
+
+.cast_crew {
+    padding: 5rem 0 0 0;
+}
+
+.cast_crew-right {
+    display: grid;
+    grid-template-columns: 10rem 10rem 20rem;
+    gap: 2rem;
+}
+
+.title-cast-crew {
+    font-size: 0.9rem;
+    color: #95afc0;
+    font-weight: 400;
+    padding: 0 0 1rem 0;
+}
+
+.cast-crew-author {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0 0 0.5rem 0;
+    font-weight: 400;
+}
+
+.cast-crew-author:nth-last-child(1) {
+    padding: 0 0 2rem 0;
+
 }
