@@ -93,7 +93,7 @@ p {
 
 .cast_crew-right {
     display: grid;
-    grid-template-columns: 10rem 10rem 20rem;
+    grid-template-columns: 10rem 10rem 25rem;
     gap: 2rem;
 }
 
@@ -105,13 +105,16 @@ p {
 }
 
 .cast-crew-author {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #333;
     padding: 0 0 0.5rem 0;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cast-crew-author:nth-last-child(1) {
     padding: 0 0 2rem 0;
 
+}
+.list-cast{
+    line-height: 1.5rem;
 }
