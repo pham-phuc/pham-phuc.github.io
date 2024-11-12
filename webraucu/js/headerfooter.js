@@ -156,10 +156,4 @@ let footer = ` <div class="container-md margin-top-40 margin-bot-28">
     </div>
   </div>
 </div>
-</div>
-<div class="copyright">
-<p>
-  Copyright @ Made with a lot of <i class="fa-solid fa-heart"></i> by
-  CQH
-</p>
 </div>`;
