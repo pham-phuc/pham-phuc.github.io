@@ -16,19 +16,21 @@ body {
   /* padding: 15px 40px; */
 }
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 114px;
+  margin-left: 7.125rem;
 }
 .icons {
   display: flex;
-  gap: 26px;
-  margin-right: 53px;
+  gap: 1.625rem;
+  margin-right: 3.3125rem;
 }
+
 .icons a img {
-  width: 37px;
-  height: 37px;
+  width: 2.3125rem;
+  height: 2.3125rem;
 }
+
 .logo span {
   color: black;
 }
@@ -38,31 +40,35 @@ nav ul {
   padding: 0;
 }
 nav ul li {
-  margin: 0 15px;
+  margin: 0 0.9375rem;
   /* position: relative; */
 }
+
 nav ul li a {
   text-decoration: none;
   color: #07272e;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 100%;
 }
+
 .dropdown-content {
   position: absolute;
   background: #ffffff;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   top: 100%;
   left: 0;
   width: 100%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
+  transform: translateY(0.625rem);
   transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
 }
+
 .dropdown-content-wrapper {
   display: flex;
   gap: 4rem;
@@ -89,14 +95,14 @@ nav ul li .item-menu::after {
   left: 50%;
   bottom: 0;
   width: 0;
-  height: 4px; /* Độ dày của gạch chân */
-  background-color: #07272e; /* Màu của gạch chân */
+  height: 4px;
+  background-color: #07272e;
   transition: width 0.3s ease, left 0.3s ease;
 }
 
 .dropbtn.active::after,
 nav ul li .item-menu.active::after {
-  width: 38px; /* Khi active, gạch chân mở rộng */
+  width: 2.375rem;
   left: 0;
 }
 .left_menu_dropDown_item a {
@@ -125,10 +131,11 @@ nav ul li .item-menu.active::after {
   flex-direction: column;
 }
 .left_menu_dropDown_item {
-  width: 274px;
-  height: 52px;
+  width: 17.125rem;
+  height: 3.25rem;
   border-bottom: 1px solid #cdcdcd;
 }
+
 .left_menu_dropDown_item:hover {
   background-color: #f3f3f3;
 }
@@ -139,7 +146,7 @@ nav ul li .item-menu.active::after {
 }
 .left_menu_dropDown_item a {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 100%;
 }
 .menu-images {
@@ -159,15 +166,155 @@ nav ul li .item-menu.active::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 3.125rem;
 }
 .hero .text h1 {
-  font-size: 80px;
+  font-size: 5rem;
 }
+
 .hero button {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background: #c4ff71;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.slide_wrapper {
+  background-color: #07272e;
+}
+.container_slide {
+  display: flex;
+  height: 51.5625rem;
+  background-color: #07272e;
+  color: white;
+}
+
+.sidebar_slide {
+  width: 5rem;
+  background: #07272e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border-right: 1px solid #ffffff;
+  padding: 3.125rem 0;
+}
+
+.social_slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social_slide a {
+  color: white;
+  margin: 0.625rem 0;
+  font-size: 1.125rem;
+}
+
+.content_slide {
+  flex: 1;
+  padding: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_social {
+  color: #cdff9a;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_left_slide {
+  margin: auto 5.75rem;
+}
+
+.title_litle_main_slide_content {
+  font-size: 0.875rem;
+  color: #cdff9a;
+  font-weight: 400;
+}
+
+.title_main_slide_content {
+  font-size: 3.75rem;
+  color: #cdff9a;
+  font-weight: 500;
+  margin: 0;
+}
+
+.content_slide_wrapper {
+  position: relative;
+  width: 100%;
+}
+.content_left_slide {
+  position: absolute;
+  top: 35%;
+}
+.content_right_slide {
+  position: absolute;
+  right: 3%;
+  top: -6.3%;
+}
+.content_right_slide img {
+  width: 48.75rem;
+  height: 45.5625rem;
+}
+
+.number_slide {
+  position: relative;
+}
+
+.number_slide img {
+  width: 23.125rem;
+}
+
+.text_main_content {
+  position: absolute;
+  top: 45%;
+  width: 28.125rem;
+}
+
+.custom-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  background: transparent;
+  border: 1px solid #c8ff9f;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 2.5rem;
+}
+
+.custom-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 100%;
+  background: #c8ff9f;
+}
+.icon_arrow_left_right img {
+  width: 3.375rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.image_slide {
+  position: relative;
+}
+.icon_arrow_left_right {
+  position: absolute;
+  right: 0;
+  bottom: 1%;
 }
